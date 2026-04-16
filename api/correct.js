@@ -1,25 +1,34 @@
-function applyPattern(input){
-  const pattern = findClosestPattern(input);
+// api/correct.js
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
 
-  if(!pattern) return input;
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+  if (!OPENAI_API_KEY) {
+    return res.status(400).json({ error: 'OPENAI_API_KEY missing' });
+  }
 
-  const inputWords = input.split(' ');
-  const patternWords = pattern.ind.split(' ');
+  const body = req.body || {};
+  if (!body.model) body.model = 'gpt-4o-mini';
+  if (!body.messages) body.messages = [{ role: 'user', content: 'Halo' }];
 
-  let result = [];
+  try {
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${OPENAI_API_KEY}`,
+      },
+      body: JSON.stringify(body),
+    });
 
-  patternWords.forEach((pw, i) => {
+    const data = await response.json();
+    if (!response.ok) return res.status(response.status).json(data);
 
-    // 🔥 ambil kata dari posisi sama jika ada
-    if(inputWords[i]){
-      result.push(inputWords[i]);
-    } else {
-      // 🔥 fallback: cari kata mirip
-      const found = inputWords.find(w => w.startsWith(pw.substring(0,3)));
-      result.push(found || pw);
-    }
-
-  });
-
-  return result.join(' ');
+    res.status(200).json(data);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: String(err.message || err) });
+  }
 }
