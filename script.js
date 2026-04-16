@@ -6157,46 +6157,58 @@ function translateFromVoice(text){
         {
           role: 'system',
           content: `
-          Kamu adalah AI yang bertugas memperbaiki hasil terjemahan dari kamus menjadi kalimat yang alami dan benar sesuai bahasa tujuan.
+        Kamu adalah AI penyusun ulang kalimat berbasis pola CSV.
 
-          Tugas kamu:
-          - JANGAN menerjemahkan ulang dari awal
-          - Gunakan hasil kamus sebagai dasar utama
-          - Hanya memperbaiki susunan kata agar menjadi kalimat yang alami dan mudah dipahami
+        PERAN KAMU:
+        - BUKAN penerjemah
+        - BUKAN pembuat kalimat baru
+        - HANYA penyusun ulang kata berdasarkan pola CSV
 
-          Aturan penting:
-          1. Pahami konteks dari kalimat asli (Bahasa Indonesia)
-          2. Susun ulang hasil kamus agar sesuai pola bahasa tujuan (Ternate/Makian/Galela)
-          3. Jika ada kata yang tidak tepat,(contoh: "gulaha") boleh diganti dengan kata yang lebih sesuai konteks
-          4. Jangan menambahkan arti baru
-          5. Jangan menghilangkan informasi dari kalimat asli
-          6. Hindari pengulangan kata yang tidak perlu
-          7. Pastikan hasil akhir terdengar seperti kalimat asli penutur daerah
+        ATURAN KERAS (WAJIB DIPATUHI):
+        1. Gunakan HANYA kata yang sudah ada di hasil kamus
+        2. DILARANG menambah kata baru
+        3. DILARANG menghapus kata penting
+        4. DILARANG menerjemahkan ulang dari Bahasa Indonesia
+        5. SUSUN ULANG hanya mengikuti pola CSV
+        6. Ikuti urutan struktur kalimat pada pola CSV target
+        7. Jika ada kata tidak cocok, tetap gunakan yang PALING DEKAT dari hasil kamus (jangan buat baru)
+        8. Output HARUS tetap dalam bahasa tujuan (Ternate/Makian/Galela)
 
-          Output:
-          - hanya 1 kalimat
-          - tanpa penjelasan
-          - natural
-          `         
+        TUJUAN:
+        - Meniru bentuk kalimat CSV
+        - BUKAN membuat kalimat bebas
+
+        OUTPUT:
+        - hanya 1 kalimat
+        - tanpa penjelasan
+        - tanpa tambahan apapun
+        `
         },
         {
           role: 'user',
           content: `
-          Arah terjemahan: ${direction}
+        Arah terjemahan: ${direction}
 
-          Kalimat asli:
-          "${originalText}"
+        KALIMAT ASLI (untuk konteks saja):
+        "${originalText}"
 
-          Hasil dari kamus:
-          "${dictResult}"
+        POLA CSV TARGET (WAJIB DIIKUTI STRUKTURNYA):
+        ${dictResult.match(/POLA CSV TARGET:\s*([\s\S]*?)HASIL KAMUS:/)?.[1] || ''}
 
-          Contoh:
-          Indonesia: saya pergi ke pasar
-          Kamus: saya pergi pasar
-          Hasil benar: saya pergi ke pasar (disusun rapi, tidak diubah makna)
+        HASIL KAMUS (SUMBER KATA):
+        ${dictResult.match(/HASIL KAMUS:\s*([\s\S]*)/)?.[1] || dictResult}
 
-          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
-          `
+        TUGAS:
+        - Susun ulang HASIL KAMUS agar mengikuti POLA CSV TARGET
+        - Jangan keluar dari kata-kata yang tersedia
+        - Jangan buat kalimat baru
+        - Fokus hanya pada SUSUNAN
+
+        CONTOH:
+        Pola CSV: guhi isiwaho fala dofu  
+        Kamus: guhi fala dofu isiwaho  
+        Hasil: guhi isiwaho fala dofu
+        `
         }
       ],
       temperature: 0.3
