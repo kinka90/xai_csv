@@ -5818,7 +5818,9 @@
 
     return result.join(' ');
   }
-
+// ======================
+// 🧠 Deteksi arah bahasa dari kamus
+// ======================
   function detectDirectionByDictionary(text){
   const t = normalizeTextForLookup(text);
 
@@ -6006,9 +6008,9 @@ if(num < 1000000){
   // dir: salah satu keys di maps
   // ======================
     // 🔥 HANDLE ANGKA
-    function translateWithMap(text, dir){
+ function translateWithMap(text, dir){
 
-  // 🔥 ANGKA LANGSUNG (123)
+  // 🔥 HANDLE ANGKA LANGSUNG (123)
   if(isNumberInput(text)){
     const num = parseInt(text);
 
@@ -6017,7 +6019,7 @@ if(num < 1000000){
     if(dir.includes("galela")) return convertNumberToLocal(num, "galela");
   }
 
-  // 🔥 ANGKA DALAM HURUF (dua belas)
+  // 🔥 ANGKA DALAM HURUF
   const numFromWord = wordsToNumber(text);
   if(numFromWord !== null){
     if(dir.includes("ter")) return convertNumberToLocal(numFromWord, "ter");
@@ -6025,28 +6027,29 @@ if(num < 1000000){
     if(dir.includes("galela")) return convertNumberToLocal(numFromWord, "galela");
   }
 
-    if(!text) return "";
-    const dict = maps[dir] || new Map();
+  if(!text) return "";
 
-    // normalisasi
-    text = normalizeTextForLookup(text);
+  const dict = maps[dir] || new Map();
+  text = normalizeTextForLookup(text);
 
-    // token = kata (jaga tanda hubung sebagai satu unit)
-    const tokens = text.split(/\s+/);
-    let out = [], i = 0;
+  const tokens = text.split(/\s+/);
+  let out = [];
+  let i = 0;
 
-    while(i < tokens.length){
-    let match = null, matchLen = 0;
+  while(i < tokens.length){
 
-    // ======================
-    // 🔥 CEK ANGKA (MULTI KATA)
-    // ======================
+    let foundMatch = null;
+    let matchLen = 0;
+
     const maxLen = Math.min(4, tokens.length - i);
 
+    // ======================
+    // 🔥 CEK ANGKA MULTI KATA
+    // ======================
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
-
       const num = wordsToNumber(phrase);
+
       if(num !== null){
         let hasilAngka = null;
 
@@ -6057,7 +6060,7 @@ if(num < 1000000){
         if(hasilAngka){
           out.push(hasilAngka);
           i += len;
-          match = true;
+          foundMatch = true;
           break;
         }
       }
@@ -6066,10 +6069,11 @@ if(num < 1000000){
     if(foundMatch) continue;
 
     // ======================
-    // 🔤 KAMUS BIASA
+    // 🔤 KAMUS (FRASE TERPANJANG)
     // ======================
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
+
       if(dict.has(phrase)){
         foundMatch = dict.get(phrase);
         matchLen = len;
@@ -6083,11 +6087,11 @@ if(num < 1000000){
     } else {
       const t = tokens[i];
 
-      // 🔥 HANDLE ANGKA DIGIT (32)
+      // 🔥 ANGKA DIGIT
       if(/^\d+$/.test(t)){
         const num = parseInt(t);
-        let hasilAngka = null;
 
+        let hasilAngka = null;
         if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
         else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
         else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
@@ -6102,8 +6106,8 @@ if(num < 1000000){
     }
   }
 
-    return out.join(" ");
-  }
+  return out.join(" ");
+}
 
 const ALL_VOCAB = [];
 
@@ -6117,22 +6121,6 @@ const ALL_VOCAB = [];
   });
 })();
 
-
-// ======================
-// 🧠 Deteksi arah bahasa dari kamus
-// ======================
-function detectDirectionByDictionary(text){
-  const t = normalizeTextForLookup(text);
-
-  if (maps["id-to-ter"].has(t) || maps["id-to-makian"].has(t) || maps["id-to-galela"].has(t))
-    return "id";
-
-  if (maps["ter-to-id"].has(t)) return "ter";
-  if (maps["makian-to-id"].has(t)) return "makian";
-  if (maps["galela-to-id"].has(t)) return "galela";
-
-  return "unknown";
-}
 
 // ======================
 // 🎙️ Translate langsung dari suara
@@ -6715,7 +6703,6 @@ if (SpeechRecognition) {
     
       const dir = ($('direction')?.value) || 'id-to-ter';
 
-      // 🔥 STEP 1: perbaiki pola dari CSV
       // 🔥 STEP 1: perbaiki pola dari CSV
       const patterned = applyPattern(raw);
 
