@@ -6208,7 +6208,11 @@ function translateFromVoice(text){
     const j = await resp.json();
     const corrected = j?.choices?.[0]?.message?.content;
 
-    return (corrected || dictResult).trim();
+    if(!corrected || corrected.length < 2){
+  return dictResult; // fallback aman
+}
+
+return corrected.trim();
 
   }catch(err){
     throw err;
@@ -6728,7 +6732,7 @@ if (SpeechRecognition) {
             `✨ Perbaikan AI: ${corrected}`;
 
         }catch(err){
-          finalText = patterned;
+          finalText = hasilKamus;
 
           $('log').textContent =
             `⚠️ GPT sibuk\n` +
