@@ -5697,43 +5697,6 @@
   })();
 
 
- 
-   // ======================
-  // 📂 DATASET CSV (POLA KALIMAT AI)
-  // ======================
-  let DATASET = [];
-
-  async function loadCSV(){
-    try{
-      const res = await fetch('dataset_500_kalimat.csv');
-
-      if(!res.ok){
-        console.warn("CSV tidak ditemukan, lanjut tanpa dataset");
-        DATASET = [];
-        return;
-      }
-
-      const text = await res.text();
-
-      const rows = text.split('\n').slice(1);
-
-      DATASET = rows.map(r => {
-        const cols = r.split(',');
-        return {
-          ind: (cols[0] || '').toLowerCase().trim(),
-          ter: cols[1] || '',
-          makian: cols[2] || '',
-          galela: cols[3] || ''
-        };
-      }).filter(d => d.ind);
-
-    }catch(err){
-      console.error("Gagal load CSV:", err);
-      DATASET = [];
-    }
-  }
-
-
   // ======================
   // 🔤 Normalisasi helper: buang tanda kutip/tanda baca kecuali '-' lalu collapse spasi
   // ======================
@@ -5756,96 +5719,6 @@
     s = s.replace(/\s+/g, ' ').trim();
     return s;
   }
-
-  // ======================
-  // 🧠 AI POLA DARI CSV
-  // ======================
-
-  function findClosestPattern(input){
-    input = normalizeTextForLookup(input);
-
-    let best = null;
-    let bestScore = 0;
-
-    DATASET.forEach(d => {
-      const a = input.split(' ');
-      const b = d.ind.split(' ');
-
-      let match = 0;
-      let orderBonus = 0;
-
-      a.forEach((word, i) => {
-        if(b.includes(word)){
-          match++;
-
-          // 🔥 BONUS jika posisi sama (struktur kalimat)
-          if(b[i] === word){
-            orderBonus += 0.5;
-          }
-        }
-      });
-
-      const score = (match + orderBonus) / a.length;
-
-      if(score > bestScore){
-        bestScore = score;
-        best = d;
-      }
-    });
-
-    return bestScore > 0.6 ? best : null; // 🔥 sedikit dinaikkan
-  }
-
-  function applyPattern(input){
-    input = normalizeTextForLookup(input); // 🔥 WAJIB
-
-    const pattern = findClosestPattern(input);
-    if(!pattern) return input;
-
-    const inputWords = input.split(' ');
-    const patternWords = pattern.ind.split(' ');
-
-    let result = [];
-
-    patternWords.forEach((pw, i) => {
-      if(inputWords[i]){
-        result.push(inputWords[i]);
-      } else {
-        const found = inputWords.find(w => w.startsWith(pw.substring(0,3)));
-        result.push(found || pw);
-      }
-    });
-
-    return result.join(' ');
-  }
-// ======================
-// 🧠 Deteksi arah bahasa dari kamus
-// ======================
-  function detectDirectionByDictionary(text){
-  const t = normalizeTextForLookup(text);
-
-  if (maps["id-to-ter"].has(t) || maps["id-to-makian"].has(t) || maps["id-to-galela"].has(t))
-    return "id";
-
-  if (maps["ter-to-id"].has(t)) return "ter";
-  if (maps["makian-to-id"].has(t)) return "makian";
-  if (maps["galela-to-id"].has(t)) return "galela";
-
-  // 🔥 fallback: cek per kata
-  const words = t.split(' ');
-  let idCount = 0, localCount = 0;
-
-  words.forEach(w=>{
-    if(maps["id-to-ter"].has(w)) idCount++;
-    if(maps["ter-to-id"].has(w) || maps["makian-to-id"].has(w) || maps["galela-to-id"].has(w))
-      localCount++;
-  });
-
-  if(idCount > localCount) return "id";
-  if(localCount > idCount) return "ter";
-
-  return "unknown";
-}
 
 // =====================================================================================
 // number parsing: kalau inputnya angka, atau teks angka (contoh: "dua belas"), parse jadi angka
@@ -6008,9 +5881,9 @@ if(num < 1000000){
   // dir: salah satu keys di maps
   // ======================
     // 🔥 HANDLE ANGKA
- function translateWithMap(text, dir){
+    function translateWithMap(text, dir){
 
-  // 🔥 HANDLE ANGKA LANGSUNG (123)
+  // 🔥 ANGKA LANGSUNG (123)
   if(isNumberInput(text)){
     const num = parseInt(text);
 
@@ -6019,7 +5892,7 @@ if(num < 1000000){
     if(dir.includes("galela")) return convertNumberToLocal(num, "galela");
   }
 
-  // 🔥 ANGKA DALAM HURUF
+  // 🔥 ANGKA DALAM HURUF (dua belas)
   const numFromWord = wordsToNumber(text);
   if(numFromWord !== null){
     if(dir.includes("ter")) return convertNumberToLocal(numFromWord, "ter");
@@ -6027,29 +5900,28 @@ if(num < 1000000){
     if(dir.includes("galela")) return convertNumberToLocal(numFromWord, "galela");
   }
 
-  if(!text) return "";
+    if(!text) return "";
+    const dict = maps[dir] || new Map();
 
-  const dict = maps[dir] || new Map();
-  text = normalizeTextForLookup(text);
+    // normalisasi
+    text = normalizeTextForLookup(text);
 
-  const tokens = text.split(/\s+/);
-  let out = [];
-  let i = 0;
+    // token = kata (jaga tanda hubung sebagai satu unit)
+    const tokens = text.split(/\s+/);
+    let out = [], i = 0;
 
-  while(i < tokens.length){
+    while(i < tokens.length){
+    let match = null, matchLen = 0;
 
-    let foundMatch = null;
-    let matchLen = 0;
-
+    // ======================
+    // 🔥 CEK ANGKA (MULTI KATA)
+    // ======================
     const maxLen = Math.min(4, tokens.length - i);
 
-    // ======================
-    // 🔥 CEK ANGKA MULTI KATA
-    // ======================
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
-      const num = wordsToNumber(phrase);
 
+      const num = wordsToNumber(phrase);
       if(num !== null){
         let hasilAngka = null;
 
@@ -6060,38 +5932,37 @@ if(num < 1000000){
         if(hasilAngka){
           out.push(hasilAngka);
           i += len;
-          foundMatch = true;
+          match = true;
           break;
         }
       }
     }
 
-    if(foundMatch) continue;
+    if(match) continue;
 
     // ======================
-    // 🔤 KAMUS (FRASE TERPANJANG)
+    // 🔤 KAMUS BIASA
     // ======================
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
-
       if(dict.has(phrase)){
-        foundMatch = dict.get(phrase);
+        match = dict.get(phrase);
         matchLen = len;
         break;
       }
     }
 
-    if(foundMatch){
-      out.push(foundMatch);
+    if(match){
+      out.push(match);
       i += matchLen;
     } else {
       const t = tokens[i];
 
-      // 🔥 ANGKA DIGIT
+      // 🔥 HANDLE ANGKA DIGIT (32)
       if(/^\d+$/.test(t)){
         const num = parseInt(t);
-
         let hasilAngka = null;
+
         if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
         else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
         else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
@@ -6106,8 +5977,8 @@ if(num < 1000000){
     }
   }
 
-  return out.join(" ");
-}
+    return out.join(" ");
+  }
 
 const ALL_VOCAB = [];
 
@@ -6121,6 +5992,22 @@ const ALL_VOCAB = [];
   });
 })();
 
+
+// ======================
+// 🧠 Deteksi arah bahasa dari kamus
+// ======================
+function detectDirectionByDictionary(text){
+  const t = normalizeTextForLookup(text);
+
+  if (maps["id-to-ter"].has(t) || maps["id-to-makian"].has(t) || maps["id-to-galela"].has(t))
+    return "id";
+
+  if (maps["ter-to-id"].has(t)) return "ter";
+  if (maps["makian-to-id"].has(t)) return "makian";
+  if (maps["galela-to-id"].has(t)) return "galela";
+
+  return "unknown";
+}
 
 // ======================
 // 🎙️ Translate langsung dari suara
@@ -6157,58 +6044,38 @@ function translateFromVoice(text){
         {
           role: 'system',
           content: `
-        Kamu adalah AI penyusun ulang kalimat berbasis pola CSV.
+          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
 
-        PERAN KAMU:
-        - BUKAN penerjemah
-        - BUKAN pembuat kalimat baru
-        - HANYA penyusun ulang kata berdasarkan pola CSV
-
-        ATURAN KERAS (WAJIB DIPATUHI):
-        1. Gunakan HANYA kata yang sudah ada di hasil kamus
-        2. DILARANG menambah kata baru
-        3. DILARANG menghapus kata penting
-        4. DILARANG menerjemahkan ulang dari Bahasa Indonesia
-        5. SUSUN ULANG hanya mengikuti pola CSV
-        6. Ikuti urutan struktur kalimat pada pola CSV target
-        7. Jika ada kata tidak cocok, tetap gunakan yang PALING DEKAT dari hasil kamus (jangan buat baru)
-        8. Output HARUS tetap dalam bahasa tujuan (Ternate/Makian/Galela)
-
-        TUJUAN:
-        - Meniru bentuk kalimat CSV
-        - BUKAN membuat kalimat bebas
-
-        OUTPUT:
-        - hanya 1 kalimat
-        - tanpa penjelasan
-        - tanpa tambahan apapun
-        `
+          Aturan:
+          1. Perbaiki hasil terjemahan agar alami
+          2. Pahami konteks kalimat secara keseluruhan
+          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
+          4. Pilih arti kata yang paling tepat berdasarkan konteks
+          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
+          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
+          7. Jika ada kata belum tepat, boleh disesuaikan secara kontekstual
+          
+          paling penting jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
+          
+          Output:
+          - hanya 1 kalimat terbaik
+          - alami
+          - sesuai konteks
+          `
         },
         {
           role: 'user',
           content: `
-        Arah terjemahan: ${direction}
+          Arah terjemahan: ${direction}
 
-        KALIMAT ASLI (untuk konteks saja):
-        "${originalText}"
+          Kalimat asli:
+          "${originalText}"
 
-        POLA CSV TARGET (WAJIB DIIKUTI STRUKTURNYA):
-        ${dictResult.match(/POLA CSV TARGET:\s*([\s\S]*?)HASIL KAMUS:/)?.[1] || ''}
+          Hasil dari kamus:
+          "${dictResult}"
 
-        HASIL KAMUS (SUMBER KATA):
-        ${dictResult.match(/HASIL KAMUS:\s*([\s\S]*)/)?.[1] || dictResult}
-
-        TUGAS:
-        - Susun ulang HASIL KAMUS agar mengikuti POLA CSV TARGET
-        - Jangan keluar dari kata-kata yang tersedia
-        - Jangan buat kalimat baru
-        - Fokus hanya pada SUSUNAN
-
-        CONTOH:
-        Pola CSV: guhi isiwaho fala dofu  
-        Kamus: guhi fala dofu isiwaho  
-        Hasil: guhi isiwaho fala dofu
-        `
+          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
+          `
         }
       ],
       temperature: 0.3
@@ -6228,11 +6095,7 @@ function translateFromVoice(text){
     const j = await resp.json();
     const corrected = j?.choices?.[0]?.message?.content;
 
-    if(!corrected || corrected.length < 2){
-  return dictResult; // fallback aman
-}
-
-return corrected.trim();
+    return (corrected || dictResult).trim();
 
   }catch(err){
     throw err;
@@ -6712,111 +6575,58 @@ if (SpeechRecognition) {
   // ======================
   // 🚀 initUI: tombol & alur translate (kamus → optional GPT)
   // ======================
-  async function initUI(){
-    await loadCSV(); // 🔥 WAJIB
+  function initUI(){
     populateDropdown();
     renderTable();
     renderVocabularyStats();
     renderDuplicateDetail();
 
     // translate utama: ambil dari kamus dulu, lalu (opsional) minta GPT memperbaiki
-    $('translateBtn')?.addEventListener('click', async ()=>{
-
+      $('translateBtn')?.addEventListener('click', async ()=>{
       const raw = ($('inputText')?.value || '').trim();
       if(!raw) return;
-
       $('log').textContent = '⏳Memproses...';
-
+    
       const dir = ($('direction')?.value) || 'id-to-ter';
+    
+      // 🔥 1. hasil kamus dulu (WAJIB untuk konteks AI)
+      const hasilKamus = translateWithMap(raw, dir);
+    
+    // 🔥 tetap ambil input asli
+    let finalText = raw;
 
-      // 🔥 STEP 1: normalisasi
-      const clean = normalizeTextForLookup(raw);
+    if($('useAI').checked){
+    try{
+        const corrected = await callOpenAIcorrect(
+        raw,
+        hasilKamus,
+        dir
+        );
 
-      // 🔥 STEP 2: ambil pola CSV
-      const patternData = findClosestPattern(clean);
-      const patterned = applyPattern(clean);
+        finalText = corrected;
 
-      // 🔥 STEP 3: translate hasil pola
-      const hasilKamus = translateWithMap(patterned, dir);
+        // ✅ LOG LEBIH JELAS (SESUAI PERMINTAANMU)
+        $('log').textContent =
+        `📝 Asli: ${raw}\n` +
+        `✨ Perbaikan: ${corrected}`;
 
-      let finalText = hasilKamus;
-
-      const shouldUseAI =
-        $('useAI')?.checked &&
-        hasilKamus.split(' ').length >= 3 &&
-        patternData; // 🔥 wajib ada pola CSV
-
-      if(shouldUseAI){
-        try{
-
-          const targetLang =
-            dir.includes('ter') ? 'Ternate' :
-            dir.includes('makian') ? 'Makian' :
-            dir.includes('galela') ? 'Galela' :
-            'Indonesia';
-
-          // 🔥 ambil pola CSV tujuan (struktur asli)
-          const polaTarget =
-            dir === 'id-to-ter' ? patternData.ter :
-            dir === 'id-to-makian' ? patternData.makian :
-            dir === 'id-to-galela' ? patternData.galela :
-            patternData.ind;
-
-          const corrected = await callOpenAIcorrect(
-            raw,
-            `
-            POLA CSV TARGET:
-            ${polaTarget}
-
-            HASIL KAMUS:
-            ${hasilKamus}
-
-            ATURAN WAJIB:
-            - Jangan ubah bahasa (tetap ${targetLang})
-            - Jangan terjemahkan ulang
-            - Gunakan 100% kata dari hasil kamus
-            - Hanya susun ulang mengikuti pola CSV
-            - Ikuti urutan struktur kalimat CSV
-            `,
-            dir
-          );
-
-          // 🔥 VALIDASI KETAT
-          const isValid =
-            corrected &&
-            corrected.length > 3 &&
-            corrected.split(' ').length >= 2 &&
-            !corrected.toLowerCase().includes("saya pergi"); // anti balik indo
-
-          if(isValid){
-            finalText = corrected;
-          }
-
-          $('log').textContent =
-            `📝 Asli: ${raw}\n` +
-            `📊 Pola CSV: ${patterned}\n` +
-            `📘 Kamus: ${hasilKamus}\n` +
-            `🎯 Pola Target: ${polaTarget}\n` +
-            `✨ AI: ${finalText}`;
-
-        }catch(err){
-
-          finalText = hasilKamus;
-
-          $('log').textContent =
-            `⚠️ GPT sibuk\n` +
-            `📊 Pola: ${patterned}\n` +
-            `📘 Kamus: ${hasilKamus}`;
-        }
-
-      }else{
+    }catch(err){
+        finalText = raw;
 
         $('log').textContent =
-          `📊 Pola CSV: ${patterned}\n` +
-          `📘 Kamus: ${hasilKamus}`;
-      }
+        `⚠️ GPT sibuk\n` +
+        `📝 Pakai kalimat asli: ${raw}`;
+    }
 
-      $('outputText').value = finalText;
+    }else{
+    $('log').textContent = 'Mode tanpa AI (langsung kamus)';
+    }
+
+    // 🔥 WAJIB: translate ulang dari hasil final (INI KUNCI FIX)
+    const hasilAkhir = translateWithMap(finalText, dir);
+
+    // ✅ OUTPUT sekarang pasti bahasa daerah
+    $('outputText').value = hasilAkhir;
     });
     
     // translate simple: langsung kamus (tanpa AI)
@@ -6883,7 +6693,7 @@ if (SpeechRecognition) {
     });
 
     // copy
-    $('copyBtn')?.addEventListener('click', async ()=>{
+    $('copyBtn').addEventListener('click', async ()=>{
       try{
         await navigator.clipboard.writeText($('outputText').value||'');
         $('copyBtn').textContent='✓ Tersalin';
