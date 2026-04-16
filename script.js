@@ -6717,18 +6717,17 @@ if (SpeechRecognition) {
 
       const dir = ($('direction')?.value) || 'id-to-ter';
 
-      // 🔥 STEP 1: normalisasi dulu
+      // 🔥 STEP 1: normalisasi
       const clean = normalizeTextForLookup(raw);
 
-      // 🔥 STEP 2: perbaiki pola dari CSV
+      // 🔥 STEP 2: pola CSV (struktur kalimat)
       const patterned = applyPattern(clean);
 
-      // 🔥 STEP 3: translate dari hasil pola
+      // 🔥 STEP 3: kamus
       const hasilKamus = translateWithMap(patterned, dir);
 
       let finalText = hasilKamus;
 
-      // 🔥 FILTER: hanya pakai AI kalau kalimat cukup panjang
       const shouldUseAI =
         $('useAI')?.checked &&
         hasilKamus.split(' ').length >= 3;
@@ -6736,17 +6735,33 @@ if (SpeechRecognition) {
       if(shouldUseAI){
         try{
 
+          // 🔥 DETEKSI TARGET BAHASA
+          const targetLang =
+            dir.includes('ter') ? 'Bahasa Ternate' :
+            dir.includes('makian') ? 'Bahasa Makian' :
+            dir.includes('galela') ? 'Bahasa Galela' :
+            'Bahasa Indonesia';
+
           const corrected = await callOpenAIcorrect(
             raw,
-            `Pola: ${patterned}\nKamus: ${hasilKamus}`,
+            `TARGET: ${targetLang}
+              Pola CSV: ${patterned}
+              Hasil Kamus: ${hasilKamus}
+
+              PERBAIKI TANPA MENGUBAH BAHASA.`,
             dir
           );
 
-          // 🔥 VALIDASI HASIL AI (anti ngaco)
+          // 🔥 VALIDASI SUPER KETAT (ANTI BALIK KE INDONESIA)
+          const isBackToIndo =
+            dir.includes('id-to') &&
+            corrected.toLowerCase().includes("saya");
+
           if(
             corrected &&
             corrected.length > 3 &&
-            corrected.split(' ').length >= 2
+            corrected.split(' ').length >= 2 &&
+            !isBackToIndo
           ){
             finalText = corrected;
           }else{
@@ -6757,6 +6772,7 @@ if (SpeechRecognition) {
             `📝 Asli: ${raw}\n` +
             `📊 Pola CSV: ${patterned}\n` +
             `📘 Kamus: ${hasilKamus}\n` +
+            `🎯 Target: ${targetLang}\n` +
             `✨ AI: ${finalText}`;
 
         }catch(err){
