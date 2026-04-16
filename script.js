@@ -6720,59 +6720,71 @@ if (SpeechRecognition) {
       // 🔥 STEP 1: normalisasi
       const clean = normalizeTextForLookup(raw);
 
-      // 🔥 STEP 2: pola CSV (struktur kalimat)
+      // 🔥 STEP 2: ambil pola CSV
+      const patternData = findClosestPattern(clean);
       const patterned = applyPattern(clean);
 
-      // 🔥 STEP 3: kamus
+      // 🔥 STEP 3: translate hasil pola
       const hasilKamus = translateWithMap(patterned, dir);
 
       let finalText = hasilKamus;
 
       const shouldUseAI =
         $('useAI')?.checked &&
-        hasilKamus.split(' ').length >= 3;
+        hasilKamus.split(' ').length >= 3 &&
+        patternData; // 🔥 wajib ada pola CSV
 
       if(shouldUseAI){
         try{
 
-          // 🔥 DETEKSI TARGET BAHASA
           const targetLang =
-            dir.includes('ter') ? 'Bahasa Ternate' :
-            dir.includes('makian') ? 'Bahasa Makian' :
-            dir.includes('galela') ? 'Bahasa Galela' :
-            'Bahasa Indonesia';
+            dir.includes('ter') ? 'Ternate' :
+            dir.includes('makian') ? 'Makian' :
+            dir.includes('galela') ? 'Galela' :
+            'Indonesia';
+
+          // 🔥 ambil pola CSV tujuan (struktur asli)
+          const polaTarget =
+            dir === 'id-to-ter' ? patternData.ter :
+            dir === 'id-to-makian' ? patternData.makian :
+            dir === 'id-to-galela' ? patternData.galela :
+            patternData.ind;
 
           const corrected = await callOpenAIcorrect(
             raw,
-            `TARGET: ${targetLang}
-              Pola CSV: ${patterned}
-              Hasil Kamus: ${hasilKamus}
+            `
+            POLA CSV TARGET:
+            ${polaTarget}
 
-              PERBAIKI TANPA MENGUBAH BAHASA.`,
+            HASIL KAMUS:
+            ${hasilKamus}
+
+            ATURAN WAJIB:
+            - Jangan ubah bahasa (tetap ${targetLang})
+            - Jangan terjemahkan ulang
+            - Gunakan 100% kata dari hasil kamus
+            - Hanya susun ulang mengikuti pola CSV
+            - Ikuti urutan struktur kalimat CSV
+            `,
             dir
           );
 
-          // 🔥 VALIDASI SUPER KETAT (ANTI BALIK KE INDONESIA)
-          const isBackToIndo =
-            dir.includes('id-to') &&
-            corrected.toLowerCase().includes("saya");
-
-          if(
+          // 🔥 VALIDASI KETAT
+          const isValid =
             corrected &&
             corrected.length > 3 &&
             corrected.split(' ').length >= 2 &&
-            !isBackToIndo
-          ){
+            !corrected.toLowerCase().includes("saya pergi"); // anti balik indo
+
+          if(isValid){
             finalText = corrected;
-          }else{
-            finalText = hasilKamus;
           }
 
           $('log').textContent =
             `📝 Asli: ${raw}\n` +
             `📊 Pola CSV: ${patterned}\n` +
             `📘 Kamus: ${hasilKamus}\n` +
-            `🎯 Target: ${targetLang}\n` +
+            `🎯 Pola Target: ${polaTarget}\n` +
             `✨ AI: ${finalText}`;
 
         }catch(err){
