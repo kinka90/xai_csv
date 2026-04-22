@@ -1204,7 +1204,7 @@
         {"ind":"kami","ter":"ngom","makian": "titanit", "galela": "to'ngomi"},
         {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone"},
         {"ind":"mereka","ter":"ana","makian": "eme/sinani", "galela": ""},
-        {"ind":"mereka berdua","ter":"","makian": "matlusi ", "galela": ""},
+        {"ind":"mereka berdua","ter":"","makian": "matlusi", "galela": ""},
         {"ind":"semua orang","ter":"","makian": "", "galela": ""},
         {"ind":"setiap orang","ter":"","makian": "", "galela": ""},
         {"ind":"orang lain","ter":"wong liya","makian": "", "galela": ""},
@@ -3514,7 +3514,6 @@
         {"ind":"lidah api","ter":"","makian": "ninolonco", "galela": ""},
         {"ind":"lipstik","ter":"","makian": "smenken", "galela": ""},
         {"ind":"luka hati","ter":"","makian": "yo'com ho'nas", "galela": ""},
-        {"ind":"lebih meriah","ter":"sirame","makian": "", "galela": ""},
         {"ind":"lenyap","ter":"susaha","makian": "", "galela": "sotu"}
       ],
       "M": [
@@ -5864,7 +5863,6 @@
     }
   };
 
-  
   // ======================
   // 🧭 Build quick maps from DICT (multi-word keys supported)
   // ======================
@@ -6336,7 +6334,7 @@ function translateFromVoice(text){
   // 🧠 callOpenAIcorrect: minta GPT perbaiki TATA KALIMAT (bukan terjemahan ulang)
   // mengirim teks hasil kamus, menerima teks yang diperbaiki
   // ======================
-async function callOpenAIcorrect(originalText, dictResult, direction){
+ async function callOpenAIcorrect(originalText, dictResult, direction){
   if(!dictResult) return dictResult;
 
   try{
@@ -6346,54 +6344,47 @@ async function callOpenAIcorrect(originalText, dictResult, direction){
         {
           role: 'system',
           content: `
-      Kamu adalah AI khusus penyempurna hasil terjemahan bahasa daerah.
+          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
 
-      Tugas:
-      - Perbaiki hasil terjemahan agar natural dan tidak kaku
-      - PILIH 1 arti TERBAIK jika ada kata multi arti (contoh: gulaha)
-      - HAPUS kata yang berulang
-      - JANGAN mengulang kata yang sama
-      - JANGAN menghasilkan kata "nan" atau angka tidak valid
-      - Pertahankan semua makna penting
+          Aturan:
+          1. Perbaiki hasil terjemahan agar alami
+          2. Pahami konteks kalimat secara keseluruhan
+          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
+          4. Pilih arti kata yang paling tepat berdasarkan konteks
+          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
+          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
+          7. Jika ada kata belum tepat, boleh disesuaikan secara kontekstual
+          
+          paling penting jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
+          
+          contoh:
+          input: "jalan baru itu banyak debu
+          output: "ngoko sungi ge dofu fika" 
 
-      Aturan wajib:
-      1. Output hanya 1 kalimat
-      2. Tidak boleh ada pengulangan kata (contoh: "makan makan makan")
-      3. Jika ada banyak arti, pilih yang PALING MASUK AKAL
-      4. Jangan ubah arti utama kalimat
-      5. Jangan kosongkan kalimat
-      6. Jangan tambahkan kata baru yang tidak perlu
+          input: ""
 
-      Contoh:
-      Input:
-      "ana gulaha gulaha"
-
-      Output:
-      "ana mengadakan"
-
-      Input:
-      "chabutara ana gulaha"
-
-      Output:
-      "nanti malam mereka mengadakan"
-      `
+          Output:
+          - hanya 1 kalimat terbaik
+          - alami
+          - sesuai konteks
+          `
         },
         {
           role: 'user',
           content: `
-Arah: ${direction}
+          Arah terjemahan: ${direction}
 
-Kalimat asli:
-"${originalText}"
+          Kalimat asli:
+          "${originalText}"
 
-Hasil kamus:
-"${dictResult}"
+          Hasil dari kamus:
+          "${dictResult}"
 
-Perbaiki menjadi kalimat terbaik:
-`
+          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
+          `
         }
       ],
-      temperature: 0.2
+      temperature: 0.3
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
@@ -6408,21 +6399,15 @@ Perbaiki menjadi kalimat terbaik:
     }
 
     const j = await resp.json();
-    let corrected = j?.choices?.[0]?.message?.content || dictResult;
+    const corrected = j?.choices?.[0]?.message?.content;
 
-    // 🔥 FIX: hapus kata berulang
-    corrected = corrected
-      .toLowerCase()
-      .split(" ")
-      .filter((word, i, arr) => word && word !== arr[i-1])
-      .join(" ");
-
-    return corrected.trim();
+    return (corrected || dictResult).trim();
 
   }catch(err){
-    return dictResult;
+    throw err;
   }
 }
+
   // ======================
   // 🔤 countAllVocabulary: hitung total kosakata di DICT
   // ======================
