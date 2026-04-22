@@ -1204,7 +1204,7 @@
         {"ind":"kami","ter":"ngom","makian": "titanit", "galela": "to'ngomi"},
         {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone"},
         {"ind":"mereka","ter":"ana","makian": "eme/sinani", "galela": ""},
-        {"ind":"mereka berdua","ter":"","makian": "matlusi ", "galela": ""},
+        {"ind":"mereka berdua","ter":"","makian": "matlusi", "galela": ""},
         {"ind":"semua orang","ter":"","makian": "", "galela": ""},
         {"ind":"setiap orang","ter":"","makian": "", "galela": ""},
         {"ind":"orang lain","ter":"wong liya","makian": "", "galela": ""},
@@ -3514,7 +3514,6 @@
         {"ind":"lidah api","ter":"","makian": "ninolonco", "galela": ""},
         {"ind":"lipstik","ter":"","makian": "smenken", "galela": ""},
         {"ind":"luka hati","ter":"","makian": "yo'com ho'nas", "galela": ""},
-        {"ind":"lebih meriah","ter":"sirame","makian": "", "galela": ""},
         {"ind":"lenyap","ter":"susaha","makian": "", "galela": "sotu"}
       ],
       "M": [
@@ -5864,8 +5863,6 @@
     }
   };
 
-  const TRANSLATE_CACHE = new Map();
-
   // ======================
   // 🧭 Build quick maps from DICT (multi-word keys supported)
   // ======================
@@ -6133,7 +6130,6 @@ function localToNumber(text, lang){
   return null;
 }
 
-
 function numberToIndo(num){
   const angka = ["nol","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan"];
 
@@ -6160,56 +6156,13 @@ function numberToIndo(num){
   return num.toString();
 }
 
-function levenshtein(a, b){
-  const matrix = [];
-
-  for(let i=0;i<=b.length;i++) matrix[i]=[i];
-  for(let j=0;j<=a.length;j++) matrix[0][j]=j;
-
-  for(let i=1;i<=b.length;i++){
-    for(let j=1;j<=a.length;j++){
-      if(b.charAt(i-1) === a.charAt(j-1)){
-        matrix[i][j] = matrix[i-1][j-1];
-      } else {
-        matrix[i][j] = Math.min(
-          matrix[i-1][j-1]+1,
-          matrix[i][j-1]+1,
-          matrix[i-1][j]+1
-        );
-      }
-    }
-  }
-  return matrix[b.length][a.length];
-}
-
-///==perbaiki huruf typo
-function findClosestWord(word, dict){
-  let bestMatch = null;
-  let minDist = 2; // maksimal typo 1 huruf
-
-  for(const key of dict.keys()){
-    const dist = levenshtein(word, key);
-
-    if(dist < minDist){
-      minDist = dist;
-      bestMatch = key;
-    }
-  }
-
-  return bestMatch;
-}
-
   // ======================
   // 🔤 translateWithMap: cari frasa terpanjang dulu (multi kata/frasa)
   // dir: salah satu keys di maps
   // ======================
   // 🔥 HANDLE ANGKA
   function translateWithMap(text, dir){
-  
-  const cacheKey = dir + "::" + text;
-  if(TRANSLATE_CACHE.has(cacheKey)){
-    return TRANSLATE_CACHE.get(cacheKey);
-  }
+    if(!text) return "";
 
   // normalisasi dulu
   text = normalizeTextForLookup(text);
@@ -6300,20 +6253,10 @@ function findClosestWord(word, dict){
     }
 
     if(match){
-    out.push(match);
-    i += matchLen;
-  } else {
-
-    const t = tokens[i];
-
-    // 🔥 FUZZY MATCH (TYPO FIX)
-    const closest = findClosestWord(t, dict);
-
-    if(closest){
-      out.push(dict.get(closest));
-      i++;
-      continue;
-    }
+      out.push(match);
+      i += matchLen;
+    } else {
+      const t = tokens[i];
 
       // 🔥 HANDLE ANGKA DIGIT (32)
       if(/^\d+$/.test(t)){
@@ -6327,17 +6270,15 @@ function findClosestWord(word, dict){
         out.push(hasilAngka || t);
       } else {
         const alt = t.replace(/-/g, ' ');
-        out.push(dict.get(alt) || t); // tetap original jika tidak ada
+        out.push(dict.get(alt) || t);
       }
 
       i++;
     }
   }
 
-    const finalResult = out.join(" ");
-    TRANSLATE_CACHE.set(cacheKey, finalResult);
-    return finalResult;
-      }
+    return out.join(" ");
+  }
 
 const ALL_VOCAB = [];
 
@@ -6466,6 +6407,7 @@ function translateFromVoice(text){
     throw err;
   }
 }
+
   // ======================
   // 🔤 countAllVocabulary: hitung total kosakata di DICT
   // ======================
