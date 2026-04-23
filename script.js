@@ -5946,28 +5946,39 @@ const indoNumberMap = {
 };
 
 function wordsToNumber(text){
+  if(!text) return null;
   text = normalizeTextForLookup(text);
 
   if(indoNumberMap[text] !== undefined){
     return indoNumberMap[text];
   }
 
-  // contoh: dua belas
+  // belas
   if(text.includes("belas")){
     const satuan = text.replace(" belas","").trim();
-    return 10 + (indoNumberMap[satuan] || 0);
+    if(indoNumberMap[satuan] === undefined) return null;
+    return 10 + indoNumberMap[satuan];
   }
 
-  // contoh: dua puluh dua
+  // puluh
   if(text.includes("puluh")){
     const [puluh, satuan] = text.split("puluh").map(s=>s.trim());
-    return (indoNumberMap[puluh]*10) + (indoNumberMap[satuan]||0);
+
+    if(indoNumberMap[puluh] === undefined) return null;
+
+    const s = satuan ? indoNumberMap[satuan] : 0;
+    if(satuan && s === undefined) return null;
+
+    return (indoNumberMap[puluh] * 10) + (s || 0);
   }
 
   return null;
 }
 
+
+
 function convertNumberToLocal(num, lang){
+  if(isNaN(num)) return "";
 
   const satuan = {
     ter: ["","rimoi","romdidi","raange","raha","ramtoha","rara","tomdi","tofkange","sio"],
@@ -6088,7 +6099,12 @@ if(num < 1000000){
  
 
 function localToNumber(text, lang){
+  if(!text) return null;
+
   text = normalizeTextForLookup(text);
+
+  const tokens = text.split(" ").filter(Boolean);
+  if(tokens.length < 2) return null;
 
   const satuanMap = {
     ter: {
@@ -6117,33 +6133,26 @@ function localToNumber(text, lang){
     galela: "de"
   };
 
-  const tokens = text.split(" ");
+  // 🔥 WAJIB: harus mulai dari kata puluh
+  if(tokens[0] !== puluhMap[lang]) return null;
 
-  // 🔹 1 kata (satuan)
-  if(tokens.length === 1){
-    return satuanMap[lang][tokens[0]] || null;
+  const puluhVal = satuanMap[lang][tokens[1]];
+  if(puluhVal === undefined) return null;
+
+  let satuanVal = 0;
+
+  // 🔥 ambil setelah "se"
+  const idx = tokens.indexOf(joinWord[lang]);
+  if(idx !== -1 && tokens[idx+1]){
+    const val = satuanMap[lang][tokens[idx+1]];
+    if(val === undefined) return null;
+    satuanVal = val;
   }
 
-  // 🔹 10 (nyagi moi, yoha so, dll)
-  if(tokens.length === 2 && tokens[0] === puluhMap[lang]){
-    return 10;
-  }
-
-  // 🔹 20–99 (puluh)
-  if(tokens[0] === puluhMap[lang]){
-    const puluh = satuanMap[lang][tokens[1]] || 0;
-
-    let satuan = 0;
-    if(tokens.includes(joinWord[lang])){
-      const idx = tokens.indexOf(joinWord[lang]);
-      satuan = satuanMap[lang][tokens[idx+1]] || 0;
-    }
-
-    return puluh * 10 + satuan;
-  }
-
-  return null;
+  return puluhVal * 10 + satuanVal;
 }
+
+
 
 function numberToIndo(num){
   const angka = ["nol","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan"];
@@ -6222,7 +6231,7 @@ function numberToIndo(num){
     text = normalizeTextForLookup(text);
 
     // token = kata (jaga tanda hubung sebagai satu unit)
-    const tokens = text.split(/\s+/);
+    const tokens = text.split(/\s+/).filter(Boolean);
     let out = [], i = 0;
 
     while(i < tokens.length){
@@ -6234,25 +6243,34 @@ function numberToIndo(num){
     const maxLen = Math.min(15, tokens.length - i);
 
     for(let len = maxLen; len > 0; len--){
-      const phrase = tokens.slice(i, i+len).join(" ");
+    const phrase = tokens.slice(i, i+len).join(" ");
 
-      const num = wordsToNumber(phrase);
-      if(num !== null){
-        let hasilAngka = null;
-
-        if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
-        else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
-        else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
-
-        if(hasilAngka){
-          out.push(hasilAngka);
-          i += len;
-          match = true;
-          break;
-        }
-      }
+    // 🔥 PRIORITAS 1: ANGKA LOKAL (anggap 1 unit utuh)
+    const numLocal = localToNumber(phrase, lang);
+    if(numLocal !== null){
+      out.push(numberToIndo(numLocal));
+      i += len;
+      match = true;
+      break;
     }
 
+    // 🔥 PRIORITAS 2: ANGKA INDONESIA
+    const num = wordsToNumber(phrase);
+    if(num !== null){
+      let hasilAngka = null;
+
+      if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
+      else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
+      else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
+
+      if(hasilAngka){
+        out.push(hasilAngka);
+        i += len;
+        match = true;
+        break;
+      }
+    }
+  }
     if(match) continue;
 
     // ======================
@@ -6359,54 +6377,71 @@ async function callOpenAIcorrect(originalText, dictResult, direction){
         {
           role: 'system',
           content: `
-      Kamu adalah AI khusus penyempurna hasil terjemahan bahasa daerah.
+        Kamu adalah AI penyusun ulang kalimat, BUKAN penerjemah.
 
-      Tugas:
-      - Perbaiki hasil terjemahan agar natural dan tidak kaku
-      - PILIH 1 arti TERBAIK jika ada kata multi arti (contoh: gulaha)
-      - HAPUS kata yang berulang
-      - JANGAN mengulang kata yang sama
-      - JANGAN menghasilkan kata "nan" atau angka tidak valid
-      - Pertahankan semua makna penting
+        Tugas utama:
+        - HANYA menyusun ulang kata dari "hasil kamus"
+        - TIDAK BOLEH mengganti arti kata
+        - TIDAK BOLEH menambahkan kata baru
+        - TIDAK BOLEH menghilangkan kata penting
+        - WAJIB menggunakan kata yang SUDAH ADA di hasil kamus
 
-      Aturan wajib:
-      1. Output hanya 1 kalimat
-      2. Tidak boleh ada pengulangan kata (contoh: "makan makan makan")
-      3. Jika ada banyak arti, pilih yang PALING MASUK AKAL
-      4. Jangan ubah arti utama kalimat
-      5. Jangan kosongkan kalimat
-      6. Jangan tambahkan kata baru yang tidak perlu
+        ATURAN KETAT:
+        1. DILARANG menerjemahkan ulang
+        2. DILARANG menambahkan kata seperti: di, ke, dari, kami, dll (jika tidak ada di hasil kamus)
+        3. DILARANG mengganti arti (contoh: "fala" tetap "rumah", tidak boleh jadi "memasak")
+        4. HANYA boleh:
+          - mengubah urutan kata
+          - menghapus duplikat
+        5. Jika ragu → KEMBALIKAN hasil kamus apa adanya
 
-      Contoh:
-      Input:
-      "ana gulaha gulaha"
+        ATURAN KHUSUS:
+        - Kata negatif (tidak, bukan, dll) HARUS di belakang
+          contoh:
+          "tidak mau" → "mau tidak"
+        - Struktur harus natural tapi tetap setia ke kamus
 
-      Output:
-      "ana mengadakan"
+        Contoh:
 
-      Input:
-      "chabutara ana gulaha"
+        Input kamus:
+        "hutan ini kita rumah"
 
-      Output:
-      "nanti malam mereka mengadakan"
-      `
+        Output:
+        "hutan ini rumah kita"
+
+        Input:
+        "tidak mau"
+
+        Output:
+        "mau tidak"
+
+        Input:
+        "rumah saya tidak mau"
+
+        Output:
+        "rumah saya mau tidak"
+
+        Output HARUS:
+        - 1 kalimat saja
+        - TANPA tambahan kata baru
+        `
         },
         {
           role: 'user',
           content: `
-Arah: ${direction}
+          Arah: ${direction}
 
-Kalimat asli:
-"${originalText}"
+          Kalimat asli:
+          "${originalText}"
 
-Hasil kamus:
-"${dictResult}"
+          Hasil kamus:
+          "${dictResult}"
 
-Perbaiki menjadi kalimat terbaik:
-`
+          Perbaiki menjadi kalimat terbaik:
+          `
         }
       ],
-      temperature: 0.2
+      temperature: 0.3
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
@@ -6421,16 +6456,25 @@ Perbaiki menjadi kalimat terbaik:
     }
 
     const j = await resp.json();
+    // 🔥 ambil hasil GPT
     let corrected = j?.choices?.[0]?.message?.content || dictResult;
 
-    // 🔥 FIX: hapus kata berulang
+    // 🔥 normalisasi
+    corrected = corrected.toLowerCase().trim();
+
+    // 🔥 VALIDASI (WAJIB)
+    corrected = enforceDictionary(dictResult, corrected);
+
+    // 🔥 FIX NEGASI
+    corrected = fixNegationOrder(corrected);
+
+    // 🔥 hapus duplikat
     corrected = corrected
-      .toLowerCase()
       .split(" ")
       .filter((word, i, arr) => word && word !== arr[i-1])
       .join(" ");
 
-    return corrected.trim();
+    return corrected;
 
   }catch(err){
     return dictResult;
@@ -6904,6 +6948,22 @@ if (SpeechRecognition) {
   recognition.lang = 'id-ID'; // default
   recognition.continuous = false;
   recognition.interimResults = false;
+}
+
+
+// 🔥 VALIDASI: pastikan GPT tidak keluar dari kamus
+function enforceDictionary(originalDict, corrected){
+  const dictWords = new Set(originalDict.split(" "));
+  const resultWords = corrected.split(" ");
+
+  // jika ada kata baru → pakai hasil kamus
+  for(const w of resultWords){
+    if(!dictWords.has(w)){
+      return originalDict;
+    }
+  }
+
+  return corrected;
 }
 
   // ======================
