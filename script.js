@@ -1133,7 +1133,6 @@
         {"ind":"lucu","ter":"garap","makian": "", "galela": "lucu"},
         {"ind":"gemas","ter":"","makian": "", "galela": "ingi dha'hako"},
         {"ind":"aneh","ter":"regu","makian": "hamaleo", "galela": ""},
-        {"ind":"aneh","ter":"gate regu","makian": "", "galela": ""},
         {"ind":"indah","ter":"jang","makian": "masure", "galela": "ovi"},
         {"ind":"cantik","ter":"jang","makian": "masure", "galela": "loha"},
         {"ind":"tampan","ter":"ganteng","makian": "", "galela": ""},
@@ -1212,7 +1211,7 @@
         {"ind":"teman","ter":"dagimoi","makian": "lomo", "galela": "dodiawo"},
         {"ind":"temannya","ter":"","makian": "nilomo", "galela": ""},
         {"ind":"teman-teman","ter":"dagimoi","makian": "gopadano", "galela": "dodiawo"},
-        {"ind":"teman-temannya","ter":"idagimoi","makian": "gopadano", "galela": "dodiawo"},
+        {"ind":"teman-temannya","ter":"dagimoi","makian": "gopadano", "galela": "dodiawo"},
         {"ind":"teman laki-laki","ter":"dagimoi fangare","makian": "", "galela": ""},
         {"ind":"teman perempuan","ter":"dagimoi fajaru","makian": "", "galela": ""}
       ],
@@ -1273,13 +1272,12 @@
         {"ind":"siapa","ter":"nage ana","makian": "alho", "galela": "nago'ona"},
         {"ind":"siapakah","ter":"nage ana","makian": "alho", "galela": "nago'ona"},
         {"ind":"apa","ter":"koa","makian": "yapu", "galela": "kiya"},
-        {"ind":"apa sebaiknya","ter":"amalaha","makian": "", "galela": ""},
         {"ind":"yang mana","ter":"","makian": "", "galela": "dha'kikiya"},
         {"ind":"di mana","ter":"kasa","makian": "pololi", "galela": "kiya'ka"},
         {"ind":"di manakah","ter":"kasa","makian": "", "galela": "kiya'ka"},
         {"ind":"kemana","ter":"tagi kasaa","makian": "kasa", "galela": "kikiya'ka"},
         {"ind":"kenapa","ter":"golokoa","makian": "pepue", "galela": ""},
-        {"ind":"tidak tahu","ter":"waro ua","makian": "", "galela": "wa'asoko"},
+        {"ind":"tidak tahu","ter":"","makian": "", "galela": "wa'asoko"},
         {"ind":"mana","ter":"kasaa","makian": "", "galela": "kiya'ka"},
         {"ind":"mengapa","ter":"golokoa","makian": "isapama", "galela": "dodo'oha"},
         {"ind":"bagaimana","ter":"doka sa","makian": "pepue", "galela": "dodo'oha"},
@@ -1413,7 +1411,7 @@
         {"ind":"banyak jenis","ter":"","makian": "", "galela": "para ma'dala"},
         {"ind":"banyak ragam","ter":"","makian": "", "galela": "para ma'dala"},
         {"ind":"banyak","ter":"dofu","makian": "lloci", "galela": "dala"},
-        {"ind":"sedikit","ter":"cabu","makian": "kutu moto", "galela": "ucu"},
+        {"ind":"sedikit","ter":"cabuu","makian": "kutu moto", "galela": "ucu"},
         {"ind":"beberapa","ter":"sawetara","makian": "iwuya", "galela": ""},
         {"ind":"beberapa","ter":"ngaruo","makian": "", "galela": ""},
         {"ind":"sejumlah","ter":"nyonyohi","makian": "", "galela": ""},
@@ -1532,7 +1530,6 @@
         {"ind":"setuju","ter":"nyiha","makian": "", "galela": "simote"},
         {"ind":"tidak","ter":"ua","makian": "te", "galela": "hiwa"},
         {"ind":"bukan","ter":"ua","makian": "", "galela": "sowo"},
-        {"ind":"bukannya","ter":"ua se","makian": "", "galela": ""},
         {"ind":"mungkin","ter":"mbok menawa","makian": "halite", "galela": "naga'la"},
         {"ind":"barangkali","ter":"barangkali","makian": "", "galela": "naga'la"},    
         {"ind":"tentu","ter":"mesthi","makian": "", "galela": ""},
@@ -1541,8 +1538,6 @@
         {"ind":"betul","ter":"temenan","makian": "ntalai", "galela": "dahe"},
         {"ind":"tidak juga","ter":"ora uga","makian": "", "galela": ""},
         {"ind":"tidak berguna","ter":"kama guna ua","makian": "", "galela": "ma'ngale i'hiwa"},
-        {"ind":"tidak mau","ter":"mau ua","makian": "", "galela": ""},
-        {"ind":"tidak mungkin","ter":"ne dadi ua","makian": "", "galela": ""},
         {"ind":"jangan","ter":"afa","makian": "patona", "galela": "upa"},
         {"ind":"jangan dulu","ter":"","makian": "", "galela": "upa'si"},
         {"ind":"jangan lagi","ter":"","makian": "", "galela": "dha'bolo'si"},
@@ -2426,7 +2421,6 @@
         {"ind":"cangkangnya","ter":"","makian": "ni liko", "galela": ""},
         {"ind":"capit kepiting","ter":"","makian": "kakkatam bosok nik", "galela": ""},
         {"ind":"cangkang kerang","ter":"","makian": "suat ni liko", "galela": ""},
-        {"ind":"caranya","ter":"ma cara","makian": "", "galela": ""},
         {"ind":"cambuk","ter":"cambuuk","makian": "", "galela": "cimboki"}
       ],
       "D": [
@@ -2541,8 +2535,6 @@
         {"ind":"dikenakan","ter":"pake","makian": "", "galela": ""},
         {"ind":"dipinjamkan","ter":"si bau","makian": "", "galela": ""},
         {"ind":"di depan","ter":"ma gunaga","makian": "", "galela": ""},
-        {"ind":"dibawa","ter":"si gasa","makian": "", "galela": ""},
-        {"ind":"dibawa","ter":"dahe","makian": "", "galela": ""},
         {"ind":"dihanyutkan","ter":"siruru","makian": "myaling", "galela": "si'dhasi"}
       ],
       "E": [
@@ -2948,7 +2940,7 @@
         {"ind":"jompo","ter":"himo himo","makian": "", "galela": ""},
         {"ind":"jemur","ter":"wohe","makian": "", "galela": "wohe"},
         {"ind":"jebak","ter":"","makian": "", "galela": "sabatolo"},
-        {"ind":"jebakan","ter":"dodeso","makian": "", "galela": "sabatolo"},
+        {"ind":"jebakan","ter":"","makian": "", "galela": "sabatolo"},
         {"ind":"jeblos","ter":"singosa","makian": "", "galela": ""},
         {"ind":"jebol","ter":"turaba","makian": "", "galela": ""},
         {"ind":"jumpa","ter":"makudero","makian": "", "galela": ""},
@@ -3351,7 +3343,6 @@
         {"ind":"kerajinannya","ter":"","makian": "kerajinan nak", "galela": ""},
         {"ind":"kotak","ter":"","makian": "kotak", "galela": ""},
         {"ind":"kelar","ter":"","makian": "lakalar", "galela": ""},
-        {"ind":"kami semua","ter":"ngom simoi","makian": "", "galela": ""},
         {"ind":"keinginan","ter":"nyafsu","makian": "", "galela": "dupa"}
       ],
       "L": [
@@ -3553,7 +3544,6 @@
         {"ind":"maling","ter":"tori tori","makian": "", "galela": "totosi"},
         {"ind":"menangis","ter":"ari","makian": "yog", "galela": "ari"},
         {"ind":"menangisi","ter":"magugari","makian": "", "galela": ""},
-        {"ind":"menangis","ter":"iduka","makian": "", "galela": ""},
         {"ind":"mata air","ter":"ake malako","makian": "woya nimto", "galela": "jobubu"},
         {"ind":"masyarakat","ter":"","makian": "", "galela": "kawasa"},
         {"ind":"masalah","ter":"masaala","makian": "", "galela": "hali"},
@@ -4044,14 +4034,13 @@
         {"ind":"manik","ter":"manyi manyi","makian": "", "galela": ""},
         {"ind":"menimbang","ter":"","makian": "tibang", "galela": ""},
         {"ind":"meninggal","ter":"sone","makian": "gei", "galela": "ma'sigiliho"},
-        {"ind":"meninggalkan","ter":"tagi supu","makian": "yaso", "galela": "do'lodha"},
+        {"ind":"meninggalkan","ter":"","makian": "yaso", "galela": "do'lodha"},
         {"ind":"meninju","ter":"","makian": "ruju", "galela": "dubu"},
         {"ind":"mengutak atik","ter":"tabi lom","makian": "", "galela": ""},
         {"ind":"mengutarakan","ter":"sigado","makian": "", "galela": ""},
         {"ind":"menipis","ter":"","makian": "fenefine", "galela": ""},
         {"ind":"meniup","ter":"sihio","makian": "nuho", "galela": "wuwu"},
         {"ind":"menolak","ter":"","makian": "anggote", "galela": "holu"},
-        {"ind":"menolong","ter":"dagali","makian": "", "galela": ""},
         {"ind":"menoleh","ter":"nyodi","makian": "", "galela": ""},
         {"ind":"menombak","ter":"","makian": "sagu", "galela": "tudu"},
         {"ind":"memencet","ter":"butu","makian": "", "galela": ""},
@@ -4752,8 +4741,6 @@
         {"ind":"pulih","ter":"","makian": "mul", "galela": ""},
         {"ind":"popok","ter":"","makian": "nilapes", "galela": ""},
         {"ind":"pertama kali","ter":"walomoi ne","makian": "", "galela": ""},
-        {"ind":"pemburu","ter":"coho se mancia","makian": "", "galela": ""},
-        {"ind":"pemburu","ter":"mancia coho","makian": "", "galela": ""},
         {"ind":"perhitungan","ter":"","makian": "", "galela": "gegeto"}
       ],
       "Q": [
@@ -5877,7 +5864,6 @@
     }
   };
 
-  
   // ======================
   // 🧭 Build quick maps from DICT (multi-word keys supported)
   // ======================
@@ -5946,39 +5932,28 @@ const indoNumberMap = {
 };
 
 function wordsToNumber(text){
-  if(!text) return null;
   text = normalizeTextForLookup(text);
 
   if(indoNumberMap[text] !== undefined){
     return indoNumberMap[text];
   }
 
-  // belas
+  // contoh: dua belas
   if(text.includes("belas")){
     const satuan = text.replace(" belas","").trim();
-    if(indoNumberMap[satuan] === undefined) return null;
-    return 10 + indoNumberMap[satuan];
+    return 10 + (indoNumberMap[satuan] || 0);
   }
 
-  // puluh
+  // contoh: dua puluh dua
   if(text.includes("puluh")){
     const [puluh, satuan] = text.split("puluh").map(s=>s.trim());
-
-    if(indoNumberMap[puluh] === undefined) return null;
-
-    const s = satuan ? indoNumberMap[satuan] : 0;
-    if(satuan && s === undefined) return null;
-
-    return (indoNumberMap[puluh] * 10) + (s || 0);
+    return (indoNumberMap[puluh]*10) + (indoNumberMap[satuan]||0);
   }
 
   return null;
 }
 
-
-
 function convertNumberToLocal(num, lang){
-  if(isNaN(num)) return "";
 
   const satuan = {
     ter: ["","rimoi","romdidi","raange","raha","ramtoha","rara","tomdi","tofkange","sio"],
@@ -6099,12 +6074,7 @@ if(num < 1000000){
  
 
 function localToNumber(text, lang){
-  if(!text) return null;
-
   text = normalizeTextForLookup(text);
-
-  const tokens = text.split(" ").filter(Boolean);
-  if(tokens.length < 2) return null;
 
   const satuanMap = {
     ter: {
@@ -6133,26 +6103,33 @@ function localToNumber(text, lang){
     galela: "de"
   };
 
-  // 🔥 WAJIB: harus mulai dari kata puluh
-  if(tokens[0] !== puluhMap[lang]) return null;
+  const tokens = text.split(" ");
 
-  const puluhVal = satuanMap[lang][tokens[1]];
-  if(puluhVal === undefined) return null;
-
-  let satuanVal = 0;
-
-  // 🔥 ambil setelah "se"
-  const idx = tokens.indexOf(joinWord[lang]);
-  if(idx !== -1 && tokens[idx+1]){
-    const val = satuanMap[lang][tokens[idx+1]];
-    if(val === undefined) return null;
-    satuanVal = val;
+  // 🔹 1 kata (satuan)
+  if(tokens.length === 1){
+    return satuanMap[lang][tokens[0]] || null;
   }
 
-  return puluhVal * 10 + satuanVal;
+  // 🔹 10 (nyagi moi, yoha so, dll)
+  if(tokens.length === 2 && tokens[0] === puluhMap[lang]){
+    return 10;
+  }
+
+  // 🔹 20–99 (puluh)
+  if(tokens[0] === puluhMap[lang]){
+    const puluh = satuanMap[lang][tokens[1]] || 0;
+
+    let satuan = 0;
+    if(tokens.includes(joinWord[lang])){
+      const idx = tokens.indexOf(joinWord[lang]);
+      satuan = satuanMap[lang][tokens[idx+1]] || 0;
+    }
+
+    return puluh * 10 + satuan;
+  }
+
+  return null;
 }
-
-
 
 function numberToIndo(num){
   const angka = ["nol","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan"];
@@ -6231,7 +6208,7 @@ function numberToIndo(num){
     text = normalizeTextForLookup(text);
 
     // token = kata (jaga tanda hubung sebagai satu unit)
-    const tokens = text.split(/\s+/).filter(Boolean);
+    const tokens = text.split(/\s+/);
     let out = [], i = 0;
 
     while(i < tokens.length){
@@ -6243,34 +6220,25 @@ function numberToIndo(num){
     const maxLen = Math.min(15, tokens.length - i);
 
     for(let len = maxLen; len > 0; len--){
-    const phrase = tokens.slice(i, i+len).join(" ");
+      const phrase = tokens.slice(i, i+len).join(" ");
 
-    // 🔥 PRIORITAS 1: ANGKA LOKAL (anggap 1 unit utuh)
-    const numLocal = localToNumber(phrase, lang);
-    if(numLocal !== null){
-      out.push(numberToIndo(numLocal));
-      i += len;
-      match = true;
-      break;
-    }
+      const num = wordsToNumber(phrase);
+      if(num !== null){
+        let hasilAngka = null;
 
-    // 🔥 PRIORITAS 2: ANGKA INDONESIA
-    const num = wordsToNumber(phrase);
-    if(num !== null){
-      let hasilAngka = null;
+        if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
+        else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
+        else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
 
-      if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
-      else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
-      else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
-
-      if(hasilAngka){
-        out.push(hasilAngka);
-        i += len;
-        match = true;
-        break;
+        if(hasilAngka){
+          out.push(hasilAngka);
+          i += len;
+          match = true;
+          break;
+        }
       }
     }
-  }
+
     if(match) continue;
 
     // ======================
@@ -6367,7 +6335,7 @@ function translateFromVoice(text){
   // 🧠 callOpenAIcorrect: minta GPT perbaiki TATA KALIMAT (bukan terjemahan ulang)
   // mengirim teks hasil kamus, menerima teks yang diperbaiki
   // ======================
-async function callOpenAIcorrect(originalText, dictResult, direction){
+ async function callOpenAIcorrect(originalText, dictResult, direction){
   if(!dictResult) return dictResult;
 
   try{
@@ -6377,67 +6345,43 @@ async function callOpenAIcorrect(originalText, dictResult, direction){
         {
           role: 'system',
           content: `
-        Kamu adalah AI penyusun ulang kalimat, BUKAN penerjemah.
+          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
 
-        Tugas utama:
-        - HANYA menyusun ulang kata dari "hasil kamus"
-        - TIDAK BOLEH mengganti arti kata
-        - TIDAK BOLEH menambahkan kata baru
-        - TIDAK BOLEH menghilangkan kata penting
-        - WAJIB menggunakan kata yang SUDAH ADA di hasil kamus
-
-        ATURAN KETAT:
-        1. DILARANG menerjemahkan ulang
-        2. DILARANG menambahkan kata seperti: di, ke, dari, kami, dll (jika tidak ada di hasil kamus)
-        3. DILARANG mengganti arti (contoh: "fala" tetap "rumah", tidak boleh jadi "memasak")
-        4. HANYA boleh:
-          - mengubah urutan kata
-          - menghapus duplikat
-        5. Jika ragu → KEMBALIKAN hasil kamus apa adanya
-
-        ATURAN KHUSUS:
-        - Kata negatif (tidak, bukan, dll) HARUS di belakang
+          Aturan:
+          1. Perbaiki hasil terjemahan agar alami
+          2. Pahami konteks kalimat secara keseluruhan
+          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
+          4. Pilih arti kata yang paling tepat berdasarkan konteks
+          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
+          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
+          7. Jika ada kata belum tepat, boleh disesuaikan secara kontekstual
+          
+          paling penting jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
+          
           contoh:
-          "tidak mau" → "mau tidak"
-        - Struktur harus natural tapi tetap setia ke kamus
+          input: "jalan baru itu banyak debu
+          output: "ngoko sungi ge dofu fika" 
 
-        Contoh:
+          input: ""
 
-        Input kamus:
-        "hutan ini kita rumah"
-
-        Output:
-        "hutan ini rumah kita"
-
-        Input:
-        "tidak mau"
-
-        Output:
-        "mau tidak"
-
-        Input:
-        "rumah saya tidak mau"
-
-        Output:
-        "rumah saya mau tidak"
-
-        Output HARUS:
-        - 1 kalimat saja
-        - TANPA tambahan kata baru
-        `
+          Output:
+          - hanya 1 kalimat terbaik
+          - alami
+          - sesuai konteks
+          `
         },
         {
           role: 'user',
           content: `
-          Arah: ${direction}
+          Arah terjemahan: ${direction}
 
           Kalimat asli:
           "${originalText}"
 
-          Hasil kamus:
+          Hasil dari kamus:
           "${dictResult}"
 
-          Perbaiki menjadi kalimat terbaik:
+          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
           `
         }
       ],
@@ -6456,30 +6400,15 @@ async function callOpenAIcorrect(originalText, dictResult, direction){
     }
 
     const j = await resp.json();
-    // 🔥 ambil hasil GPT
-    let corrected = j?.choices?.[0]?.message?.content || dictResult;
+    const corrected = j?.choices?.[0]?.message?.content;
 
-    // 🔥 normalisasi
-    corrected = corrected.toLowerCase().trim();
-
-    // 🔥 VALIDASI (WAJIB)
-    corrected = enforceDictionary(dictResult, corrected);
-
-    // 🔥 FIX NEGASI
-    corrected = fixNegationOrder(corrected);
-
-    // 🔥 hapus duplikat
-    corrected = corrected
-      .split(" ")
-      .filter((word, i, arr) => word && word !== arr[i-1])
-      .join(" ");
-
-    return corrected;
+    return (corrected || dictResult).trim();
 
   }catch(err){
-    return dictResult;
+    throw err;
   }
 }
+
   // ======================
   // 🔤 countAllVocabulary: hitung total kosakata di DICT
   // ======================
@@ -6948,22 +6877,6 @@ if (SpeechRecognition) {
   recognition.lang = 'id-ID'; // default
   recognition.continuous = false;
   recognition.interimResults = false;
-}
-
-
-// 🔥 VALIDASI: pastikan GPT tidak keluar dari kamus
-function enforceDictionary(originalDict, corrected){
-  const dictWords = new Set(originalDict.split(" "));
-  const resultWords = corrected.split(" ");
-
-  // jika ada kata baru → pakai hasil kamus
-  for(const w of resultWords){
-    if(!dictWords.has(w)){
-      return originalDict;
-    }
-  }
-
-  return corrected;
 }
 
   // ======================
