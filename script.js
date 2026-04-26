@@ -6527,11 +6527,13 @@ function translateFromVoice(text){
           4. Pilih arti kata yang paling tepat berdasarkan konteks
           5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
           6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
-          7. Jika ada kata belum tepat, boleh disesuaikan secara kontekstual
-          
-          paling penting jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
+          7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
 
-          selalu utamakan kata atau kalimat penting dulu 
+          Imbuhan: 
+          "i","o", "da", "ka" : sebagai penghubung kata kerja, aktif pasif dll
+
+          ATURAN PENTING:
+          SELALU UTAMAKAN KATA/ KALIMAT BERISI KETERANGAN/PENTING DULU BARU DI LANJUTKAN KATA / KALIMAT SETELAHNYA 
           contoh: 
           meme: ibu
           tomi rio: membantu
@@ -6543,18 +6545,8 @@ function translateFromVoice(text){
           input: "jalan baru itu banyak debu
           output: "ngoko sungi ge dofu fika" 
 
-          input: angka+ kata/kalimat
-          output: kata/kalimat + angka
-
-          ATURAN PENTING:
-          KATA/ KALIMAT BERISI KETERANGAN/PENTING BARU DI LANJUTKAN KATA / KALIMAT SETELAHNYA 
-
-          input: ""
-
-          Output:
-          - hanya 1 kalimat terbaik
-          - alami
-          - sesuai konteks
+          input: BERISI angka+ BERISI kata/kalimat
+          output: BERISI kata/kalimat + ngai + BERISI angka
           `
         },
         {
@@ -6572,7 +6564,7 @@ function translateFromVoice(text){
           `
         }
       ],
-      temperature: 0.3
+      temperature: 0.4
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
