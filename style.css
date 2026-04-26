@@ -97,7 +97,7 @@ pre#log{white-space:pre-wrap}
 
 /* =====================================
    RESPONSIVE VOCAB CARD GRID
-   HP: 3 | Tablet: 4 | Desktop: 6
+   HP: 2 | Tablet: 4 | Desktop: 6
 ===================================== */
 /* card full-width di grid */
 .vocab-card {
@@ -126,9 +126,9 @@ pre#log{white-space:pre-wrap}
 
 
 /* HP */
-@media (max-width: 575.98px) {
+@media (max-width: 560px) {
   .vocab-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
