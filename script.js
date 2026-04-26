@@ -81,7 +81,7 @@
         {"ind":"anak bungsu","ter":"ngofa majojo","makian": "mtu dungko", "galela": "ngopa ma'so'ohu"},
         {"ind":"anak kembar","ter":"ngofa susara","makian": "", "galela": "ngopama'susara"},
         {"ind":"kembar","ter":"susara","makian": "susara", "galela": "ngopama'susara"},
-        {"ind":"","ter":"","makian": "", "galela": "ngopama'yosago"},
+        {"ind":"kembar","ter":"","makian": "", "galela": "ngopama'yosago"},
         {"ind":"anak cucu","ter":"ngofa se dano","makian": "mtu lo mapin", "galela": "ngopama'dano"},
         {"ind":"bungsu","ter":"majojo","makian": "", "galela": ""},
         {"ind":"anak tengah","ter":"","makian": "", "galela": "ngopa i'raraba"}
@@ -304,6 +304,7 @@
         {"ind":"sapi","ter":"sapi","makian": "sapi", "galela": "sapi", "img":"https://unair.ac.id/wp-content/uploads/2022/04/Foto-by-Dunia-Sapi.jpg"},
         {"ind":"kadal","ter":"jaran","makian": "tonololan", "galela": "kaso ma'wuwu", "img":"https://www.batamnews.co.id/foto_berita//83kuda.jpg"},
         {"ind":"anak kadal","ter":"","makian": "", "galela": "kekedoko"},
+        {"ind":"anak kucing","ter":"","makian": "", "galela": "o boki mangopa"},
         {"ind":"kerbau","ter":"sapi","makian": "kerbau", "galela": "kerbau"},
         {"ind":"domba","ter":"wedhus","makian": "biri-biri", "galela": "domba", "img":"https://awsimages.detik.net.id/community/media/visual/2024/06/07/177426993_169.jpeg?w=600&q=90"},
         {"ind":"kambing","ter":"kabi","makian": "kabin", "galela": "kabi", 	"img":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/960px-Hausziege_04.jpg"},
@@ -787,8 +788,8 @@
         {"ind":"belajar","ter":"sinau","makian": "balajar", "galela": "ma'doto","img":"https://radarbanyumas.disway.id/upload/84200b799d075d819b57084e10b890b7.jpg"},
         {"ind":"bermain","ter":"toniru","makian": "lalawa", "galela": "u'ule","img":"https://asset.kompas.com/crops/JSevcavFEBJuxwQbNmMm5x9YxV0=/38x69:838x602/1200x800/data/photo/2020/07/23/5f18d345cb9dd.jpg"},
         {"ind":"mendengarkan","ter":"ise","makian": "malonga", "galela": "si'ise","img":"https://i0.wp.com/www.harakatuna.com/wp-content/uploads/2022/11/ilustrasi-orang-bicara-ini-zodiak-yang-terkenal-super-manis-saat-diajak-ngobrol.jpg?resize=696%2C391&ssl=1"},
-        {"ind":"melihat","ter":"sorinyodi","makian": "ltono", "galela": "kelelo","img":"https://img-cdn.medkomtek.com/qFeEv2iPoRd_FywuI7oXnTB-Nk4=/510x395/smart/filters:quality(100):format(webp)/article/xQFCwccyptoTFhpq8thGW/original/086987600_1577875819-Mata-Silau-Saat-Melihat-Cahaya-Terang-Kapan-Harus-Khawatir-shutterstock_736460488.jpg"},
-        {"ind":"melihat","ter":"nyodi","makian": "tono", "galela": ""},
+        {"ind":"melihat","ter":"sorinyodi","makian": "ltono", "galela": "takelelo","img":"https://img-cdn.medkomtek.com/qFeEv2iPoRd_FywuI7oXnTB-Nk4=/510x395/smart/filters:quality(100):format(webp)/article/xQFCwccyptoTFhpq8thGW/original/086987600_1577875819-Mata-Silau-Saat-Melihat-Cahaya-Terang-Kapan-Harus-Khawatir-shutterstock_736460488.jpg"},
+        {"ind":"melihat","ter":"nyodi","makian": "tono", "galela": "kelelo"},
         {"ind":"melihat","ter":"","makian": "nam", "galela": ""},
         {"ind":"merasa","ter":"rasa","makian": "sosam", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbYTnuVMIgb2W_B52NxZNJ_gHk8ZFnDlnGY4KTrGm_cNtOW033Tg0ClEff4MWMeNbq2Q&usqp=CAU"},
         {"ind":"memegang","ter":" ","makian": "loi", "galela": "coho","img":"https://stiba.ac.id/wp-content/uploads/2016/02/mendidik-anak-dalam-islam.jpg"},
@@ -798,7 +799,7 @@
         {"ind":"membuka","ter":"hoi","makian": "tupe", "galela": "hoi","img":"https://st.depositphotos.com/27811286/58277/v/1600/depositphotos_582775934-stock-illustration-little-kid-open-door-friend.jpg"},
         {"ind":"menutup","ter":"kuci","makian": "faot", "galela": "didu","img":"https://png.pngtree.com/png-clipart/20210718/original/pngtree-a-beautiful-muslimah-open-the-door-png-image_6541663.jpg"},
         {"ind":"tutup","ter":"tan","makian": "faot", "galela": "peresu","img":"https://www.kindpng.com/picc/m/146-1468479_light-switch-png-turn-off-light-switch-png-transparent.png"},
-        {"ind":"masak","ter":"ma","makian": "mmosa", "galela": "osa","img":"https://img.okezone.com/content/2020/06/16/298/2237321/5-tips-memotong-bawang-putih-tanpa-menangis-ygW3y3Y6vK.jpg"},
+        {"ind":"masak","ter":"ma","makian": "mosa", "galela": "osa","img":"https://img.okezone.com/content/2020/06/16/298/2237321/5-tips-memotong-bawang-putih-tanpa-menangis-ygW3y3Y6vK.jpg"},
         {"ind":"beli","ter":"fodi ","makian": "poli", "galela": "ija","img":"https://asset-2.tribunnews.com/tribunkaltimtravel/foto/bank/images/beli-baju-baru-lagi.jpg"},
         {"ind":"menjual","ter":"mafuku","makian": "wagik", "galela": "si'ija","img":"https://png.pngtree.com/png-clipart/20241208/original/pngtree-fruit-seller-selling-oranges-buy-and-sell-clip-art-png-image_17664797.png"},
         {"ind":"membawa","ter":"gawa","makian": "yat", "galela": "","img":"https://png.pngtree.com/png-clipart/20230716/original/pngtree-kids-bring-a-book-png-image_9308110.png"},
@@ -1005,10 +1006,10 @@
         {"ind":"biru","ter":"balao","makian": "balao", "galela": "bisi"},
         {"ind":"kuning","ter":"kuraci","makian": "makninis", "galela": "kurati"},
         {"ind":"hijau","ter":"ijo","makian": "ijo", "galela": "dha'bobole ma'soka"},
-        {"ind":"hitam","ter":"kokotu","makian": "kuda", "galela": "taro"},
+        {"ind":"hitam","ter":"kokotu","makian": "kuda", "galela": "tata'ro"},
         {"ind":"hitam legam","ter":"","makian": "burat", "galela": ""},
         {"ind":"putih","ter":"bubudo","makian": "bulang", "galela": ""},
-        {"ind":"abu-abu","ter":"fika-fika","makian": "tattapin", "galela": "kapo"},
+        {"ind":"abu-abu","ter":"fika-fika","makian": "tat'tapin", "galela": "kapo"},
         {"ind":"cokelat","ter":"coklat","makian": "kakao", "galela": "sokulati"},
         {"ind":"jingga","ter":"jingga","makian": "jingga", "galela": "dha'jijiga"},  
         {"ind":"ungu","ter":"wung","makian": "", "galela": ""},
@@ -1258,7 +1259,7 @@
         {"ind":"bawah","ter":"toma adu","makian": "naso", "galela": "dahe"},
         {"ind":"depan","ter":"ma gunaga","makian": "sodali", "galela": "sima"},
         {"ind":"belakang","ter":"mburi","makian": "taggulo", "galela": "dudu"},
-        {"ind":"dibelakang","ter":"toma dudu","makian": "", "galela": "ma'dudu'ka"},
+        {"ind":"di belakang","ter":"toma dudu","makian": "", "galela": "ma'dudu'ka"},
         {"ind":"dalam","ter":"ngido","makian": "tai", "galela": "raba"},
         {"ind":"dalam","ter":"madaha","makian": "", "galela": ""},
         {"ind":"luar","ter":"madudu","makian": "lik", "galela": ""},
@@ -1284,6 +1285,8 @@
         {"ind":"berapa jam ke depan","ter":"","makian": "", "galela": "cakomuruo ma'sima'ka"},
         {"ind":"berapa jam yang sudah ditempuh","ter":"","makian": "", "galela": "cakomuruo'no"},
         {"ind":"siapa","ter":"nage ana","makian": "alho", "galela": "nago'ona"},
+        {"ind":"siapa laki-laki itu","ter":"","makian": "", "galela": "nagu'una"},
+        {"ind":"siapa laki-laki itu","ter":"","makian": "", "galela": "nagu'muna"},
         {"ind":"siapakah","ter":"nage ana","makian": "alho", "galela": "nago'ona"},
         {"ind":"apa","ter":"koa","makian": "yapu", "galela": "kiya"},
         {"ind":"apa sebaiknya","ter":"amalaha","makian": "", "galela": ""},
@@ -1294,12 +1297,15 @@
         {"ind":"kenapa","ter":"golokoa","makian": "pepue", "galela": ""},
         {"ind":"tidak tahu","ter":"waro ua","makian": "", "galela": "wa'asoko"},
         {"ind":"mana","ter":"kasaa","makian": "", "galela": "kiya'ka"},
-        {"ind":"mengapa","ter":"golokoa","makian": "isapama", "galela": "dodo'oha"},
+        {"ind":"mengapa","ter":"golokoa","makian": "isapama", "galela": "dha'do'oha"},
         {"ind":"bagaimana","ter":"doka sa","makian": "pepue", "galela": "dodo'oha"},
-        {"ind":"kapan","ter":"wangerao","makian": "poiso", "galela": "kapuruo"},
-        {"ind":"berapa","ter":"rao","makian": "", "galela": "muruwo"},
+        {"ind":"dari mana","ter":"","makian": "", "galela": "kikiya no"},
+        {"ind":"dari siapa","ter":"","makian": "", "galela": "nago'ona'no"},
+        {"ind":"kapan","ter":"wangerao","makian": "poiso", "galela": "muruo'de"},
+        {"ind":"berapa","ter":"rao","makian": "", "galela": "ngai muruo"},
         {"ind":"adakah","ter":"","makian": "", "galela": "de'maena so?"},
         {"ind":"apakah","ter":"","makian": "", "galela": "de'maena so"},
+        {"ind":"apakah","ter":"","makian": "", "galela": "i'gogou"},
         {"ind":"apakah benar ada","ter":"","makian": "", "galela": "de'maena so"},
         {"ind":"sudah ada","ter":"","makian": "", "galela": "de'ma'ena'ka"},
         {"ind":"sudah adakah","ter":"durung ana","makian": "", "galela": "dema'ena ka"},
@@ -1771,8 +1777,8 @@
         {"ind":"kekasih","ter":"dodara","makian": "", "galela": "eso"},
         {"ind":"sayang","ter":"dodara","makian": "dodara", "galela": "dodara"},
         {"ind":"pernah","ter":"parnah","makian": "", "galela": ""},
-        {"ind":"bisa","ter":"bisa","makian": "nahan", "galela": "aku"},
-        {"ind":"bisa","ter":"","makian": "han", "galela": ""},
+        {"ind":"bisa","ter":"dadi","makian": "nahan", "galela": "dadi"},
+        {"ind":"bisa","ter":"dadi","makian": "han", "galela": ""},
         {"ind":"mampu","ter":"poha","makian": "", "galela": "aku"},
         {"ind":"sanggup","ter":"poha","makian": "", "galela": "mangaku"},
         {"ind":"berani","ter":"barani","makian": "barani", "galela": "tomole"},
@@ -3580,7 +3586,7 @@
         {"ind":"mahir","ter":"maher","makian": "", "galela": "cawaro"},
         {"ind":"main","ter":"toniru","makian": "", "galela": "ule"},
         {"ind":"malaria","ter":"","makian": "malosam", "galela": ""},
-        {"ind":"mainan","ter":"toniru","makian": "", "galela": "gogu'ule"},
+        {"ind":"mainan","ter":"toniru","makian": "", "galela": "goule"},
         {"ind":"maju","ter":"maju","makian": "yomto", "galela": "dagi"},
         {"ind":"makam","ter":"kubu","makian": "", "galela": "bo'osu"},
         {"ind":"maki","ter":"","makian": "", "galela": "dowa"},
@@ -3641,7 +3647,7 @@
         {"ind":"mandul","ter":"","makian": "nimtu te", "galela": "ngopa i'hiwa"},
         {"ind":"mangkuk","ter":"","makian": "sopa", "galela": ""},
         {"ind":"mantan","ter":"bakas","makian": "bakas", "galela": ""},
-        {"ind":"manusia","ter":"mancia","makian": "manca", "galela": "nyawa"},
+        {"ind":"manusia","ter":"mancia","makian": "manca", "galela": "o nyawa ka"},
         {"ind":"memarahi","ter":"","makian": "setan", "galela": "do'osa"},
         {"ind":"muparu","ter":"","makian": "", "galela": ""},
         {"ind":"memar","ter":"boha","makian": "psos", "galela": ""},
@@ -3783,6 +3789,7 @@
         {"ind":"mencakup","ter":"","makian": "", "galela": "si'dopolu"},
         {"ind":"menceraikan","ter":"utalaki","makian": "talaki", "galela": ""},
         {"ind":"mencicipi","ter":"","makian": "tohang", "galela": ""},
+        {"ind":"mendapatkan","ter":"","makian": "tohang", "galela": "mamake"},
         {"ind":"menjelek-jelekan","ter":"na-ira","makian": "", "galela": "dorou si'jarita"},
         {"ind":"menjenguk","ter":"hoba","makian": "", "galela": "kurumi"},
         {"ind":"menjelekkan","ter":"na-ira","makian": "", "galela": "dorou si'jarita"},
@@ -4448,7 +4455,7 @@
         {"ind":"pengikat","ter":"","makian": "bali", "galela": "bobiliku"},
         {"ind":"pengembalian","ter":"","makian": "", "galela": "ma'giliho"},
         {"ind":"pelacur","ter":"","makian": "upas", "galela": "momosola"},
-        {"ind":"permainan","ter":"","makian": "", "galela": ""},
+        {"ind":"permainan","ter":"","makian": "", "galela": "gogu'ule"},
         {"ind":"permohonan","ter":"","makian": "daidot", "galela": ""},
         {"ind":"permaisuri","ter":"maboki","makian": "", "galela": ""},
         {"ind":"permai","ter":"jang","makian": "", "galela": ""},
@@ -6408,57 +6415,159 @@ function translateFromVoice(text){
   // 🧠 callOpenAIcorrect: minta GPT perbaiki TATA KALIMAT (bukan terjemahan ulang)
   // mengirim teks hasil kamus, menerima teks yang diperbaiki
   // ======================
- async function callOpenAIcorrect(originalText, dictResult, direction){
+async function callOpenAIcorrect(originalText, dictResult, direction){
   if(!dictResult) return dictResult;
 
   try{
+
+    // ======================
+    // 🎯 PILIH PROMPT SESUAI BAHASA
+    // ======================
+    let systemPrompt = "";
+
+    // 🔴 ================= GALela =================
+    if(direction.includes("galela")){
+      systemPrompt = `
+
+      
+Kamu adalah AI penerjemah Bahasa Indonesia ke Bahasa Galela berbasis aturan kamus.
+
+TUGAS:
+-Pahami konteks kalimat secara keseluruhan
+-Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
+- Pilih arti kata yang paling tepat berdasarkan konteks
+- Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
+- WAJIB gunakan hasil kamus sebagai dasar
+- TIDAK boleh menerjemahkan ulang dari nol
+- SUSUN ulang sesuai aturan Bahasa Galela
+
+=====================
+ATURAN WAJIB:
+=====================
+
+1. STRUKTUR:
+- Dahulukan informasi penting (waktu/objek)
+- Bukan urutan Indonesia
+
+Contoh benar:
+i lang-lang no tagi no pasar
+
+2. AWAL KALIMAT:
+- 1 orang → i
+- lebih dari 1 → ai
+
+3. SUBJEK:
+- kamu → no
+- mereka → yo
+- saya → to
+- kami → mi
+
+4. BENDA:
+- gunakan "o"
+contoh: o boki, o kabi, o nao
+
+5. TEMPAT:
+- gunakan "o" atau "i"
+contoh: o doroko, i ngeko
+
+6. GENDER:
+- perempuan → mo
+- laki-laki → wo
+
+7. WARNA:
+- gunakan "da"
+contoh: o nao da susawala
+
+8. ANGKA:
+- letakkan di akhir
+- gunakan "ngai"
+
+contoh:
+o nao da susawala ngai munahalo
+
+9. NEGASI:
+- letakkan di akhir
+contoh:
+dadi ua
+
+=====================
+
+OUTPUT:
+- hanya 1 kalimat
+- wajib sesuai aturan
+- jangan hilangkan kata penting
+`;
+    }
+
+    // 🟡 ================= TERNATE =================
+    else if(direction.includes("ter")){
+      systemPrompt = `
+Kamu adalah AI penerjemah Bahasa Indonesia ke Bahasa Ternate.
+
+ATURAN:
+- Gunakan hasil kamus sebagai dasar
+- Susun kalimat alami
+- Gunakan:
+  - "o" = akan / sedang
+  - "i" = sudah
+- boleh gunakan "ne" di akhir jika konteks waktu sekarang
+- jangan ubah arti
+
+OUTPUT:
+- 1 kalimat alami
+`;
+    }
+
+    // 🟢 ================= MAKIAN =================
+    else if(direction.includes("makian")){
+      systemPrompt = `
+Kamu adalah AI penerjemah Bahasa Indonesia ke Bahasa Makian.
+
+ATURAN:
+- Gunakan hasil kamus sebagai dasar
+- Gunakan awalan:
+  - "n" = dia
+  - "k" = saya
+- gunakan "li" di akhir jika perlu
+- jangan ubah arti
+
+OUTPUT:
+- 1 kalimat alami
+`;
+    }
+
+    // ======================
+    // 🚀 REQUEST KE AI
+    // ======================
     const body = {
       model: (typeof OPENAI_MODEL !== 'undefined' ? OPENAI_MODEL : 'gpt-4o-mini'),
       messages: [
         {
           role: 'system',
-          content: `
-          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
-
-          Aturan:
-          1. Perbaiki hasil terjemahan agar alami
-          2. Pahami konteks kalimat secara keseluruhan
-          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
-          4. Pilih arti kata yang paling tepat berdasarkan konteks
-          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
-          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
-          7. Jika ada kata belum tepat, boleh disesuaikan secara kontekstual
-          
-          paling penting jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
-          
-          contoh:
-          input: "jalan baru itu banyak debu
-          output: "ngoko sungi ge dofu fika" 
-
-          input: ""
-
-          Output:
-          - hanya 1 kalimat terbaik
-          - alami
-          - sesuai konteks
-          `
+          content: systemPrompt
         },
         {
           role: 'user',
           content: `
-          Arah terjemahan: ${direction}
+Arah: ${direction}
 
-          Kalimat asli:
-          "${originalText}"
+Kalimat asli:
+"${originalText}"
 
-          Hasil dari kamus:
-          "${dictResult}"
+Hasil kamus:
+"${dictResult}"
 
-          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
-          `
+Tugas:
+- Gunakan hasil kamus sebagai dasar
+- Susun ulang sesuai aturan bahasa
+- Jangan hilangkan arti
+- Jangan tambah arti baru
+
+Output hanya 1 kalimat.
+`
         }
       ],
-      temperature: 0.3
+      temperature: 0.2
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
@@ -6481,7 +6590,6 @@ function translateFromVoice(text){
     throw err;
   }
 }
-
   // ======================
   // 🔤 countAllVocabulary: hitung total kosakata di DICT
   // ======================
@@ -6952,6 +7060,26 @@ if (SpeechRecognition) {
   recognition.interimResults = false;
 }
 
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+// =================
+// muncul kalau scroll ke bawah
+// =================
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+// klik → scroll ke atas halus
+scrollBtn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
   // ======================
   // 🚀 initUI: tombol & alur translate (kamus → optional GPT)
   // ======================
@@ -6969,43 +7097,26 @@ if (SpeechRecognition) {
     
       const dir = ($('direction')?.value) || 'id-to-ter';
     
-      // 🔥 1. hasil kamus dulu (WAJIB untuk konteks AI)
-      const hasilKamus = translateWithMap(raw, dir);
-    
     // 🔥 tetap ambil input asli
-    let finalText = raw;
+    let hasilKamus = translateWithMap(raw, dir);
+    let hasilAkhir = hasilKamus;
 
     if($('useAI').checked){
-    try{
-        const corrected = await callOpenAIcorrect(
-        raw,
-        hasilKamus,
-        dir
-        );
-
-        finalText = corrected;
-
-        // ✅ LOG LEBIH JELAS (SESUAI PERMINTAANMU)
-        $('log').textContent =
-        `📝 Asli: ${raw}\n` +
-        `✨ Perbaikan: ${corrected}`;
-
-    }catch(err){
-        finalText = raw;
+      try{
+        hasilAkhir = await callOpenAIcorrect(raw, hasilKamus, dir);
 
         $('log').textContent =
-        `⚠️ GPT sibuk\n` +
-        `📝 Pakai kalimat asli: ${raw}`;
-    }
+          `📝 Asli: ${raw}\n` +
+          `✨ AI: ${hasilAkhir}`;
 
+      }catch(err){
+        hasilAkhir = hasilKamus;
+        $('log').textContent = '⚠️ AI gagal, pakai kamus';
+      }
     }else{
-    $('log').textContent = 'Mode tanpa AI (langsung kamus)';
+      $('log').textContent = 'Mode kamus';
     }
 
-    // 🔥 WAJIB: translate ulang dari hasil final (INI KUNCI FIX)
-    const hasilAkhir = translateWithMap(finalText, dir);
-
-    // ✅ OUTPUT sekarang pasti bahasa daerah
     $('outputText').value = hasilAkhir;
     });
     
