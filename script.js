@@ -841,7 +841,7 @@
         {"ind":"lompat","ter":"mahega","makian": "", "galela": "mu'umo","img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/09140019/Ini-Teknik-Dasar-Lompat-Jauh-dan-Tips-Terhindar-dari-Cedera.jpg"},
         {"ind":"loncat","ter":"mahega","makian": "", "galela": "mu'umo","img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/09140019/Ini-Teknik-Dasar-Loncat-Jauh-dan-Tips-Terhindar-dari-Cedera.jpg"},
         {"ind":"duduk","ter":"tego", "makian": "batalon", "galela": "dogoge","img":"https://static.honestdocs.id/450x400/webp/system/blog_articles/main_hero_images/000/004/573/original/iStock-1137312447_%281%29.jpg"},
-        {"ind":"berdiri","ter":"ngadeg", "makian": "wosal", "galela": "oko","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpBvDB-TdnoQLuiEWIk_f_wQn8axkyygSZUA&s"},
+        {"ind":"berdiri","ter":"ngadeg", "makian": "wosal", "galela": "koko","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpBvDB-TdnoQLuiEWIk_f_wQn8axkyygSZUA&s"},
         {"ind":"merangkak","ter":"ngretek","makian": "isin", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIfm8f2dFWUnnbDQPeU8iWZKiUXqLxp90hVJQkTnwLYzAtXH4H4s6wN8l7w3FRcnq1T4&usqp=CAU"},
         {"ind":"membungkuk","ter":"fugu","makian": "fugu", "galela": "","img":"https://res.cloudinary.com/dk0z4ums3/image/upload/v1636041548/attached_image/kyphosis.jpg"},
         {"ind":"naik","ter":"fere","makian": "so", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmianqQgIA0LQmEY7F13LU6KXEKumjBQYBQ&s"},
@@ -6399,21 +6399,34 @@ function translateFromVoice(text){
           6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
           7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
 
-          ATURAN PENTING:
-          SELALU UTAMAKAN KATA/ KALIMAT BERISI KETERANGAN/PENTING DULU BARU DI LANJUTKAN KATA / KALIMAT SETELAHNYA 
-          contoh: 
-          meme: ibu
-          tomi rio: membantu
-          jadi
-          id: membantu ibu
-          output ter/makian/galela: meme tomi rio
           
           contoh:
           input: "jalan baru itu banyak debu
           output: "ngoko sungi ge dofu fika" 
 
-          input: BERISI angka+ BERISI kata/kalimat
-          output: BERISI kata/kalimat + ngai + BERISI angka
+          PENTING (IMBUHAN BAHASA DAERAH):
+          Jika ada kata yang mengandung imbuhan seperti:
+          "o", "i", "ai", "da", "dha", "k", "n"
+
+          MAKA:
+          - Cari kata dasarnya
+          - Anggap imbuhan itu hanya variasi bentuk kata
+          - JANGAN ubah arti kata dasar
+
+          CONTOH:
+          fala = rumah
+          o fala =  rumah
+          i fala = = rumah
+          fala ni =  rumah
+
+          input: ""
+
+          Output:
+          - hanya 1 kalimat terbaik
+          - alami
+          - sesuai konteks
+
+
           `
         },
         {
