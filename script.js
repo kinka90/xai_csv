@@ -1620,6 +1620,7 @@
         {"ind":"tapi","ter":"tapi","makian": "mai", "galela": "duma"},
         {"ind":"bilamana","ter":"lan","makian": "", "galela": "nako so"},
         {"ind":"atau","ter":"atawa","makian": "utawa", "galela": "eko"},
+        {"ind":"dan","ter":"se","makian": "lo", "galela": "de"},
         {"ind":"tetapi","ter":"tatapi","makian": "mai", "galela": "duma"},
         {"ind":"karena","ter":"amarga","makian": "", "galela": "sababu"},
         {"ind":"jika","ter":"kalu","makian": "", "galela": "nako so"},
@@ -6363,10 +6364,6 @@ function translateFromVoice(text){
           PENTING (IMBUHAN BAHASA DAERAH):
           Jika ada kata yang mengandung imbuhan seperti:
           "o", "i", "ai", "da", "dha", "k", "n", "se", "ma"
-
-          "se"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba se yaya" - bahasa ternate
-          "lo"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba lo mama" - bahasa makian
-          "de"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba de meme" - bahasa galela
 
           MAKA:
           - Cari kata dasarnya
