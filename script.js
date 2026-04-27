@@ -6372,7 +6372,7 @@ function translateFromVoice(text){
   // 🧠 callOpenAIcorrect: minta GPT perbaiki TATA KALIMAT (bukan terjemahan ulang)
   // mengirim teks hasil kamus, menerima teks yang diperbaiki
   // ======================
-async function callOpenAIcorrect(originalText, dictResult, direction){
+ async function callOpenAIcorrect(originalText, dictResult, direction){
   if(!dictResult) return dictResult;
 
   try{
@@ -6382,78 +6382,50 @@ async function callOpenAIcorrect(originalText, dictResult, direction){
         {
           role: 'system',
           content: `
-Kamu adalah AI penyusun kalimat khusus BAHASA GALELA ↔ INDONESIA.
+          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
 
-Tugas:
-Merapikan hasil kamus agar menjadi kalimat yang benar, alami, dan sesuai struktur bahasa GALELA atau INDONESIA.
+          Aturan:
+          1. Perbaiki hasil terjemahan agar alami
+          2. Pahami konteks kalimat secara keseluruhan
+          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
+          4. Pilih arti kata yang paling tepat berdasarkan konteks
+          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
+          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
+          7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
 
-========================
-🔥 ATURAN UTAMA
-========================
-1. JANGAN terjemahkan ulang
-2. HANYA susun ulang kalimat
-3. Gunakan hasil kamus sebagai dasar
-4. Jangan hapus kata penting
-5. Jangan menambah kata baru tanpa alasan konteks
+          ATURAN PENTING:
+          SELALU UTAMAKAN KATA/ KALIMAT BERISI KETERANGAN/PENTING DULU BARU DI LANJUTKAN KATA / KALIMAT SETELAHNYA 
+          contoh: 
+          meme: ibu
+          tomi rio: membantu
+          jadi
+          id: membantu ibu
+          output ter/makian/galela: meme tomi rio
+          
+          contoh:
+          input: "jalan baru itu banyak debu
+          output: "ngoko sungi ge dofu fika" 
 
-========================
-🌊 STRUKTUR GALELA (WAJIB)
-========================
-- Urutan: SUBJEK → AKSI → OBJEK → KETERANGAN → ANGKA
-- Informasi penting selalu di depan
-
-Contoh:
-"saya melihat ikan merah 20"
-→ "ngohi takelelo o nao da susawala ngai 20"
-
-========================
-🔢 ATURAN ANGKA
-========================
-- Angka selalu di AKHIR informasi objek
-- Gunakan "ngai" sebelum angka
-
-Contoh:
-"ikan 20"
-→ "o nao ngai 20"
-
-========================
-❌ NEGASI
-========================
-- selalu di akhir
-"bisa tidak" → "dadi ua"
-
-========================
-🌍 KE INDONESIA
-========================
-- ubah ke S-P-O-K normal
-- hilangkan: ngai, da, o, yo, i, ai, mi
-- gabungkan angka ke bentuk Indonesia:
-  "moriha de motoha" → "45"
-
-========================
-🎯 OUTPUT
-========================
-- HANYA kalimat akhir
-- tanpa penjelasan
-- tanpa tambahan teks
+          input: BERISI angka+ BERISI kata/kalimat
+          output: BERISI kata/kalimat + ngai + BERISI angka
           `
         },
         {
           role: 'user',
           content: `
-Arah: ${direction}
+          Arah terjemahan: ${direction}
 
-Kalimat asli:
-"${originalText}"
+          Kalimat asli:
+          "${originalText}"
 
-Hasil kamus:
-"${dictResult}"
+          Hasil dari kamus:
+          "${dictResult}"
 
-Susun ulang sesuai aturan Galela ↔ Indonesia.
+          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
           `
         }
       ],
-      temperature: 0.2
+      temperature: 0.4
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
