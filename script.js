@@ -627,7 +627,6 @@
         {"ind":"musik","ter":"musik","makian": "", "galela": "","img":"https://indonesiakaya.com/wp-content/uploads/2020/10/arababu_1200.jpg"},
         {"ind":"adat","ter":"adat","makian": "", "galela": "","img":"https://halmaherapost.com/wp-content/uploads/2022/02/IMG-20220219-WA0013.jpg"},
         {"ind":"kain tradisonal","ter":"","makian": "", "galela": "","img":"https://cdn.news.com/cache/1200x800/2022/08/11/Batik-Tubo-khas-Malut.jpg"},
-        {"ind":"pesta","ter":"rame","makian": "ramean", "galela": "","img":"https://awsimages.detik.net.id/content/2013/03/25/1049/legugam.jpg"},
         {"ind":"upacara","ter":"upacara","makian": "", "galela": "","img":"https://cdn.news.com/cache/1200x800/2024/03/27/Kesultanan-Ternate-gelar-ritual-Kabasarang-Uci-ke-15-Ramadhan-2632024-ans-2.jpg"},
         {"ind":"tradisional","ter":"tradisional","makian": "", "galela": "","img":"https://awsimages.detik.net.id/community/media/visual/2023/12/15/keindahan-anak-anak-di-timur-ri-menarikan-cakalele-9_169.jpeg?w=700&q=90"},
         {"ind":"lagu","ter":"lagu","makian": "", "galela": "","img":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTOHmuEsdB6QH6wCBDpxNrZ5MGFBxfvHpV0kDv_GkdtoAFp6Lp-TjSg0GQ_l5z-pkjM0_cc7GHoeA1Lkibz19OVbdJr58G3Hi5I61_I_N3iuE5b255H4BfoW0s3EvEF5mRteAiCqvJPBE/w0/Bambu+Hitada.jpg"},
@@ -2042,7 +2041,7 @@
         {"ind":"beras ketan","ter":"","makian": "pulo", "galela": ""},
         {"ind":"beras jagung","ter":"","makian": "kai", "galela": ""},
         {"ind":"berewok","ter":"","makian": "paramasan", "galela": "parasi"},
-        {"ind":"betina","ter":"foheka","makian": "papa", "galela": "bedheka"},
+        {"ind":"betina","ter":"heka","makian": "papa", "galela": "bedheka"},
         {"ind":"betapa","ter":"","makian": "", "galela": "i'cara'wa"},
         {"ind":"betapapun","ter":"","makian": "", "galela": "ngaroko"},
         {"ind":"bidik","ter":"","makian": "", "galela": "meta"},
@@ -2946,7 +2945,7 @@
         {"ind":"jangkau","ter":"","makian": "", "galela": "doa'ie"},
         {"ind":"jangkau ke atas","ter":"","makian": "", "galela": "doa'ie"},
         {"ind":"jangkau ke depan","ter":"","makian": "", "galela": "toa'ka"},
-        {"ind":"jantan","ter":"nunau","makian": "jago", "galela": "nau"},
+        {"ind":"jantan","ter":"nau","makian": "jago", "galela": "nau"},
         {"ind":"jingkrak","ter":"mamahega","makian": "", "galela": ""},
         {"ind":"jasad","ter":"","makian": "", "galela": "rohe"},
         {"ind":"jatah","ter":"","makian": "", "galela": "bobula"},
@@ -4620,7 +4619,6 @@
         {"ind":"penjara","ter":"bui","makian": "", "galela": ""},
         {"ind":"pembunuhan","ter":"koru-koru","makian": "", "galela": "do'oma"},
         {"ind":"pembunuh","ter":"koru koru","makian": "", "galela": "do'oma"},
-        {"ind":"partner","ter":"dagimoi","makian": "", "galela": ""},
         {"ind":"pendidikan","ter":"","makian": "", "galela": "doto"},
         {"ind":"penanda","ter":"","makian": "klongo", "galela": ""},
         {"ind":"pendatang","ter":"","makian": "", "galela": "tatagi'no"},
@@ -5142,7 +5140,7 @@
         {"ind":"selang","ter":"","makian": "", "galela": "ma'deka"},
         {"ind":"selaras","ter":"","makian": "", "galela": "ma'ketero"},
         {"ind":"serdawa","ter":"","makian": "galeit", "galela": ""},
-        {"ind":"selesai","ter":"kanang ne","makian": "o'kit", "galela": "bolo'ka"},
+        {"ind":"selesai","ter":"kanang","makian": "o'kit", "galela": "bolo'ka"},
         {"ind":"selingkuh","ter":"","makian": "masola", "galela": "sala"},
         {"ind":"selisih","ter":"matero ua","makian": "", "galela": "so'ohu"},
         {"ind":"selubung","ter":"jahe jahe","makian": "", "galela": ""},
@@ -6393,7 +6391,7 @@ function translateFromVoice(text){
           `
         }
       ],
-      temperature: 0.4
+      temperature: 0.3
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
