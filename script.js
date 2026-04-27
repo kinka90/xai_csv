@@ -5966,14 +5966,17 @@
     Object.values(DICT).forEach(themes=>{
       Object.values(themes).forEach(list=>{
         list.forEach(it=>{
-          const ind = (it.ind||'').toLowerCase();
-          if(!ind) return;
-          if(it.ter) maps["id-to-ter"].set(ind, it.ter);
-          if(it.ter) maps["ter-to-id"].set((it.ter||'').toLowerCase(), it.ind);
-          if(it.makian) maps["id-to-makian"].set(ind, it.makian);
-          if(it.makian) maps["makian-to-id"].set((it.makian||'').toLowerCase(), it.ind);
-          if(it.galela) maps["id-to-galela"].set(ind, it.galela);
-          if(it.galela) maps["galela-to-id"].set((it.galela||'').toLowerCase(), it.ind);
+        const ind = normalizeTextForLookup(it.ind);
+        if(!ind) return;
+
+        if(it.ter) maps["id-to-ter"].set(ind, it.ter);
+        if(it.ter) maps["ter-to-id"].set(normalizeTextForLookup(it.ter), it.ind);
+
+        if(it.makian) maps["id-to-makian"].set(ind, it.makian);
+        if(it.makian) maps["makian-to-id"].set(normalizeTextForLookup(it.makian), it.ind);
+
+        if(it.galela) maps["id-to-galela"].set(ind, it.galela);
+        if(it.galela) maps["galela-to-id"].set(normalizeTextForLookup(it.galela), it.ind);
         });
       });
     });
@@ -6291,12 +6294,15 @@ function translateWithMap(text, dir){
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
 
-      if(dict.has(phrase)){
-        out.push(dict.get(phrase));
+      const key = normalizeTextForLookup(phrase);
+
+      if(dict.has(key)){
+        out.push(dict.get(key));
         i += len;
         matched = true;
         break;
       }
+
     }
 
     if(matched) continue;
@@ -6918,26 +6924,27 @@ if (SpeechRecognition) {
   recognition.interimResults = false;
 }
 
-const scrollBtn = document.getElementById("scrollTopBtn");
-
 // =================
 // muncul kalau scroll ke bawah
 // =================
-window.onscroll = function() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
-  }
-};
+const scrollBtn = document.getElementById("scrollTopBtn");
 
-// klik → scroll ke atas halus
-scrollBtn.onclick = function() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
+if(scrollBtn){
+  window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  scrollBtn.onclick = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+}
   // ======================
   // 🚀 initUI: tombol & alur translate (kamus → optional GPT)
   // ======================
