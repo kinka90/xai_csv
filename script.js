@@ -6435,7 +6435,7 @@ function translateFromVoice(text){
           `
         }
       ],
-      temperature: 0.1
+      temperature: 0.3
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
@@ -6514,7 +6514,6 @@ function detectDuplicateVocabulary(){
     .filter(([_, count]) => count > 1)
     .map(([word, count]) => ({ word, count }));
 }
-
 
 function renderVocabularyStats(){
   const total = countAllVocabulary();
