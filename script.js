@@ -11,6 +11,7 @@
         {"ind":"keluarga","ter":"ahlii sedihutu","makian":"ahali","galela":"duhutu","img":"https://img.freepik.com/premium-photo/3d-illustration-cartoon-character-with-happy-expression-his-face_1057-44581.jpg?w=360"},
         {"ind":"ayah","ter":"baba","makian":"baba","galela":"baba","img":"https://img.freepik.com/premium-photo/3d-illustration-cartoon-character-with-happy-expression-his-face_1057-44581.jpg?w=360"},
         {"ind":"ibu","ter":"yaya","makian":"mama","galela":"awa","img":"https://img.freepik.com/free-photo/celebration-labour-day-with-3d-cartoon-portrait-working-woman_23-2151306628.jpg?semt=ais_hybrid&w=740&q=80"},
+        {"ind":"ibu","ter":"yaya","makian":"ma","galela":"meme"},
         {"ind":"orang tua","ter":"mancia","makian":"bau-baui","galela":"dihimo","img":"https://marketplace.canva.com/4aiT4/MAGid44aiT4/1/tl/canva-happy-cartoon-boy-drawing-outdoors-MAGid44aiT4.jpg"},
         {"ind":"anak","ter":"ngofa","makian":"mtu","galela":"ngopa","img":"https://marketplace.canva.com/4aiT4/MAGid44aiT4/1/tl/canva-happy-cartoon-boy-drawing-outdoors-MAGid44aiT4.jpg"},
         {"ind":"anak laki-laki","ter":"ngofa nunau","makian":"mtu mon","galela":"ngopa yanau","img":"https://png.pngtree.com/png-clipart/20250119/original/pngtree-3d-animated-boy-character-with-cool-outfit-and-energetic-pose-png-image_19860542.png"},
@@ -1006,9 +1007,9 @@
         {"ind":"biru","ter":"balao","makian": "balao", "galela": "dha bisi"},
         {"ind":"kuning","ter":"kuraci","makian": "makninis", "galela": "dha kukurati"},
         {"ind":"hijau","ter":"ijo","makian": "ijo", "galela": "dha'bobole ma'soka"},
-        {"ind":"hitam","ter":"kokotu","makian": "kuda", "galela": "da tata'ro"},
+        {"ind":"hitam","ter":"kokotu","makian": "kuda", "galela": "dha tata'ro"},
         {"ind":"hitam legam","ter":"","makian": "burat", "galela": ""},
-        {"ind":"putih","ter":"bubudo","makian": "bulang", "galela": ""},
+        {"ind":"putih","ter":"bubudo","makian": "bulang", "galela": "dha are"},
         {"ind":"abu-abu","ter":"fika-fika","makian": "tat'tapin", "galela": "da kakapo"},
         {"ind":"cokelat","ter":"coklat","makian": "kakao", "galela": "dha sokulati"},
         {"ind":"jingga","ter":"jingga","makian": "jingga", "galela": "dha'jijiga"},  
@@ -1361,8 +1362,8 @@
         {"ind":"tujuh puluh","ter":"nyagi tomdi","makian": "", "galela": "moritomudingi"},
         {"ind":"delapan puluh","ter":"nyagi tofkange","makian": "", "galela": "moritupa'ange"},
         {"ind":"sembilan puluh","ter":"satus siji","makian": "", "galela": ""},
-        {"ind":"seratus","ter":"ratumoi","makian": "utin", "galela": ""},
-        {"ind":"seratus ribu","ter":"cala ratu moi","makian": "", "galela": ""},
+        {"ind":"seratus","ter":"ratumoi","makian": "utin", "galela": "ratumoi"},
+        {"ind":"seratus ribu","ter":"cala ratu moi","makian": "", "galela": "cala ratu moi"},
         {"ind":"empat ratus","ter":"","makian": "untihot", "galela": ""},
         {"ind":"enam ratus","ter":"","makian": "utim wonam", "galela": ""},
         {"ind":"delapan ratus","ter":"ratu tofkange","makian": "", "galela": "ratu tupa'ange"},
@@ -3849,7 +3850,7 @@
         {"ind":"menghitung","ter":"","makian": "yohan", "galela": "eto"},
         {"ind":"mengigau","ter":"utumurafo","makian": "babbuh", "galela": "tumurafu"},
         {"ind":"mengikat","ter":"","makian": "bali", "galela": "piliku"},
-        {"ind":"mengikuti","ter":"mote","makian": "itumo", "galela": "momote"},
+        {"ind":"mengikuti","ter":"mote","makian": "itumo", "galela": "i mote-mote"},
         {"ind":"mengikuti pendapat","ter":"mote ma demo","makian": "", "galela": "si'mote"},
         {"ind":"mengingat","ter":"","makian": "milnga", "galela": ""},
         {"ind":"mengikis","ter":"","makian": "", "galela": "kiroi"},
@@ -5425,8 +5426,6 @@
         {"ind":"tanding","ter":"lawang","makian": "", "galela": "kokitlho"},
         {"ind":"tanda lahir","ter":"","makian": "tada", "galela": ""},
         {"ind":"tandan","ter":"hutu moi","makian": "gominye", "galela": ""},
-        {"ind":"tandas","ter":"moi","makian": "", "galela": ""},
-        {"ind":"taufan","ter":"ratu","makian": "", "galela": ""},
         {"ind":"tanduk","ter":"matadu","makian": "tadik", "galela": "tadu"},
         {"ind":"tandu","ter":"doi doi","makian": "", "galela": ""},
         {"ind":"tangga","ter":"ngute","makian": "lowan", "galela": "ngute"},
@@ -6005,19 +6004,25 @@
   }
 
 // =====================================================================================
-// number parsing: kalau inputnya angka, atau teks angka (contoh: "dua belas"), parse jadi angka
+// 🔢 UTIL: DETEKSI ANGKA DIGIT
 // =====================================================================================
 function isNumberInput(text){
   text = text.replace(/\s+/g, ' ').trim();
-  return /^\d+$/.test(text.trim());
+  return /^\d+$/.test(text);
 }
 
+// =====================================================================================
+// 🔢 MAP ANGKA INDONESIA
+// =====================================================================================
 const indoNumberMap = {
-  "nol":0,"satu":1,"dua":2,"tiga":3,"empat":4,
-  "lima":5,"enam":6,"tujuh":7,"delapan":8,"sembilan":9,
-  "sepuluh":10,"sebelas":11
+  nol:0, satu:1, dua:2, tiga:3, empat:4,
+  lima:5, enam:6, tujuh:7, delapan:8, sembilan:9,
+  sepuluh:10, sebelas:11
 };
 
+// =====================================================================================
+// 🔢 INDONESIA (TEKS) → ANGKA
+// =====================================================================================
 function wordsToNumber(text){
   text = normalizeTextForLookup(text);
 
@@ -6025,443 +6030,302 @@ function wordsToNumber(text){
     return indoNumberMap[text];
   }
 
-  // contoh: dua belas
+  // 12–19
   if(text.includes("belas")){
-    const satuan = text.replace(" belas","").trim();
+    const satuan = text.replace("belas","").trim();
     return 10 + (indoNumberMap[satuan] || 0);
   }
 
-  // contoh: dua puluh dua
+  // 20–99
   if(text.includes("puluh")){
     const [puluh, satuan] = text.split("puluh").map(s=>s.trim());
-    return (indoNumberMap[puluh]*10) + (indoNumberMap[satuan]||0);
+    return (indoNumberMap[puluh] * 10) + (indoNumberMap[satuan] || 0);
   }
 
   return null;
 }
 
+// =====================================================================================
+// 🌍 ANGKA → BAHASA DAERAH
+// =====================================================================================
 function convertNumberToLocal(num, lang){
 
   const satuan = {
     ter: ["","rimoi","romdidi","raange","raha","ramtoha","rara","tomdi","tofkange","sio"],
     makian: ["","pso","plu","ptol","phot","plim","pwonam","phit","pwal","psiwo"],
-    galela: ["","moi","sinoto","sa'ange","iha","motoha","butanga","tumudingi","tupa'ange","sio"]
+    galela: ["","moi","sinoto","saange","iha","motoha","butanga","tumudingi","tupaange","sio"]
   };
 
-  const join = {
-    ter: " se ",
-    makian: " lo ",
-    galela: " de "
-  };
+  const join = { ter:" se ", makian:" lo ", galela:" de " };
+  const belas = { ter:"nyagimoi", makian:"yohaso", galela:"mogiowo" };
+  const puluh = { ter:"nyagi", makian:"yoha", galela:"mori" };
+  const ratus = { ter:"ratu", makian:"utin", galela:"ratu" };
+  const ribu  = { ter:"cala", makian:"calan", galela:"cala" };
 
-  const belas = {
-    ter: "nyagimoi",
-    makian: "yohaso",
-    galela: "mogiowo"
-  };
+  // 0–9
+  if(num < 10) return satuan[lang][num];
 
-  const puluh = {
-    ter: "nyagi",
-    makian: "yoha",
-    galela: "mori"
-  };
-
-  const ratus = {
-    ter: "ratu",
-    makian: "utin",
-    galela: "ratu"
-  };
-
-  const ribu = {
-    ter: "cala",
-    makian: "calan",
-    galela: "cala"
-  };
-
-  // 🔹 0–9
-  if(num < 10){
-    return satuan[lang][num];
-  }
-
-  // 🔹 10
+  // 10
   if(num === 10){
-    return {
-      ter: "nyagi moi",
-      makian: "awoinye",
-      galela: "mori moi"
-    }[lang];
+    return { ter:"nyagi moi", makian:"awoinye", galela:"mori moi" }[lang];
   }
 
-  // 🔹 11 (khusus)
+  // 11
   if(num === 11){
-    return {
-      ter: "nyagimoi se rimoi",
-      makian: "aunye lo minye",
-      galela: "mogiowo"
-    }[lang];
+    return { ter:"nyagimoi se rimoi", makian:"aunye lo minye", galela:"mogiowo" }[lang];
   }
 
-  // 🔹 12–19
+  // 12–19
   if(num < 20){
     return belas[lang] + join[lang] + satuan[lang][num-10];
   }
 
-  // 🔹 20–99
+  // 20–99
   if(num < 100){
 
     if(lang === "galela"){
       const puluhMap = {
-        2: "monahalo",
-        3: "moruange",
-        4: "moruha",
-        5: "moritoha",
-        6: "moributanga",
-        7: "moritumudingi",
-        8: "moritupa'ange",
-        9: "morisio"
+        2:"monahalo",3:"moruange",4:"moruha",5:"moritoha",
+        6:"moributanga",7:"moritumudingi",8:"moritupaange",9:"morisio"
       };
 
       const p = Math.floor(num/10);
       const s = num % 10;
 
       let hasil = puluhMap[p] || "";
-
-      if(s !== 0){
-        hasil += " de " + satuan[lang][s];
-      }
+      if(s !== 0) hasil += " de " + satuan[lang][s];
 
       return hasil;
     }
 
-    // default bahasa lain
     const p = Math.floor(num/10);
     const s = num % 10;
 
     let hasil = puluh[lang] + " " + satuan[lang][p];
-
-    if(s !== 0){
-      hasil += join[lang] + satuan[lang][s];
-    }
+    if(s !== 0) hasil += join[lang] + satuan[lang][s];
 
     return hasil;
   }
 
-  // 🔹 100–999
+  // 100–999
   if(num < 1000){
     const r = Math.floor(num/100);
     const sisa = num % 100;
 
-    if(lang === "galela"){
-      let hasil = "ratu " + satuan[lang][r];
-
-      if(sisa !== 0){
-        hasil += " de " + convertNumberToLocal(sisa, lang);
-      }
-
-      return hasil;
-    }
-
-    // default
     let hasil = ratus[lang] + " " + satuan[lang][r];
 
     if(sisa !== 0){
-      hasil += join[lang] + convertNumberToLocal(sisa, lang);
+      hasil += (lang === "galela" ? " de " : join[lang]) + convertNumberToLocal(sisa, lang);
     }
 
     return hasil;
   }
 
-  // 🔹 1000–999999
-if(num < 1000000){
-  const rib = Math.floor(num/1000);
-  const sisa = num % 1000;
+  // 1000+
+  if(num < 1000000){
+    const rib = Math.floor(num/1000);
+    const sisa = num % 1000;
 
-  if(lang === "galela"){
-    let hasil = "cala " + satuan[lang][rib];
+    let hasil = ribu[lang] + " " + convertNumberToLocal(rib, lang);
 
     if(sisa !== 0){
-      hasil += " de " + convertNumberToLocal(sisa, lang);
+      hasil += (lang === "galela" ? " de " : join[lang]) + convertNumberToLocal(sisa, lang);
     }
 
     return hasil;
   }
-
-  // default
-  let hasil = "";
-
-  if(rib < 10){
-    hasil = ribu[lang] + " " + satuan[lang][rib];
-  } else if(rib < 100){
-    hasil = ribu[lang] + " " + puluh[lang] + " " + satuan[lang][Math.floor(rib/10)];
-  } else {
-    hasil = ribu[lang] + " " + convertNumberToLocal(rib, lang);
-  }
-
-  if(sisa !== 0){
-    hasil += join[lang] + convertNumberToLocal(sisa, lang);
-  }
-
-  return hasil;
-}
 
   return num.toString();
 }
- 
 
-function localToNumber(text, lang){
+function convertLocalToNumber(text, lang){
   text = normalizeTextForLookup(text);
 
   const satuanMap = {
-    ter: {
-      rimoi:1, romdidi:2, raange:3, raha:4, ramtoha:5,
-      rara:6, tomdi:7, tofkange:8, sio:9
-    },
-    makian: {
-      so:1, lu:2, tol:3, hot:4, lim:5,
-      wonam:6, hit:7, wal:8, siwo:9
-    },
-    galela: {
-      moi:1, sinoto:2, saange:3, iha:4, motoha:5,
-      butanga:6, tumudingi:7, tupaange:8, sio:9
-    }
+    ter:{ rimoi:1, romdidi:2, raange:3, raha:4, ramtoha:5, rara:6, tomdi:7, tofkange:8, sio:9 },
+    makian:{ pso:1, plu:2, ptol:3, phot:4, plim:5, pwonam:6, phit:7, pwal:8, psiwo:9 },
+    galela:{ moi:1, sinoto:2, saange:3, iha:4, motoha:5, butanga:6, tumudingi:7, tupaange:8, sio:9 }
   };
 
-  const puluhMap = {
-    ter: "nyagi",
-    makian: "yoha",
-    galela: "mori"
-  };
+  const puluhWord = { ter:"nyagi", makian:"yoha", galela:"mori" };
+  const joinWord = { ter:"se", makian:"lo", galela:"de" };
 
-  const joinWord = {
-    ter: "se",
-    makian: "lo",
-    galela: "de"
-  };
+  const tokens = text.split(" ").filter(Boolean);
 
-  const tokens = text.split(" ");
+  let total = 0;
+  let i = 0;
 
-  // 🔹 1 kata (satuan)
-  if(tokens.length === 1){
-    return satuanMap[lang][tokens[0]] || null;
-  }
+  while(i < tokens.length){
 
-  // 🔹 10 (nyagi moi, yoha so, dll)
-  if(tokens.length === 2 && tokens[0] === puluhMap[lang]){
-    return 10;
-  }
+    // 🔥 PULUH
+    if(tokens[i] === puluhWord[lang]){
+      if(!satuanMap[lang][tokens[i+1]]) return null; // ❗ strict
+      let val = satuanMap[lang][tokens[i+1]] * 10;
+      i += 2;
 
-  // 🔹 20–99 (puluh)
-  if(tokens[0] === puluhMap[lang]){
-    const puluh = satuanMap[lang][tokens[1]] || 0;
+      if(tokens[i] === joinWord[lang]){
+        if(!satuanMap[lang][tokens[i+1]]) return null; // ❗ strict
+        val += satuanMap[lang][tokens[i+1]];
+        i += 2;
+      }
 
-    let satuan = 0;
-    if(tokens.includes(joinWord[lang])){
-      const idx = tokens.indexOf(joinWord[lang]);
-      satuan = satuanMap[lang][tokens[idx+1]] || 0;
+      total += val;
+      continue;
     }
 
-    return puluh * 10 + satuan;
+    // 🔹 SATUAN
+    if(satuanMap[lang][tokens[i]]){
+      total += satuanMap[lang][tokens[i]];
+      i++;
+      continue;
+    }
+
+    // ❌ kalau ada kata bukan angka → langsung gagal
+    return null;
   }
 
-  return null;
+  return total;
 }
 
+
+// =====================================================================================
+// 🔍 DETEKSI ANGKA DALAM KALIMAT
+// =====================================================================================
+function tryParseLocalNumber(tokens, startIndex, lang){
+
+  let bestMatch = null;
+  const maxLen = Math.min(10, tokens.length - startIndex);
+
+  for(let len = 1; len <= maxLen; len++){
+
+    const phrase = tokens.slice(startIndex, startIndex + len).join(" ");
+    const num = convertLocalToNumber(phrase, lang);
+
+    if(num !== null){
+      bestMatch = {
+        value: num,
+        length: len
+      };
+    }
+    // ❗ JANGAN break
+  }
+
+  return bestMatch;
+}
+
+// =====================================================================================
+// 🔢 ANGKA → INDONESIA
+// =====================================================================================
 function numberToIndo(num){
   const angka = ["nol","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan"];
 
   if(num < 10) return angka[num];
-
   if(num === 10) return "sepuluh";
   if(num === 11) return "sebelas";
 
-  if(num < 20){
-    return angka[num-10] + " belas";
-  }
+  if(num < 20) return angka[num-10] + " belas";
 
   if(num < 100){
     const p = Math.floor(num/10);
     const s = num % 10;
 
-    let hasil = angka[p] + " puluh";
-    if(s !== 0){
-      hasil += " " + angka[s];
-    }
-    return hasil;
+    return angka[p] + " puluh" + (s ? " " + angka[s] : "");
   }
 
   return num.toString();
 }
 
-  // ======================
-  // 🔤 translateWithMap: cari frasa terpanjang dulu (multi kata/frasa)
-  // dir: salah satu keys di maps
-  // ======================
-  // 🔥 HANDLE ANGKA
-  function translateWithMap(text, dir){
-    if(!text) return "";
+// =====================================================================================
+// 🧠 TRANSLATOR UTAMA
+// =====================================================================================
+function translateWithMap(text, dir){
+  if(!text || text.trim() === "") return "";
 
-  // normalisasi dulu
   text = normalizeTextForLookup(text);
 
-  // ======================
-  // 🔥 REVERSE ANGKA (LOCAL → INDONESIA)
-  // ======================
-  let lang = null;
+  let lang = dir.includes("ter") ? "ter" :
+             dir.includes("makian") ? "makian" :
+             dir.includes("galela") ? "galela" : null;
 
-  if(dir.includes("ter")) lang = "ter";
-  else if(dir.includes("makian")) lang = "makian";
-  else if(dir.includes("galela")) lang = "galela";
+  const dict = maps[dir] || new Map();
+  const tokens = text.split(/\s+/);
 
-  if(lang){
-    const numLocal = localToNumber(text, lang);
-    if(numLocal !== null){
-      return numberToIndo(numLocal);
+  let out = [];
+  let i = 0;
+
+  while(i < tokens.length){
+
+    // 🔥 LOCAL → INDONESIA (DALAM KALIMAT)
+    if(dir.includes("to-id") && lang){
+      const parsed = tryParseLocalNumber(tokens, i, lang);
+
+      if(parsed){
+        out.push(numberToIndo(parsed.value));
+        i += parsed.length;
+        continue;
+      }
     }
-  }
 
-  // 🔥 ANGKA LANGSUNG (123)
-  if(isNumberInput(text)){
-    const num = parseInt(text);
-
-    if(dir.includes("ter")) return convertNumberToLocal(num, "ter");
-    if(dir.includes("makian")) return convertNumberToLocal(num, "makian");
-    if(dir.includes("galela")) return convertNumberToLocal(num, "galela");
-  }
-
-  // 🔥 ANGKA DALAM HURUF (dua belas)
-  const numFromWord = wordsToNumber(text);
-  if(numFromWord !== null){
-    if(dir.includes("ter")) return convertNumberToLocal(numFromWord, "ter");
-    if(dir.includes("makian")) return convertNumberToLocal(numFromWord, "makian");
-    if(dir.includes("galela")) return convertNumberToLocal(numFromWord, "galela");
-  }
-
-    if(!text) return "";
-    const dict = maps[dir] || new Map();
-
-    // normalisasi
-    text = normalizeTextForLookup(text);
-
-    // token = kata (jaga tanda hubung sebagai satu unit)
-    const tokens = text.split(/\s+/);
-    let out = [], i = 0;
-
-    while(i < tokens.length){
-    let match = null, matchLen = 0;
-
-    // ======================
-    // 🔥 CEK ANGKA (MULTI KATA)
-    // ======================
+    let matched = false;
     const maxLen = Math.min(15, tokens.length - i);
 
+    // 🔥 INDONESIA → LOCAL
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
-
       const num = wordsToNumber(phrase);
+
       if(num !== null){
-        let hasilAngka = null;
-
-        if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
-        else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
-        else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
-
-        if(hasilAngka){
-          out.push(hasilAngka);
+        const hasil = convertNumberToLocal(num, lang);
+        if(hasil){
+          out.push(hasil);
           i += len;
-          match = true;
+          matched = true;
           break;
         }
       }
     }
 
-    if(match) continue;
+    if(matched) continue;
 
-// =====ngai===== ///
-  function applyNgaiRule(result, dir){
-
-  const angkaPattern = "(?:cala|ratu|monahalo|moruange|moruha|moritoha|moributanga|moritumudingi|moritupa'ange|morisio|nyagi|yoha|moi|sinoto|sa'ange|iha|motoha|butanga|tumudingi|tupa'ange|sio)(?:\\s+(?:de|se)\\s+(?:[a-z']+))*";
-
-  // ======================
-  // 🔁 INDONESIA → GALela / TERNATE
-  // ======================
-  if(dir.includes("galela") || dir.includes("ter")){
-
-    // 1. angka + kata → kata + angka
-    result = result.replace(
-      new RegExp(`\\b(${angkaPattern})\\s+([a-z]+)`, "gi"),
-      "$2 $1"
-    );
-
-    // 2. kata + angka → kata ngai angka
-    result = result.replace(
-      new RegExp(`\\b([a-z]+)\\s+(${angkaPattern})`, "gi"),
-      "$1 ngai $2"
-    );
-  }
-
-  // ======================
-  // 🔁 GALela / TERNATE → INDONESIA
-  // ======================
-  if(dir.includes("to-id")){
-
-    // kata ngai angka → angka kata
-    result = result.replace(
-      new RegExp(`\\b([a-z]+)\\s+ngai\\s+(${angkaPattern})`, "gi"),
-      "$2 $1"
-    );
-  }
-
-  return result;
-}
-
-    // ======================
-    // 🔤 KAMUS BIASA
-    // ======================
+    // 🔤 KAMUS
     for(let len = maxLen; len > 0; len--){
       const phrase = tokens.slice(i, i+len).join(" ");
+
       if(dict.has(phrase)){
-        match = dict.get(phrase);
-        matchLen = len;
+        out.push(dict.get(phrase));
+        i += len;
+        matched = true;
         break;
       }
     }
 
-    if(match){
-      out.push(match);
-      i += matchLen;
-    } else {
-      const t = tokens[i];
+    if(matched) continue;
 
-      // 🔥 HANDLE ANGKA DIGIT (32)
-      if(/^\d+$/.test(t)){
-        const num = parseInt(t);
-        let hasilAngka = null;
-
-        if(dir.includes("ter")) hasilAngka = convertNumberToLocal(num, "ter");
-        else if(dir.includes("makian")) hasilAngka = convertNumberToLocal(num, "makian");
-        else if(dir.includes("galela")) hasilAngka = convertNumberToLocal(num, "galela");
-
-        out.push(hasilAngka || t);
-      } else {
-        const alt = t.replace(/-/g, ' ');
-        out.push(dict.get(alt) || t);
-      }
-
+    // 🔢 ANGKA DIGIT
+    if(/^\d+$/.test(tokens[i])){
+      const hasil = convertNumberToLocal(parseInt(tokens[i]), lang);
+      out.push(hasil || tokens[i]);
       i++;
+      continue;
     }
+
+    // DEFAULT
+    out.push(tokens[i]);
+    i++;
   }
 
   return out.join(" ");
-  }
+}
 
+// =====================================================================================
+// 📚 GLOBAL VOCAB
+// =====================================================================================
 const ALL_VOCAB = [];
 
 (function buildGlobalList(){
   Object.values(DICT).forEach(themes=>{
     Object.values(themes).forEach(list=>{
-      list.forEach(it=>{
-        ALL_VOCAB.push(it);
-      });
+      list.forEach(it=> ALL_VOCAB.push(it));
     });
   });
 })();
@@ -6518,53 +6382,143 @@ function translateFromVoice(text){
         {
           role: 'system',
           content: `
-          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
+          Kamu adalah AI translator & penyusun kalimat untuk 4 bahasa:
+          - Indonesia
+          - Ternate
+          - Makian
+          - Galela
 
-          Aturan:
-          1. Perbaiki hasil terjemahan agar alami
-          2. Pahami konteks kalimat secara keseluruhan
-          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
-          4. Pilih arti kata yang paling tepat berdasarkan konteks
-          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
-          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
-          7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
+          Tugas utama:
+          Menyusun ulang hasil terjemahan dari kamus agar menjadi kalimat yang BENAR, ALAMI, dan SESUAI STRUKTUR bahasa tujuan.
 
-          Imbuhan: 
-          "i","o", "da", "ka" : sebagai penghubung kata kerja, aktif pasif dll
+          ====================================
+          🔁 ATURAN UMUM
+          ====================================
+          1. JANGAN menerjemahkan ulang dari nol
+          2. Gunakan hasil kamus sebagai dasar
+          3. Perbaiki SUSUNAN KALIMAT, bukan mengganti arti
+          4. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai konteks
+          5. Jangan hilangkan kata penting
+          6. Pastikan hasil bisa bolak-balik (round-trip stabil)
 
-          ATURAN PENTING:
-          SELALU UTAMAKAN KATA/ KALIMAT BERISI KETERANGAN/PENTING DULU BARU DI LANJUTKAN KATA / KALIMAT SETELAHNYA 
-          contoh: 
-          meme: ibu
-          tomi rio: membantu
-          jadi
-          id: membantu ibu
-          output ter/makian/galela: meme tomi rio
-          
-          contoh:
-          input: "jalan baru itu banyak debu
-          output: "ngoko sungi ge dofu fika" 
+          ====================================
+          📌 STRUKTUR KALIMAT (WAJIB)
+          ====================================
 
-          input: BERISI angka+ BERISI kata/kalimat
-          output: BERISI kata/kalimat + ngai + BERISI angka
+          SEMUA bahasa daerah:
+          → Selalu mendahulukan informasi paling penting terlebih dahulu
+
+          Contoh:
+          "anak kucing" → "kucing anak" (boki mangopa)
+
+          ====================================
+          🔢 ATURAN ANGKA
+          ====================================
+          Jika kalimat mengandung angka + objek:
+          → Letakkan angka DI AKHIR
+
+          Contoh:
+          "25 ikan merah"
+          → "ikan merah 25"
+
+          Galela:
+          → gunakan "ngai" sebelum angka
+
+          Ternate:
+          → gunakan "se"
+
+          Makian:
+          → gunakan "lo"
+
+          ====================================
+          ❌ KALIMAT NEGATIF
+          ====================================
+          Selalu di AKHIR
+
+          Contoh:
+          "tidak bisa" → "bisa tidak"
+          Ternate: dadi ua
+          Makian: dadi te
+          Galela: dadi ua
+
+          ====================================
+          🌍 KHUSUS TERJEMAHAN KE INDONESIA
+          ====================================
+          1. Susun ulang menjadi struktur Bahasa Indonesia normal (S-P-O-K)
+          2. Hilangkan kata penghubung lokal seperti:
+            - se / lo / de / ngai
+          3. Gabungkan angka dengan benar:
+            "nyagi ramtoha se tofkange"
+            → "lima puluh delapan"
+
+          ====================================
+          🌴 KHUSUS TERJEMAHAN KE TERNATE
+          ====================================
+          - Gunakan "o" (akan/sedang)
+          - Gunakan "i" (sudah)
+          - Letakkan "ne" jika konteks waktu sekarang
+
+          ====================================
+          🔥 KHUSUS TERJEMAHAN KE MAKIAN
+          ====================================
+          - Awalan:
+            n / ni → dia
+            k / ka → saya
+          - Akhiran: "li"
+
+          ====================================
+          🌊 KHUSUS TERJEMAHAN KE GALELA
+          ====================================
+          - Subjek:
+            i = penghubung untuk seorang/ seekor
+            ai = penghubung untuk lebih dari 1
+            to = saya yang beraktivitas
+            mi = penghubung aksi/ sifat yang ada subjek kami
+            yo = sebutan untuk aksi/sifat yang ada subjek mereka
+
+
+          - Gunakan:
+            o → objek / benda
+            da → penghubung sifat
+            ngai → jumlah
+
+          - Urutan:
+            subjek → aksi → objek → sifat → jumlah
+
+          Contoh:
+          "saya melihat dua puluh ikan merah"
+          → "ngohi takelelo o nao da susawala ngai munahalo"
+
+          ====================================
+          🎯 TARGET AKHIR
+          ====================================
+          Hasil harus:
+          ✅ alami
+          ✅ sesuai struktur bahasa tujuan
+          ✅ tidak literal kacau
+          ✅ bisa diterjemahkan balik dengan benar
+
+          JANGAN tambahkan penjelasan.
+          Hanya keluarkan kalimat hasil akhir.
           `
         },
         {
           role: 'user',
           content: `
-          Arah terjemahan: ${direction}
+          Arah: ${direction}
 
           Kalimat asli:
           "${originalText}"
 
-          Hasil dari kamus:
+          Hasil kamus:
           "${dictResult}"
 
-          Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
+          Perbaiki sesuai aturan struktur bahasa tujuan.
+          Jangan ubah makna.
           `
         }
       ],
-      temperature: 0.4
+      temperature: 0.3
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
