@@ -1500,7 +1500,6 @@
         {"ind":"setengah","ter":"masunanga","makian": "halamo", "galela": "ma'sononga"},
         {"ind":"sambil","ter":"simote","makian": "", "galela": ""},
         {"ind":"sendirian","ter":"matengo","makian": "", "galela": "matego"},
-        {"ind":"bersama-sama","ter":"","makian": "", "galela": ""},
         {"ind":"terus-menerus","ter":"","makian": "", "galela": ""},
         {"ind":"sekali-sekali","ter":"foloi","makian": "haso-haso", "galela": ""},
         {"ind":"sekali-kali","ter":"foloi","makian": "haso-haso", "galela": ""},
@@ -6365,7 +6364,9 @@ function translateFromVoice(text){
           Jika ada kata yang mengandung imbuhan seperti:
           "o", "i", "ai", "da", "dha", "k", "n", "se", "ma"
 
-          "se"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba se yaya"
+          "se"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba se yaya" - bahasa ternate
+          "lo"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba lo mama" - bahasa makian
+          "de"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba de meme" - bahasa galela
 
           MAKA:
           - Cari kata dasarnya
@@ -6378,12 +6379,6 @@ function translateFromVoice(text){
           i fala = = rumah
           fala ni =  rumah
 
-          input: ""
-
-          Output:
-          - hanya 1 kalimat terbaik
-          - alami
-          - sesuai konteks
           `
         },
         {
@@ -6401,7 +6396,7 @@ function translateFromVoice(text){
           `
         }
       ],
-      temperature: 0.1
+      temperature: 0.4
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
