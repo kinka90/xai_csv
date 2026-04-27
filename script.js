@@ -6444,7 +6444,7 @@ function translateFromVoice(text){
           `
         }
       ],
-      temperature: 0.4
+      temperature: 0.2
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
