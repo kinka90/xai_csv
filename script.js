@@ -10,8 +10,7 @@
       "Keluarga": [
         {"ind":"keluarga","ter":"ahlii sedihutu","makian":"ahali","galela":"duhutu","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_krGSlIxN0gahOt467iC8PXg992rR_qI2Q&s"},
         {"ind":"ayah","ter":"baba","makian":"baba","galela":"baba","img":"https://img.freepik.com/premium-photo/3d-illustration-cartoon-character-with-happy-expression-his-face_1057-44581.jpg?w=360"},
-        {"ind":"ibu","ter":"yaya","makian":"mama","galela":"awa","img":"https://img.freepik.com/free-photo/celebration-labour-day-with-3d-cartoon-portrait-working-woman_23-2151306628.jpg?semt=ais_hybrid&w=740&q=80"},
-        {"ind":"ibu","ter":"yaya","makian":"ma","galela":"meme","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4He4PNhcfLw2TeMeiGe8npE93OiWPjtpWmQ&s"},
+        {"ind":"ibu","ter":"yaya","makian":"mama","galela":"meme","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4He4PNhcfLw2TeMeiGe8npE93OiWPjtpWmQ&s"},
         {"ind":"orang tua","ter":"mancia","makian":"bau-baui","galela":"dihimo","img":"https://png.pngtree.com/png-clipart/20250426/original/pngtree-happy-family-mom-and-dad-3d-cute-cartoon-character-png-image_20825524.png"},
         {"ind":"anak","ter":"ngofa","makian":"mtu","galela":"ngopa","img":"https://marketplace.canva.com/4aiT4/MAGid44aiT4/1/tl/canva-happy-cartoon-boy-drawing-outdoors-MAGid44aiT4.jpg"},
         {"ind":"anak laki-laki","ter":"ngofa nunau","makian":"mtu mon","galela":"ngopa yanau","img":"https://png.pngtree.com/png-clipart/20250119/original/pngtree-3d-animated-boy-character-with-cool-outfit-and-energetic-pose-png-image_19860542.png"},
@@ -56,8 +55,6 @@
         {"ind":"saudara perempuan seibu","ter":"fira yaya moi","makian": "", "galela": ""},
         {"ind":"sepupu laki-laki","ter":"","makian":"","galela":"amahira"},
         {"ind":"sepupu perempuan","ter":"","makian":"","galela":"awabira"},
-        {"ind":"seibu","ter":"seibu","makian":"seibu","galela":"seibu"},
-        {"ind":"seayah","ter":"seayah","makian":"seayah","galela":"seayah"},
         {"ind":"bayi","ter":"ngofa kiyau","makian":"malaikat","galela":"ngopa ma'e'ece","img":"https://img.favpng.com/14/13/20/animated-baby-adorable-crawling-baby-cartoon-jTA0nJFh.jpg"},
         {"ind":"ipar laki-laki","ter":"tafu","makian":"ipar mane","galela":"au dapu"},
         {"ind":"ipar perempuan","ter":"dafu","makian":"ipar fona","galela":"an dapu"},
@@ -151,7 +148,7 @@
         {"ind":"tulang","ter":"obo","makian": "subebi", "galela": "kobo", "img":"https://img.lovepik.com/png/20231018/x-ray-clipart-yellow-haired-child-bone-cartoon-bones_250844_wh860.png"},
         {"ind":"sendi","ter":"kakaci","makian": "kakaci", "galela": "kakaci"},
         {"ind":"tulang rahang","ter":"","makian": "ngeku niyoyo", "galela": ""},
-        {"ind":"darah","ter":"getih","makian": "wuni", "galela": "au", "img":"https://media.istockphoto.com/id/1264055086/id/vektor/donor-darah-tangan-dengan-konsep-transfusi-darah-dalam-ilustrasi-kartun-vektor-terisolasi.jpg?s=612x612&w=0&k=20&c=bGI1eRA-NKyd8xtb28v1Po6SaQCEP1uopfueiL3FBY4="},
+        {"ind":"darah","ter":"","makian": "wuni", "galela": "au", "img":"https://media.istockphoto.com/id/1264055086/id/vektor/donor-darah-tangan-dengan-konsep-transfusi-darah-dalam-ilustrasi-kartun-vektor-terisolasi.jpg?s=612x612&w=0&k=20&c=bGI1eRA-NKyd8xtb28v1Po6SaQCEP1uopfueiL3FBY4="},
         {"ind":"otot","ter":"rehe","makian": "", "galela": "", "img":"https://w7.pngwing.com/pngs/212/329/png-transparent-flexing-arm-muscles-sticker-arms-thumb-muscle-a-powerful-arm-mammal-carnivoran-hand.png"},
         {"ind":"kulit","ter":"ahi","makian": "liko", "galela": "kahi", "img":"https://img.freepik.com/vektor-premium/konsep-perawatan-jerawat-wanita-tanpa-masalah-kulit-tanpa-jerawat-wajah-bersih-dan-jernih-ilustrasi-kartun-vektor-datar_77116-2315.jpg"},
         {"ind":"tulang kering","ter":"","makian": "wonowuni", "galela": "wuni", "img":"https://thumbs.dreamstime.com/b/old-man-backache-bones-spine-old-man-backache-bones-spine-medical-care-red-spot-skeleton-sad-character-cane-228153992.jpg"},
@@ -231,7 +228,7 @@
         {"ind":"berhutan","ter":"","makian": "", "galela": "panga ma'raba", "img":"https://png.pngtree.com/thumb_back/fh260/background/20230315/pngtree-forest-path-cartoon-background-image_1948359.jpg"},
         {"ind":"hutan belantara","ter":"","makian": "ngodo", "galela": ""},
         {"ind":"pantai","ter":"rumbaka","makian": "ssolo", "galela": "teo ma'bati", "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlCvw54wUoPmn1SDvL_5HLS3FSJ52w2Pxj0RWI1NEbce9r8HQ61oJnLhPOfjYXqbZqB0&usqp=CAU"},
-        {"ind":"pantai","ter":"","makian": "pante", "galela": "","img":"https://png.pngtree.com/background/20250104/original/pngtree-summer-cartoon-beach-background-picture-image_15549575.jpg"},
+        {"ind":"pantai","ter":"bubane","makian": "pante", "galela": "","img":"https://png.pngtree.com/background/20250104/original/pngtree-summer-cartoon-beach-background-picture-image_15549575.jpg"},
         {"ind":"langit","ter":"tufa","makian": "tupam", "galela": "dipa", "img":"https://png.pngtree.com/background/20230420/original/pngtree-natural-animation-white-clouds-blue-sky-picture-image_2448755.jpg"},
         {"ind":"bulan","ter":"ma'ara","makian": "pa'it", 	"galela": 	"ngo'osa", 	"img":"https://img.pikbest.com/illustration/20241002/a-anime-alone-women-wear-gown-enjoying-at-moonlight-night-view-ai-generated-image_10917439.jpg!sw800"},
         {"ind":"matahari","ter":"wange malako","makian":"ngan", 	"galela":"wange malako", 	"img":"https://static.vecteezy.com/system/resources/previews/000/521/795/non_2x/a-boy-watching-the-sunset-at-the-riverbank-vector.jpg"},
@@ -327,7 +324,7 @@
         {"ind":"merpati","ter":"pombo","makian": "pombo", "galela": "pombo", 	"img":"https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/17816_5-fakta-seputar-burung-hantu.jpg"},
         {"ind":"burung hantu","ter":"","makian": "", "galela": "wuku"},
         {"ind":"capung","ter":"merpati","makian": "bedemeteni", "galela": "ake ma'sesesa", 	"img":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rock_Pigeon_Columba_livia.jpg/1024px-Rock_Pigeon_Columba_livia.jpg"},     
-        {"ind":"cicak","ter":"diti","makian": "baicucu", "galela": "lola'hekana", "img":"https://cdn.rri.co.id/berita/Fak_Fak/t/1730175449502-elang/7yq20ujyho4dixy.jpeg"},
+        {"ind":"cicak","ter":"diti","makian": "", "galela": "lola'hekana", "img":"https://cdn.rri.co.id/berita/Fak_Fak/t/1730175449502-elang/7yq20ujyho4dixy.jpeg"},
         {"ind":"badak","ter":"badak","makian": "badak", "galela": "badaki"},
         {"ind":"kakatua","ter":"gatala","makian": "", "galela": "gotopo"},
         {"ind":"camar","ter":"","makian": "", "galela": "salamburungu"},
@@ -789,6 +786,7 @@
         {"ind":"melihat","ter":"sorinyodi","makian": "ltono", "galela": "takelelo","img":"https://img-cdn.medkomtek.com/qFeEv2iPoRd_FywuI7oXnTB-Nk4=/510x395/smart/filters:quality(100):format(webp)/article/xQFCwccyptoTFhpq8thGW/original/086987600_1577875819-Mata-Silau-Saat-Melihat-Cahaya-Terang-Kapan-Harus-Khawatir-shutterstock_736460488.jpg"},
         {"ind":"melihat","ter":"nyodi","makian": "tono", "galela": "kelelo"},
         {"ind":"melihat","ter":"tohida","makian": "nam", "galela": ""},
+        {"ind":"melihat","ter":"hida","makian": "nam", "galela": ""},
         {"ind":"merasa","ter":"rasa","makian": "sosam", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbYTnuVMIgb2W_B52NxZNJ_gHk8ZFnDlnGY4KTrGm_cNtOW033Tg0ClEff4MWMeNbq2Q&usqp=CAU"},
         {"ind":"memegang","ter":" ","makian": "loi", "galela": "coho","img":"https://stiba.ac.id/wp-content/uploads/2016/02/mendidik-anak-dalam-islam.jpg"},
         {"ind":"menyentuh","ter":"", "makian": "loi", "galela": "","img":"https://st3.depositphotos.com/1004384/13612/i/1600/depositphotos_136120706-stock-photo-little-girl-touches-boy-with.jpg"},
@@ -797,31 +795,31 @@
         {"ind":"membuka","ter":"hoi","makian": "tupe", "galela": "hoi","img":"https://st.depositphotos.com/27811286/58277/v/1600/depositphotos_582775934-stock-illustration-little-kid-open-door-friend.jpg"},
         {"ind":"menutup","ter":"kuci","makian": "faot", "galela": "didu","img":"https://png.pngtree.com/png-clipart/20210718/original/pngtree-a-beautiful-muslimah-open-the-door-png-image_6541663.jpg"},
         {"ind":"tutup","ter":"tan","makian": "faot", "galela": "peresu","img":"https://www.kindpng.com/picc/m/146-1468479_light-switch-png-turn-off-light-switch-png-transparent.png"},
-        {"ind":"masak","ter":"ma","makian": "mosa", "galela": "osa","img":"https://img.okezone.com/content/2020/06/16/298/2237321/5-tips-memotong-bawang-putih-tanpa-menangis-ygW3y3Y6vK.jpg"},
+        {"ind":"masak","ter":"mucurum","makian": "mosa", "galela": "osa","img":"https://img.okezone.com/content/2020/06/16/298/2237321/5-tips-memotong-bawang-putih-tanpa-menangis-ygW3y3Y6vK.jpg"},
         {"ind":"beli","ter":"fodi ","makian": "poli", "galela": "ija","img":"https://asset-2.tribunnews.com/tribunkaltimtravel/foto/bank/images/beli-baju-baru-lagi.jpg"},
         {"ind":"menjual","ter":"mafuku","makian": "wagik", "galela": "si'ija","img":"https://png.pngtree.com/png-clipart/20241208/original/pngtree-fruit-seller-selling-oranges-buy-and-sell-clip-art-png-image_17664797.png"},
         {"ind":"membawa","ter":"gawa","makian": "yat", "galela": "","img":"https://png.pngtree.com/png-clipart/20230716/original/pngtree-kids-bring-a-book-png-image_9308110.png"},
         {"ind":"mengambil","ter":"raba","makian": "nyol", "galela": "dhehe","img":"https://media.istockphoto.com/id/1472538743/id/foto/anak-sekolah-kecil-mengambil-buku-dari-rak-di-perpustakaan-dengan-setumpuk-buku-di-tangan.jpg?s=170667a&w=0&k=20&c=c3yjKqtUkY-jA9Rkz0XNXabTMmD5zYv5BDH-SewQ_4c="},
-        {"ind":"memberi","ter":"menehi","makian": "o'tik", "galela": "hike","img":"https://asset-2.tribunnews.com/jambi/foto/bank/images/beri-uang-anak-orangtua.jpg"},
-        {"ind":"beri","ter":"menehi ","makian": "pula", "galela": "hike"},
-        {"ind":"memberi makan","ter":"","makian": "", "galela": "topo"},
-        {"ind":"diberi","ter":"menehi","makian": "dopula", "galela": ""},
+        {"ind":"memberi","ter":"pulo","makian": "o'tik", "galela": "hike","img":"https://asset-2.tribunnews.com/jambi/foto/bank/images/beri-uang-anak-orangtua.jpg"},
+        {"ind":"beri","ter":"pulo ","makian": "pula", "galela": "hike"},
+        {"ind":"memberi makan","ter":"pulo oho","makian": "", "galela": "topo"},
+        {"ind":"diberi","ter":"","makian": "dopula", "galela": ""},
         {"ind":"menerima","ter":"","makian": "", "galela": "mode","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYejKpUb273dmXMnDt9IfuipHDziK59T8lg&s"},
         {"ind":"berpikir","ter":"pikir","makian": "", "galela": "","img":"https://bimba-aiueo.com/wp-content/uploads/2018/06/1d9e05c1-5_0_994_665_c517f75ae5aa4fcf5d99a82eefe5996f0e731ec0.jpg"},
         {"ind":"membantu","ter":"rio", "makian": "", "galela": "rio"},
         {"ind":"mencari","ter":"sidike", "makian": "", "galela": "sari"},
         {"ind":"mencari","ter":"tike","makian": "", "galela": ""},
-        {"ind":"menemukan","ter":"temu", "makian": "tala", "galela": ""},
+        {"ind":"menemukan","ter":"dahe", "makian": "tala", "galela": ""},
         {"ind":"tidak mengerti","ter":"ora ngerti", "makian": "", "galela": ""},        
         {"ind":"datang ","ter":"haro", "makian": "womli", "galela": "hino"},
         {"ind":"datang","ter":"hado","makian": "", "galela": ""},
         {"ind":"datang","ter":"kado","makian": "", "galela": ""},
-        {"ind":"memakai","ter":"nganggo", "makian": "pake", "galela": "si'ngado"},
+        {"ind":"memakai","ter":"pake", "makian": "pake", "galela": "si'ngado"},
         {"ind":"melepaskan","ter":"pasa", "makian": "", "galela": "dhoha"},
-        {"ind":"mencukur","ter":"nggukur", "makian": "", "galela": ""},
+        {"ind":"mencukur","ter":"", "makian": "", "galela": ""},
         {"ind":"mandi","ter":"mahodo", "makian": "asop", "galela": "osi"}, 
         {"ind":"berdoa","ter":"ndonga", "makian": "", "galela": ""},
-        {"ind":"bermain musik","ter":"dolanan musik", "makian": "", "galela": ""},
+        {"ind":"bermain musik","ter":"", "makian": "", "galela": ""},
         {"ind":"kagum","ter":"takjub", "makian": "hakto", "galela": ""},
         {"ind":"menonton","ter":"uni", "makian": "", "galela": "tomina"},
         {"ind":"berbelanja","ter":"fodi", "makian": "", "galela": "balajangi"}, 
@@ -871,7 +869,7 @@
         {"ind":"angkat tangan","ter":"tede gia","makian": "giya tede", "galela": "tide"},
         {"ind":"tepuk tangan","ter":"paka gia","makian": "", "galela": ""},
         {"ind":"jabat tangan","ter":"imakudasi","makian": "", "galela": "coho giya"},
-        {"ind":"salaman","ter":"salam tangan","makian": "", "galela": ""},
+        {"ind":"salaman","ter":"","makian": "", "galela": ""},
         {"ind":"melambai","ter":"imakugugai","makian": "", "galela": ""},
         {"ind":"mengangguk","ter":"utagacama","makian": "", "galela": ""},
         {"ind":"menggeleng","ter":"nggoyangno","makian": "", "galela": ""},
@@ -976,7 +974,7 @@
         {"ind":"berpesta","ter":"pesta","makian": "isa ramean", "galela": ""},
         {"ind":"merayakan","ter":"sirame","makian": "", "galela": ""},
         {"ind":"bersosialisasi","ter":"sosialisasi","makian": "", "galela": ""},
-        {"ind":"berbicara","ter":"omong","makian": "matutin", "galela": "foreto"},
+        {"ind":"berbicara","ter":"","makian": "matutin", "galela": "foreto"},
         {"ind":"bercanda","ter":"basedu","makian": "", "galela": ""},
         {"ind":"tertawa","ter":"uhohe","makian": "ae", "galela": "dhohe"}
       ],
@@ -1199,8 +1197,7 @@
         {"ind":"saya","ter":"ngori","makian": "yak", "galela": "ngohi"},
         {"ind":"saya laki-laki","ter":"fangare","makian": "", "galela": ""},
         {"ind":"saya perempuan","ter":"fajaru","makian": "", "galela": ""},
-        {"ind":"aku","ter":"ngori","makian": "", "galela": "ngohi"},
-        {"ind":"ku","ter":"ngori","makian": "yak", "galela": "ngohi"},
+        {"ind":"aku","ter":"ngori","makian": "yak", "galela": "ngohi"},
         {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngona"},
         {"ind":"engkau","ter":"ngon","makian": "ni", "galela": "ngona"},
         {"ind":"anda","ter":"ngon","makian": "", "galela": ""},
@@ -1255,15 +1252,15 @@
         {"ind":"sana","ter":"ena ge","makian": "sona", "galela": ""},
         {"ind":"atas","ter":"manyeku","makian": "yase", "galela": "dake"},
         {"ind":"bawah","ter":"toma adu","makian": "naso", "galela": "dahe"},
-        {"ind":"depan","ter":"ma gunaga","makian": "sodali", "galela": "sima"},
+        {"ind":"depan","ter":"magunaga","makian": "sodali", "galela": "sima"},
         {"ind":"belakang","ter":"mburi","makian": "taggulo", "galela": "dudu"},
         {"ind":"di belakang","ter":"toma madudu","makian": "", "galela": "ma'dudu'ka"},
         {"ind":"dalam","ter":"ngido","makian": "tai", "galela": "raba"},
         {"ind":"dalam","ter":"madaha","makian": "", "galela": ""},
         {"ind":"luar","ter":"madudu","makian": "lik", "galela": ""},
         {"ind":"diluar","ter":"","makian": "lik", "galela": ""},
-        {"ind":"sebelah","ter":"masunanga","makian": "happalik", "galela": ""},
-        {"ind":"disebelah","ter":"masunanga","makian": "", "galela": ""},
+        {"ind":"sebelah","ter":"masunanga","makian": "happalik", "galela": "ma'sononga"},
+        {"ind":"di sebelah","ter":"masunanga","makian": "", "galela": "ma'sononga"},
         {"ind":"samping","ter":"dudite","makian": "happalik", "galela": ""},
         {"ind":"tengah","ter":"konora","makian": "halaim", "galela": "raraba"},
         {"ind":"di atas","ter":"manyeku","makian": "", "galela": "ka'dake"},
@@ -1276,7 +1273,7 @@
         {"ind":"dari arah timur","ter":"","makian": "lawe", "galela": "sa'dadhe"},
         {"ind":"dari arah barat","ter":"","makian": "", "galela": "ko'dine"},
         {"ind":"dari arah seberang","ter":"","makian": "happalik", "galela": "no'doke"},
-        {"ind":"didalam","ter":"","makian": "llo", "galela": "ma'raba'ka"}
+        {"ind":"di dalam","ter":"","makian": "llo", "galela": "ma'raba'ka"}
       ],
       "Tanya": [
         {"ind":"jam berapa","ter":"","makian": "", "galela": "cako muruo"},
@@ -1503,7 +1500,7 @@
         {"ind":"setengah","ter":"masunanga","makian": "halamo", "galela": "ma'sononga"},
         {"ind":"sambil","ter":"simote","makian": "", "galela": ""},
         {"ind":"sendirian","ter":"matengo","makian": "", "galela": "matego"},
-        {"ind":"bersama-sama","ter":"bareng-bareng","makian": "", "galela": ""},
+        {"ind":"bersama-sama","ter":"","makian": "", "galela": ""},
         {"ind":"terus-menerus","ter":"","makian": "", "galela": ""},
         {"ind":"sekali-sekali","ter":"foloi","makian": "haso-haso", "galela": ""},
         {"ind":"sekali-kali","ter":"foloi","makian": "haso-haso", "galela": ""},
@@ -1527,11 +1524,11 @@
         {"ind":"kurang","ter":"kado ua","makian": "ntunai", "galela": "wabi"},
         {"ind":"hampir","ter":"seba","makian": "nyoa", "galela": "cebeleke"},
         {"ind":"hampir saja","ter":"meh wae","makian": "nyoa", "galela": "cebeleke"},
-        {"ind":"sejauh","ter":"sajauh","makian": "nalou", "galela": "kuru"},
-        {"ind":"sedalam","ter":"sedalam","makian": "", "galela": ""},
-        {"ind":"setinggi","ter":"setinggi","makian": "", "galela": ""},
-        {"ind":"serendah","ter":"serendah","makian": "", "galela": ""},
-        {"ind":"secepat","ter":"secepat","makian": "", "galela": "cai-cai"},
+        {"ind":"sejauh","ter":"","makian": "nalou", "galela": "kuru"},
+        {"ind":"sedalam","ter":"","makian": "", "galela": ""},
+        {"ind":"setinggi","ter":"","makian": "", "galela": ""},
+        {"ind":"serendah","ter":"","makian": "", "galela": ""},
+        {"ind":"secepat","ter":"","makian": "", "galela": "cai-cai"},
         {"ind":"secepatnya","ter":"","makian": "", "galela": "cai-cai"},
         {"ind":"selambat","ter":"selambat","makian": "hilik", "galela": ""},
         {"ind":"sebaik","ter":"sebaik","makian": "", "galela": ""},
@@ -1623,7 +1620,6 @@
         {"ind":"bila","ter":"lan","makian": "", "galela": "nako so"},
         {"ind":"tapi","ter":"tapi","makian": "mai", "galela": "duma"},
         {"ind":"bilamana","ter":"lan","makian": "", "galela": "nako so"},
-        {"ind":"dan","ter":"se","makian": "lo", "galela": "de"},
         {"ind":"atau","ter":"atawa","makian": "utawa", "galela": "eko"},
         {"ind":"tetapi","ter":"tatapi","makian": "mai", "galela": "duma"},
         {"ind":"karena","ter":"amarga","makian": "", "galela": "sababu"},
@@ -1703,40 +1699,17 @@
 
       ],
       "Sapaan Biasa": [
-        {"ind":"halo","ter":"halo","makian": "", "galela": ""},
-        {"ind":"hai","ter":"hai","makian": "", "galela": ""},
-        {"ind":"selamat pagi","ter":"","makian": "", "galela": ""},
-        {"ind":"selamat siang","ter":"","makian": "", "galela": ""},
-        {"ind":"selamat sore","ter":"","makian": "", "galela": ""},
-        {"ind":"selamat malam","ter":"","makian": "", "galela": ""},
         {"ind":"apa kabar?","ter":"habar doka saa","makian": "", "galela": "khabari dodo'oha"},
         {"ind":"terima kasih","ter":"sukur dofu-dofu","makian": "", "galela": "syukuru dala-dala"},
         {"ind":"sama-sama","ter":"sama-sama","makian": "", "galela": ""},
-        {"ind":"maaf","ter":"maaf","makian": "", "galela": ""},
-        {"ind":"bermaaf-maafan","ter":"ana imaku maaf","makian": "", "galela": ""},
-        {"ind":"permisi","ter":"tabea","makian": "", "galela": ""},
-        {"ind":"selamat tinggal","ter":"","makian": "", "galela": ""},
-        {"ind":"sampai jumpa","ter":"","makian": "", "galela": ""},
-        {"ind":"sampai nanti","ter":"","makian": "", "galela": ""},
-        {"ind":"sampai besok","ter":"","makian": "", "galela": ""},
-        {"ind":"selamat jalan","ter":"","makian": "", "galela": ""},
-        {"ind":"selamat beristirahat","ter":"","makian": "", "galela": "sidatu"},
-        {"ind":"selamat bekerja","ter":"selamat makarya","makian": "", "galela": ""},
-        {"ind":"selamat belajar","ter":"selamat sinau","makian": "", "galela": ""},
-        {"ind":"selamat makan","ter":"selamat dhahar","makian": "", "galela": ""},
-        {"ind":"selamat ulang tahun","ter":"selamat ulang tahun","makian": "", "galela": ""},
-        {"ind":"selamat hari raya","ter":"selamat lebaran","makian": "", "galela": ""},
-        {"ind":"selamat natal","ter":"selamat natal","makian": "", "galela": ""},
-        {"ind":"selamat tahun baru","ter":"selamat warsa anyar","makian": "", "galela": ""},
-        {"ind":"selamat idul fitri","ter":"selamat idul fitri","makian": "", "galela": ""},
-        {"ind":"selamat idul adha","ter":"selamat idul adha","makian": "", "galela": ""}
+        {"ind":"maaf","ter":"maaf","makian": "", "galela": ""}
       ],
     },
     "Kata Bantu": {
       "Kata Kerja Bantu": [
         {"ind":"sedang","ter":"sedang","makian": "", "galela": ""},
         {"ind":"akan","ter":"sari","makian": "toba", "galela": "done"},
-        {"ind":"akankah","ter":"","makian": "toba", "galela": ""},
+        {"ind":"akankah","ter":"o sari","makian": "toba", "galela": ""},
         {"ind":"akan","ter":"ana","makian": "tobal", "galela": ""},
         {"ind":"telah","ter":"raima","makian": "", "galela": ""},
         {"ind":"sudah","ter":"raima","makian": "togumo", "galela": ""},
@@ -2021,7 +1994,6 @@
         {"ind":"bayangan lampu","ter":"gurumi lampu","makian": "boto", "galela": "ngoro"},
         {"ind":"bekas","ter":"bakas","makian": "gowo", "galela": "riho"},
         {"ind":"bekas luka","ter":"","makian": "roba", "galela": ""},
-        {"ind":"bersama","ter":"se","makian": "", "galela": ""},
         {"ind":"bedak","ter":"pupur","makian": "pupur", "galela": "wadaka"},
         {"ind":"beduk","ter":"tifa","makian": "atipa", "galela": "gosoma"},
         {"ind":"begadang","ter":"wango wango","makian": "wonga", "galela": "saiwange"},
@@ -2557,7 +2529,7 @@
         {"ind":"diperpanjang","ter":"","makian": "", "galela": "si'gila"},
         {"ind":"dalam keadaan sadar","ter":"","makian": "", "galela": "lako i'tawi-tawi"},
         {"ind":"disandarkan","ter":"sidurifa","makian": "hasolak", "galela": "si'dorifa"},
-        {"ind":"ditekan","ter":"dibutu","makian": "butu", "galela": "si'dibitu"},
+        {"ind":"ditekan","ter":"toma butu","makian": "butu", "galela": "si'dibitu"},
         {"ind":"ditiup","ter":"ihoa","makian": "", "galela": "wuwu"},
         {"ind":"dampak","ter":"ma akibat","makian": "akibat", "galela": "akibat"},
         {"ind":"daya","ter":"tanaga","makian": "", "galela": ""},
@@ -2802,8 +2774,7 @@
         {"ind":"hal","ter":"hal","makian": "", "galela": "hali"},
         {"ind":"haluan","ter":"hema","makian": "telea", "galela": "noma"},
         {"ind":"halau","ter":"duo","makian": "", "galela": ""},
-        {"ind":"halaman","ter":"kintal","makian": "dowowu", "galela": "soanyie"},
-        {"ind":"halaman buku","ter":"","makian": "", "galela": ""},
+        {"ind":"halaman rumah","ter":"kintal","makian": "dowowu", "galela": "soanyie"},
         {"ind":"hambar","ter":"","makian": "gamati", "galela": "hao"},
         {"ind":"hambur","ter":"fiaro","makian": "hajak", "galela": "piringa"},
         {"ind":"hamil","ter":"foko","makian": "sonan", "galela": "tilibu"},
@@ -3270,13 +3241,11 @@
         {"ind":"kantuk","ter":"kadu kadu","makian": "", "galela": "kiolo"},
         {"ind":"kapas","ter":"kapas","makian": "kopas", "galela": "kapa"},
         {"ind":"kapok","ter":"utobat","makian": "", "galela": ""},
-        {"ind":"kolega","ter":"dagimoi","makian": "", "galela": ""},
         {"ind":"kolor","ter":"calana madaha","makian": "", "galela": ""},
         {"ind":"katarak","ter":"","makian": "", "galela": "lako dha'osa"},
         {"ind":"katup","ter":"buki","makian": "", "galela": "dadanu"},
         {"ind":"kambuh","ter":"gogola adi","makian": "", "galela": ""},
         {"ind":"kawal","ter":"jaga","makian": "", "galela": "mote-mote"},
-        {"ind":"kawan","ter":"dagimoi","makian": "", "galela": "dodiawo"},
         {"ind":"kaum","ter":"dihutu","makian": "", "galela": "umati"},
         {"ind":"keruh","ter":"som","makian": "", "galela": ""},
         {"ind":"kepul","ter":"manyefo","makian": "", "galela": ""},
@@ -4940,7 +4909,6 @@
         {"ind":"ruwet","ter":"","makian": "", "galela": "susah cara'wa"},
         {"ind":"rasio","ter":"akal","makian": "", "galela": ""},
         {"ind":"regang","ter":"tau","makian": "", "galela": ""},
-        {"ind":"rekan","ter":"dagimoi","makian": "", "galela": ""},
         {"ind":"rela","ter":"ikhlas","makian": "", "galela": ""},
         {"ind":"rusuh","ter":"rogu","makian": "", "galela": ""},
         {"ind":"rumit","ter":"","makian": "mollekat", "galela": ""},
@@ -5174,7 +5142,7 @@
         {"ind":"selang","ter":"","makian": "", "galela": "ma'deka"},
         {"ind":"selaras","ter":"","makian": "", "galela": "ma'ketero"},
         {"ind":"serdawa","ter":"","makian": "galeit", "galela": ""},
-        {"ind":"selesai","ter":"kanang","makian": "o'kit", "galela": "bolo'ka"},
+        {"ind":"selesai","ter":"kanang ne","makian": "o'kit", "galela": "bolo'ka"},
         {"ind":"selingkuh","ter":"","makian": "masola", "galela": "sala"},
         {"ind":"selisih","ter":"matero ua","makian": "", "galela": "so'ohu"},
         {"ind":"selubung","ter":"jahe jahe","makian": "", "galela": ""},
@@ -5471,7 +5439,6 @@
         {"ind":"tegur","ter":"binyafo","makian": "", "galela": ""},
         {"ind":"teguk","ter":"oke","makian": "", "galela": "nasi"},
         {"ind":"tegun","ter":"haga","makian": "", "galela": ""},
-        {"ind":"tekan","ter":"butu","makian": "butu", "galela": "bitu"},
         {"ind":"teduh","ter":"ogo","makian": "goi", "galela": "taru"},
         {"ind":"teko","ter":"tekwan","makian": "cere", "galela": "cere"},
         {"ind":"teluk","ter":"jiko","makian": "doklo", "galela": "jiko"},
@@ -6394,10 +6361,11 @@ function translateFromVoice(text){
           6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
           7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
  
-
           PENTING (IMBUHAN BAHASA DAERAH):
           Jika ada kata yang mengandung imbuhan seperti:
-          "o", "i", "ai", "da", "dha", "k", "n"
+          "o", "i", "ai", "da", "dha", "k", "n", "se", "ma"
+
+          "se"= di gunakan untuk penghubung misal "ayah dan ibu" = "baba se yaya"
 
           MAKA:
           - Cari kata dasarnya
@@ -6416,8 +6384,6 @@ function translateFromVoice(text){
           - hanya 1 kalimat terbaik
           - alami
           - sesuai konteks
-
-
           `
         },
         {
@@ -6435,7 +6401,7 @@ function translateFromVoice(text){
           `
         }
       ],
-      temperature: 0.3
+      temperature: 0.1
     };
 
     const resp = await fetch((typeof API_PROXY_URL !== 'undefined' ? API_PROXY_URL : '/api/correct'), {
@@ -6514,6 +6480,7 @@ function detectDuplicateVocabulary(){
     .filter(([_, count]) => count > 1)
     .map(([word, count]) => ({ word, count }));
 }
+
 
 function renderVocabularyStats(){
   const total = countAllVocabulary();
