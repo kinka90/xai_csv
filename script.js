@@ -165,6 +165,7 @@
         {"ind":"ginjal","ter":"imangga mangga","makian": "sulumbi", "galela": "ginjal", 	"img":"https://media.istockphoto.com/id/824687130/id/vektor/kartun-ginjal-manusia.jpg?s=1024x1024&w=is&k=20&c=Vd9oPUaMNW-d4eyn01AhXgkmr28mEW1hu-19f6xA_G0="},
         {"ind":"lambung","ter":"lambung","makian": "gale-gale", "galela": 	"lambung", 	"img":"https://cdn.linkumkm.id/uploads/library/8/6/1/0/1/86101_840x576.jpg"},
         {"ind":"ekor","ter":"biki","makian": "kaku", "galela": 	"pego", 	"img":"https://thumbs.dreamstime.com/b/old-man-backache-bones-spine-old-man-backache-bones-spine-medical-care-red-spot-skeleton-sad-character-cane-228153992.jpg"},
+        {"ind":"ekor","ter":"ngai","makian": "kaku", "galela": 	"ngai"},
         {"ind":"paha","ter":"pala pala","makian": "dawoyo", "galela": "pu'gili","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA6QJgRFVjfLRXu2QOIUNfNjgjGDSImnXvpg&s"},
         {"ind":"betis","ter":" hohu ma-isu isu","makian": "bisi", "galela": "bita","img":"https://cdn.abcteach.com/abcteach-content-free/docs/free_preview/c/calfrgb_p.png"},
         {"ind":"lengan","ter":"gia maloa","makian": "pado", "galela": "giya ma'soha","img":"https://w1.pngwing.com/pngs/504/619/png-transparent-boy-thumb-arm-sleeve-hand-biceps-muscle-muscles-of-the-hand.png"},
@@ -801,7 +802,7 @@
         {"ind":"mengambil","ter":"raba","makian": "nyol", "galela": "dhehe","img":"https://media.istockphoto.com/id/1472538743/id/foto/anak-sekolah-kecil-mengambil-buku-dari-rak-di-perpustakaan-dengan-setumpuk-buku-di-tangan.jpg?s=170667a&w=0&k=20&c=c3yjKqtUkY-jA9Rkz0XNXabTMmD5zYv5BDH-SewQ_4c="},
         {"ind":"memberi","ter":"pulo","makian": "o'tik", "galela": "hike","img":"https://asset-2.tribunnews.com/jambi/foto/bank/images/beri-uang-anak-orangtua.jpg"},
         {"ind":"beri","ter":"pulo ","makian": "pula", "galela": "hike"},
-        {"ind":"memberi makan","ter":"pulo oho","makian": "", "galela": "topo"},
+        {"ind":"memberi makan","ter":"pulo oho","makian": "", "galela": "misi topo"},
         {"ind":"diberi","ter":"","makian": "dopula", "galela": ""},
         {"ind":"menerima","ter":"","makian": "", "galela": "mode","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYejKpUb273dmXMnDt9IfuipHDziK59T8lg&s"},
         {"ind":"berpikir","ter":"pikir","makian": "", "galela": "","img":"https://bimba-aiueo.com/wp-content/uploads/2018/06/1d9e05c1-5_0_994_665_c517f75ae5aa4fcf5d99a82eefe5996f0e731ec0.jpg"},
@@ -1207,7 +1208,7 @@
         {"ind":"dia perempuan","ter":"mina","makian": "", "galela": "to'muna"},   
         {"ind":"kami","ter":"ngom","makian": "titanit", "galela": "to'ngomi"},
         {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone"},
-        {"ind":"mereka","ter":"ana","makian": "eme/sinani", "galela": ""},
+        {"ind":"mereka","ter":"ana","makian": "eme/sinani", "galela": "ona"},
         {"ind":"mereka berdua","ter":"","makian": "matlusi ", "galela": ""},
         {"ind":"semua orang","ter":"","makian": "", "galela": ""},
         {"ind":"setiap orang","ter":"","makian": "", "galela": ""},
@@ -1657,7 +1658,7 @@
       "Artikula":[
         {"ind":"si","ter":"si","img":"assets/img/si.png"},
         {"ind":"sang","ter":"sang","makian": "", "galela": ""},
-        {"ind":"para","ter":"ana","makian": "", "galela": ""},
+        {"ind":"para","ter":"","makian": "", "galela": ""},
         {"ind":"yang","ter":"iyo se","makian": "yang", "galela": ""},
         {"ind":"sebuah","ter":"","makian": "", "galela": ""},
         {"ind":"seorang","ter":"","makian": "yak le", "galela": ""}
@@ -6266,17 +6267,19 @@ function translateFromVoice(text){
           Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
 
           Aturan:
-          1. Pahami konteks kalimat secara keseluruhan
-          2. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
-          3. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
-          4. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
-          5. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
-          6. Jika ada beberapa arti dalam kamus (contoh: "gawa" = bawa / seret), pilih SALAH SATU yang PALING MASUK AKAL sesuai konteks, dan DILARANG memilih kata di luar daftar arti kamus
-          7. Berpikir layaknya manusia
- 
+          1. Perbaiki hasil terjemahan agar alami
+          2. Pahami konteks kalimat secara keseluruhan
+          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
+          4. Pilih arti kata yang paling tepat berdasarkan konteks
+          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
+          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
+          7. Jika ada kata belum tepat, boleh disesuaikan secara kontekstual
+          
+          paling penting jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
+
           PENTING (IMBUHAN BAHASA DAERAH):
           Jika ada kata yang mengandung imbuhan seperti:
-          "o", "i", "ai", "da", "dha", "k", "n", "se", "ma"
+          "o", "i", "ai", "da", "dha", "k", "n", "se", "ma", "ka"
 
           MAKA:
           - Cari kata dasarnya
@@ -6288,7 +6291,17 @@ function translateFromVoice(text){
           o fala =  rumah
           i fala = = rumah
           fala ni =  rumah
+          
+          contoh:
+          input: "jalan baru itu banyak debu
+          output: "ngoko sungi ge dofu fika" 
 
+          input: ""
+
+          Output:
+          - hanya 1 kalimat terbaik
+          - alami
+          - sesuai konteks
           `
         },
         {
