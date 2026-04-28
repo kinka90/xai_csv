@@ -6286,11 +6286,12 @@ function translateFromVoice(text){
           content: `
           Arah terjemahan: ${direction}
 
-          selalu utamakan kata keterangan baru di lanjutkan ke kalimat berikutnya, jangan menghilangkan kata yang sudah ada di hasil kamus, tapi susunlah menjadi kalimat yang benar dan alami.
-          contoh:
-          input: "jalan baru itu banyak debu
-          output: "ngoko sungi ge dofu fika" 
-          
+          Kalimat asli:
+          "${originalText}"
+
+          Hasil dari kamus:
+          "${dictResult}"
+
           Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
           `
         }
