@@ -6262,59 +6262,75 @@ function translateFromVoice(text){
           Ubah susunan kata dari hasil kamus agar mengikuti pola yang benar.
 
           ==================================
-          ATURAN UTAMA (WAJIB IKUTI):
+          ATURAN UTAMA:
           ==================================
 
-          BENTUK INPUT:
-          "ngaimoi o boki mangopa dha tataro i mote-mote de ya hino ngohi ka"
+          1. POLA BENDA:
 
-          BENTUK OUTPUT:
-          "o boki mangopa dha tataro ngaimoi i mote-mote de ya hino ngohi ka"
+          [jumlah] + [benda] + [sifat]
+          → menjadi
+          [benda] + [sifat] + [jumlah]
 
           ----------------------------------
 
-          POLA YANG HARUS DIIKUTI:
+          CONTOH:
+          "ngaimoi o boki dha tataro"
+          → "o boki dha tataro ngaimoi"
 
-          Jika ada susunan seperti:
-          [jumlah] + [benda] + [penjelas/sifat]
+          ==================================
+          ATURAN NEGASI (PENTING):
+          ==================================
+
+          Jika ada pola:
+          "hiwa + kata kerja + objek"
 
           MAKA UBAH MENJADI:
-          [benda] + [penjelas/sifat] + [jumlah]
+          "objek + kata kerja + hiwa"
 
           ----------------------------------
 
-          CONTOH 1:
-          INPUT:
-          "ngaimoi o boki dha tataro"
-
-          OUTPUT:
-          "o boki dha tataro ngaimoi"
+          CONTOH:
+          "hiwa mamake goule"
+          → "goule mamake hiwa"
 
           ----------------------------------
 
-          CONTOH 2:
-          INPUT:
-          "ngaimoi o boki mangopa dha tataro"
+          CONTOH KALIMAT:
+          "nongoru ari sabab hiwa mamake goule"
+          → "nongoru ari sabab goule mamake hiwa"
 
-          OUTPUT:
-          "o boki mangopa dha tataro ngaimoi"
+          ==================================
+          ATURAN JUMLAH:
+          ==================================
 
-          ----------------------------------
+          1. Jika jumlah muncul 2 kali dalam 1 benda:
+          → hapus yang di depan
+          → simpan hanya 1 di belakang
 
-          ATURAN TAMBAHAN:
+          CONTOH SALAH:
+          "monahalo de moi o nao dha susawala monahalo de moi"
 
-          1. Kata kerja (contoh: i mote-mote, hino)
-            → JANGAN DIPINDAH jauh, tetap setelah subjek
-
-          2. JANGAN:
-            - tambah kata
-            - hapus kata
-            - ubah arti
-
-          3. HANYA:
-            - pindahkan posisi kata agar sesuai pola
+          CONTOH BENAR:
+          "o nao dha susawala monahalo de moi"
 
           ----------------------------------
+
+          2. Jika ada 2 benda berbeda:
+          → masing-masing boleh punya jumlah
+
+          CONTOH:
+          "ikan merah 21 juga ikan kuning 21"
+
+          ==================================
+          ATURAN UMUM:
+          ==================================
+
+          - Kata kerja tetap setelah subjek
+          - Jangan tambah kata
+          - Jangan hapus kata (kecuali jumlah duplikat)
+          - Jangan ubah arti
+
+          ==================================
 
           OUTPUT:
           - hanya kalimat akhir
