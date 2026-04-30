@@ -134,15 +134,15 @@
         {"ind":"telapak","ter":"saha","makian": "", "galela": "soha"},
         {"ind":"telapak tangan","ter": "gia masaha", "makian": "giya ma'soha", "galela": "", "img": "https://i.pinimg.com/474x/7c/89/a2/7c89a21e453983f7c795cba558e5370f.jpg"},      
         {"ind":"telapak kaki", "ter": "hohu masaha", "makian": "dhohu ma'soha", "galela": "", "img": "https://i.pinimg.com/474x/1a/8e/1b/1a8e1b1f654f5f4f5f3f4e4f5f6f7f8f.jpg"},
-        {"ind":"kuku","ter":"gulcifi","makian": "kuyo", "galela": "gitipi", "img": "https://i.pinimg.com/474x/8c/2f/0d/8c2f0d7b0c1e5f8b3c5e9a2f0e1a3b4c.jpg"},
+        {"ind":"kuku","ter":"magulcifi","makian": "kuyo", "galela": "gitipi", "img": "https://i.pinimg.com/474x/8c/2f/0d/8c2f0d7b0c1e5f8b3c5e9a2f0e1a3b4c.jpg"},
         {"ind":"jari tangan","ter":"gia maraga raga","makian": "we nimyao", "galela": "giya ma'raraga", "img": "https://i.pinimg.com/474x/7c/89/a2/7c89a21e453983f7c795cba558e5370f.jpg"},
         {"ind":"jari kaki","ter":"hohu maraga raga","makian": "", "galela": "dhohu ma'raraga", "img":"img/jari_kaki.png"},
         {"ind":"jari","ter":"raga raga","makian": "nimyao", "galela": "raraga", "img":"img/jari_kaki.png"},
-        {"ind":"ibu jari","ter":"tugu hera","makian": "", "galela": "raraga ma'awa"},
-        {"ind":"jari telunjuk","ter":"gia masahadat","makian": "", "galela": "raraga si'tutum"},
-        {"ind":"jari tengah","ter":"raga raga","makian": "nimyao halaim", "galela": "raraga totongiraba"},
-        {"ind":"jari manis","ter":"","makian": "", "galela": "ali-ali ma'raraga"},
-        {"ind":"jari kelingking","ter":"tugudeki","makian": "", "galela": "raraga ma'galegiti"},
+        {"ind":"ibu jari","ter":"matuguhera","makian": "", "galela": "raraga ma'awa"},
+        {"ind":"jari telunjuk","ter":"masahadat","makian": "", "galela": "raraga si'tutum"},
+        {"ind":"jari tengah","ter":"magonora","makian": "nimyao halaim", "galela": "raraga totongiraba"},
+        {"ind":"jari manis","ter":"maistinja","makian": "", "galela": "ali-ali ma'raraga"},
+        {"ind":"jari kelingking","ter":"matugudeki","makian": "", "galela": "raraga ma'galegiti"},
         {"ind":"jantung","ter":"gate","makian": "yo'co", "galela": "mamata", "img":"https://thumb.viva.id/intipseleb/663x372/2022/06/28/62ba8b9875e01-sakit-jantung-ilustrasi.jpg"},
         {"ind":"otak","ter":"otak","makian": "kalia", "galela": "otak", "img":"https://cdn.kibrispdr.org/data/477/gambar-otak-animasi-25.jpg"},
         {"ind":"tulang","ter":"obo","makian": "subebi", "galela": "kobo", "img":"https://img.lovepik.com/png/20231018/x-ray-clipart-yellow-haired-child-bone-cartoon-bones_250844_wh860.png"},
@@ -797,6 +797,7 @@
         {"ind":"beli","ter":"fodi ","makian": "poli", "galela": "ija","img":"https://asset-2.tribunnews.com/tribunkaltimtravel/foto/bank/images/beli-baju-baru-lagi.jpg"},
         {"ind":"menjual","ter":"mafuku","makian": "wagik", "galela": "si'ija","img":"https://png.pngtree.com/png-clipart/20241208/original/pngtree-fruit-seller-selling-oranges-buy-and-sell-clip-art-png-image_17664797.png"},
         {"ind":"membawa","ter":"gawa","makian": "yat", "galela": "o aho","img":"https://png.pngtree.com/png-clipart/20230716/original/pngtree-kids-bring-a-book-png-image_9308110.png"},
+        {"ind":"membawanya","ter":"mogasa ","makian": "", "galela": ""},
         {"ind":"mengambil","ter":"raba","makian": "nyol", "galela": "dhehe","img":"https://media.istockphoto.com/id/1472538743/id/foto/anak-sekolah-kecil-mengambil-buku-dari-rak-di-perpustakaan-dengan-setumpuk-buku-di-tangan.jpg?s=170667a&w=0&k=20&c=c3yjKqtUkY-jA9Rkz0XNXabTMmD5zYv5BDH-SewQ_4c="},
         {"ind":"memberi","ter":"pulo","makian": "o'tik", "galela": "hike","img":"https://asset-2.tribunnews.com/jambi/foto/bank/images/beri-uang-anak-orangtua.jpg"},
         {"ind":"beri","ter":"pulo ","makian": "pula", "galela": "hike"},
@@ -994,7 +995,7 @@
         {"ind":"tipis","ter":"tipis","makian": "nihis", "galela": "hina"},
       ],
       "Warna": [
-        {"ind":"warna","ter":"makeler","makian": "kler", "galela": "hodha"},
+        {"ind":"warna","ter":"makler","makian": "kler", "galela": "hodha"},
         {"ind":"warna putih","ter":"","makian": "bulang", "galela": "ma'hodha dha'a'are"},
         {"ind":"merah","ter":"roriha","makian": "makot", "galela": "dha susawala"},
         {"ind":"biru","ter":"balao","makian": "balao", "galela": "dha bisi"},
@@ -1239,9 +1240,8 @@
       ],
       "Penunjuk": [
         {"ind":"penunjuk","ter":"","makian": "", "galela": "si'dudumu"},
-        {"ind":"ini","ter":"ne","makian": "mine", "galela": "ma'nena"},
+        {"ind":"ini","ter":"ena ne","makian": "mine", "galela": "ma'nena"},
         {"ind":"itu","ter":"ena ge","makian": "mema", "galela": "magena"},
-        {"ind":"itu","ter":"ge","makian": "dia", "galela": ""},
         {"ind":"sini","ter":"kenee","makian": "sine", "galela": ""},
         {"ind":"situ","ter":"ena ge","makian": "", "galela": ""},
         {"ind":"kesana","ter":"ika","makian": "", "galela": ""},
@@ -1254,7 +1254,7 @@
         {"ind":"bawah","ter":"toma adu","makian": "naso", "galela": "dahe"},
         {"ind":"depan","ter":"magunaga","makian": "sodali", "galela": "sima"},
         {"ind":"belakang","ter":"mburi","makian": "taggulo", "galela": "dudu"},
-        {"ind":"di belakang","ter":"toma madudu","makian": "", "galela": "ma'dudu'ka"},
+        {"ind":"di belakang","ter":"toma madudu","makian": "", "galela": "maduduka"},
         {"ind":"dalam","ter":"ngido","makian": "tai", "galela": "raba"},
         {"ind":"dalam","ter":"madaha","makian": "", "galela": ""},
         {"ind":"luar","ter":"madudu","makian": "lik", "galela": ""},
@@ -2308,6 +2308,7 @@
         {"ind":"berjaga","ter":"majaga","makian": "", "galela": ""},
         {"ind":"bersiap-siap","ter":"masigaro","makian": "", "galela": ""},
         {"ind":"bersama","ter":"se","makian": "", "galela": ""},
+        {"ind":"berekor","ter":"mabiki","makian": "", "galela": ""},
         {"ind":"beristirahat","ter":"","makian": "aomak", "galela": "sidatu"}
       ],
       "C": [
@@ -2546,7 +2547,6 @@
         {"ind":"dihanyutkan","ter":"siruru","makian": "myaling", "galela": "si'dhasi"}
       ],
       "E": [
-        {"ind":"ecer","ter":"rimoi rimoi","makian": "", "galela": "ngai"},
         {"ind":"enceran","ter":"rimoi rimoi","makian": "", "galela": "ngai-ngai"},
         {"ind":"edan","ter":"","makian": "", "galela": "togosa"},
         {"ind":"edar","ter":"pangoro","makian": "", "galela": "si'dagi"},
@@ -2589,11 +2589,12 @@
         {"ind":"esok","ter":"difutu","makian": "", "galela": "langi"},
         {"ind":"exim","ter":"","makian": "", "galela": "kudusi"},
         {"ind":"emping","ter":"karopo ganem","makian": "", "galela": ""},
-        {"ind":"fantasi","ter":"menghayal","makian": "", "galela": ""},
+        {"ind":"ekor","ter":"","makian": "", "galela": "ngai"},
         {"ind":"expor","ter":"","makian": "", "galela": "si'supu"}
       ],
       "F": [
         {"ind":"faedah","ter":"maguna","makian": "", "galela": "ngale"},
+        {"ind":"fantasi","ter":"menghayal","makian": "", "galela": ""},
         {"ind":"faham","ter":"mangale","makian": "", "galela": "fahami"},
         {"ind":"fajar","ter":"dima dima","makian": "lilisi", "galela": "dai i'bati"},
         {"ind":"fakir","ter":"miskiin","makian": "", "galela": "mularat"},
@@ -4339,7 +4340,7 @@
         {"ind":"nanti malam","ter":"chabutara","makian": "", "galela": ""},
         {"ind":"nama","ter":"maronga","makian": "aim", "galela": "ronga"},
         {"ind":"nama","ter":"","makian": "sso", "galela": ""},
-        {"ind":"namanya","ter":"","makian": "nisso", "galela": ""},
+        {"ind":"namanya","ter":"maronga","makian": "nisso", "galela": ""},
         {"ind":"nama saya","ter":"","makian": "yakso", "galela": ""},
         {"ind":"nanah","ter":"boa boa","makian": "boboa", "galela": "boa"},
         {"ind":"nelayan","ter":"hau-hau","makian": "baiboyam", "galela": "hahau"},
@@ -6255,78 +6256,141 @@ function translateFromVoice(text){
       messages: [
         {
           role: 'system',
-         content: `
-          Kamu adalah AI penyusun ulang kalimat untuk Bahasa Galela.
-          
+          content: `
+          Kamu adalah AI penyusun ulang kalimat.
+
           TUGAS:
-          Ubah hasil kamus menjadi SUSUNAN KALIMAT BAHASA GALELA yang benar.
-          
+          Susun ulang kata dari hasil kamus berdasarkan aturan posisi.
+          JANGAN ubah arti. HANYA ubah posisi kata.
+
           ==================================
-          ATURAN SEDERHANA (WAJIB DIIKUTI):
+          ATURAN UTAMA (WAJIB IKUTI)
           ==================================
-          
-          INPUT:
-          Kalimat hasil kamus (acak / masih gaya Indonesia)
-          
-          OUTPUT:
-          Kalimat Bahasa Galela dengan urutan yang benar
-          
-          ----------------------------------
-          
-          POLA WAJIB:
-          
-          1. SUSUNAN UTAMA:
-          [benda] + [sifat] + [jumlah] + [kata kerja] + [objek/keterangan]
-          
-          ----------------------------------
-          
-          2. ATURAN KHUSUS:
-          
-          - Jika ada kata jumlah:
-            "ngaimoi" (seekor), angka, dll
-            → PINDAHKAN ke BELAKANG kata benda
-          
-          - Jika ada kata sifat:
-            → letakkan setelah kata benda
-          
-          - Kata kerja:
-            → tetap setelah subjek
-          
-          ----------------------------------
-          
-          3. JANGAN:
-          - Jangan tambah kata baru
-          - Jangan hapus kata
-          - Jangan ubah arti
-          
-          ----------------------------------
-          
-          4. GUNAKAN HASIL KAMUS:
-          - Hanya susun ulang, bukan menerjemahkan ulang
-          
-          ----------------------------------
-          
+
+          1. SUBJEK + KATA KERJA
+          Jika kalimat dimulai dengan:
+          "saya, kamu, aku, kami, kalian, dia, mereka, ibu, ayah, adik"
+
+          → MAKA:
+          Subjek tetap di depan
+          Kata kerja tetap setelah subjek
+
           CONTOH:
-          
-          INPUT:
-          "ngaimoi o boki mangopa dha tataro i mote-mote de ya"
-          
-          OUTPUT:
-          "o boki mangopa dha tataro ngaimoi i mote-mote de ya"
-          
+          "saya makan nasi"
+          → tetap "saya makan nasi"
+
           ----------------------------------
-          
-          INPUT:
-          "ngaimoi o boki dha tataro"
-          
-          OUTPUT:
-          "o boki dha tataro ngaimoi"
-          
+
+          2. ATURAN ANGKA (SANGAT PENTING)
+
+          Jika ada:
+          [angka] + [benda]
+          → menjadi
+          [benda] + [angka]
+
+          Jika ada:
+          [angka] + [benda] + [sifat]
+          → menjadi
+          [benda] + [sifat] + [angka]
+
+          CONTOH:
+          "2 rumah" → "rumah 2"
+          "21 ikan merah" → "ikan merah 21"
+          "21 ayam kuning" → "ayam kuning 21"
+
           ----------------------------------
-          
-          OUTPUT AKHIR:
-          - Hanya kalimat
-          - Tanpa penjelasan
+
+          3. ATURAN NEGASI
+
+          Jika ada:
+          "tidak + kata kerja"
+          → menjadi
+          "kata kerja + tidak"
+
+          Jika ada:
+          "tidak + kata kerja + objek"
+          → menjadi
+          "objek + kata kerja + tidak"
+
+          Jika ada:
+          "bukan + kata"
+          → menjadi
+          "kata + bukan"
+
+          CONTOH:
+          "tidak mau" → "mau tidak"
+          "tidak makan nasi" → "nasi makan tidak"
+          "bukan itu" → "itu bukan"
+
+          ----------------------------------
+
+          4. ATURAN FRASA DIBALIK
+
+          Jika ada pasangan 2 kata:
+
+          "rumah saya" → "saya rumah"  
+          "buah kelapa" → "kelapa buah"  
+          "belakang rumah" → "rumah belakang"  
+          "depan rumah" → "rumah depan"  
+
+          ----------------------------------
+
+          5. ATURAN POSISI TEMPAT
+
+          "di belakang rumah"
+          → "di rumah belakang"
+
+          "di depan rumah"
+          → "di rumah depan"
+
+          ----------------------------------
+
+          6. ATURAN WAKTU (JANGAN DIUBAH)
+
+          "pagi ini"
+          "sore ini"
+          "malam ini"
+          "besok malam"
+
+          → tetap (JANGAN DIUBAH)
+
+          ----------------------------------
+
+          7. KALIMAT PANJANG
+
+          Ikuti semua aturan di atas secara berurutan.
+
+          CONTOH:
+          "adik menangis karena tidak mendapatkan mainan"
+          → "adik menangis karena mainan mendapatkan tidak"
+
+          "kami tidak bisa pergi karena jalan rusak"
+          → "kami pergi bisa tidak karena jalan rusak"
+
+          "ayah membawa empat buah kelapa dari kebun"
+          → "ayah membawa kelapa buah empat dari kebun"
+
+          "mereka memiliki 2 mobil di rumah"
+          → "mereka memiliki mobil 2 di rumah"
+
+          ----------------------------------
+
+          ==================================
+          ATURAN PENTING
+          ==================================
+
+          - Jangan tambah kata
+          - Jangan hapus kata (kecuali angka duplikat)
+          - Jangan ubah arti
+          - Hanya ubah posisi
+          - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali jika di inputan angka hanya sekali)
+          - Negasi SELALU pindah ke belakang kata kerja atau objek
+
+          ==================================
+
+          OUTPUT:
+          - hanya kalimat akhir
+          - tanpa penjelasan
           `
         },
         {
