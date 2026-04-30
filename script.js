@@ -287,22 +287,22 @@
         {"ind":"kasuari","ter":"kasuwari","makian": "", "galela": "o namo kasuari"},
         {"ind":"bebek","ter":"bebe","makian": "gabura", "galela": "o bebe"},
         {"ind":"jangkrik","ter":"jojorore","makian": "salas", "galela": "o cacaoreke"},
-        {"ind":"kucing","ter":"tusa","makian": "tusa", "galela": "o boki", 	"img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/03/06082237/kucing-domestik.jpg"},        
-        {"ind":"buaya","ter":"sama","makian": "poi", "galela": "o gosoma", 	"img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/03/06082237/kucing-domestik.jpg"},        
-        {"ind":"anjing","ter":"kaso","makian": "nyo", "galela": "o kaso", 	"img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/08/20065849/Ini-X-Gangguan-Kesehatan-yang-Umumnya-Dialami-Anjing-Golden.jpg.webp"},
+        {"ind":"kucing","ter":"tusa","makian": "tusa", "galela": "o boki"},        
+        {"ind":"buaya","ter":"sama","makian": "poi", "galela": "o gosoma"},        
+        {"ind":"anjing","ter":"kaso","makian": "nyo", "galela": "o kaso"},
         {"ind":"anjing hutan","ter":"","makian": "nyo dawallo", "galela":"o ponga ma'kaso"},
         {"ind":"anjing liar","ter":"","makian": "nyo nayoba", "galela": "o kaso laba'ra"},
-        {"ind":"burung","ter":"namo namo","makian": "haiwan", "galela": "o namo", 	"img":"https://asset.kompas.com/crops/CuREXFE9aBNsZ5ItbJb_VwPP8Q0=/0x0:1000x667/1200x800/data/photo/2022/07/26/62dfce0acaeaa.jpg"},
-        {"ind":"ikan","ter":"nyao","makian": "yan", "galela": "o nao", "img":"https://cdn.rri.co.id/berita/Cirebon/o/1725425715188-6513cccbe1a45/iajx9pf5ezaet8v.png"},
+        {"ind":"burung","ter":"namo namo","makian": "haiwan", "galela": "o namo"},
+        {"ind":"ikan","ter":"nyao","makian": "yan", "galela": "o nao"},
         {"ind":"ikan asin","ter":"nyao gasi","makian": "", "galela": "o timoloha/gogiring"},
-        {"ind":"ayam","ter":"namo","makian": "manik", "galela": "o toko", "img":"https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,f_auto,q_auto:best,w_640/v1634025439/79068f7851f61f80697295d0fdf1abcace4d34b0d25eb4c68e300da2a50e37de.jpg"},
-        {"ind":"sapi","ter":"sapi","makian": "sapi", "galela": "o sapi", "img":"https://unair.ac.id/wp-content/uploads/2022/04/Foto-by-Dunia-Sapi.jpg"},
-        {"ind":"kadal","ter":"jaran","makian": "tonololan", "galela": "o kaso ma'wuwu", "img":"https://www.batamnews.co.id/foto_berita//83kuda.jpg"},
+        {"ind":"ayam","ter":"namo","makian": "manik", "galela": "o toko"},
+        {"ind":"sapi","ter":"sapi","makian": "sapi", "galela": "o sapi"},
+        {"ind":"kadal","ter":"jaran","makian": "tonololan", "galela": "o kaso ma'wuwu"},
         {"ind":"anak kadal","ter":"","makian": "", "galela": "o kekedoko"},
         {"ind":"anak kucing","ter":"","makian": "", "galela": "o boki mangopa"},
         {"ind":"kerbau","ter":"sapi","makian": "kerbau", "galela": "o kerbau"},
-        {"ind":"domba","ter":"wedhus","makian": "biri-biri", "galela": "o domba", "img":"https://awsimages.detik.net.id/community/media/visual/2024/06/07/177426993_169.jpeg?w=600&q=90"},
-        {"ind":"kambing","ter":"kabi","makian": "kabin", "galela": "o kabi", 	"img":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/960px-Hausziege_04.jpg"},
+        {"ind":"domba","ter":"wedhus","makian": "biri-biri", "galela": "o domba"},
+        {"ind":"kambing","ter":"kabi","makian": "kabin", "galela": "o kabi"},
         {"ind":"landak","ter":"","makian": "", "galela": "o landaki"},
         {"ind":"orang utan","ter":"","makian": "tapawori", "galela": "o ponga ma'nyawa"},
         {"ind":"tupai","ter":"palando","makian": "upai", "galela": "o palado/kuso"},
@@ -312,90 +312,90 @@
         {"ind":"kalajengking","ter":"","makian": "", "galela": "o hai sosolota"},
         {"ind":"bangau putih","ter":"","makian": "", "galela": "o tuma"},
         {"ind":"bangau hitam","ter":"","makian": "", "galela": "o suweko"},
-        {"ind":"belatung","ter":"kerbau","makian": "sagat", "galela": "o gai", "img":"https://cdn.grid.id/crop/0x0:0x0/x/photo/2022/11/14/perbedaan-hewan-kerbau-dan-bante-20221114032702.jpg"},
-        {"ind":"biawak","ter":"biawak","makian": "suwoi", "galela": "o ragu", 	"img":"https://image.idntimes.com/post/20250106/202306-varanus-komodoensis-df50788dcc3c7a7a2e797148af184b7b-4bd21075cfdc8d0c46069f35b80b09cd.jpg"},
+        {"ind":"belatung","ter":"kerbau","makian": "sagat", "galela": "o gai"},
+        {"ind":"biawak","ter":"biawak","makian": "suwoi", "galela": "o ragu"},
         {"ind":"biawak air","ter":"","makian": "", "galela": "o kariyanga"},
         {"ind":"biawak darat","ter":"","makian": "", "galela": "o ragu"},
-        {"ind":"belalang","ter":"boto-boto","makian": "kacupang", "galela": "o galasosoko", 	"img":"https://image.idntimes.com/post/20250106/202306-varanus-komodoensis-df50788dcc3c7a7a2e797148af184b7b-4bd21075cfdc8d0c46069f35b80b09cd.jpg"},
+        {"ind":"belalang","ter":"boto-boto","makian": "kacupang", "galela": "o galasosoko"},
         {"ind":"belalang besar","ter":"","makian": "", "galela": "o galasosoko"},
         {"ind":"belalang kecil","ter":"","makian": "", "galela": "o bubukili"},
-        {"ind":"bunglon","ter":"sadute","makian": "ngangali tuo", "galela": "o sarawodeke", 	"img":"https://api.ternakhias.com/public/images/b49c88af7ca84ba7957e411f64f3bd8f.webp"},
-        {"ind":"merpati","ter":"pombo","makian": "pombo", "galela": "o pombo", 	"img":"https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/17816_5-fakta-seputar-burung-hantu.jpg"},
+        {"ind":"bunglon","ter":"sadute","makian": "ngangali tuo", "galela": "o sarawodeke"},
+        {"ind":"merpati","ter":"pombo","makian": "pombo", "galela": "o pombo"},
         {"ind":"burung hantu","ter":"","makian": "", "galela": "o wuku"},
-        {"ind":"capung","ter":"merpati","makian": "bedemeteni", "galela": "o ake ma'sesesa", 	"img":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Rock_Pigeon_Columba_livia.jpg/1024px-Rock_Pigeon_Columba_livia.jpg"},     
-        {"ind":"cicak","ter":"diti","makian": "", "galela": "o lola'hekana", "img":"https://cdn.rri.co.id/berita/Fak_Fak/t/1730175449502-elang/7yq20ujyho4dixy.jpeg"},
+        {"ind":"capung","ter":"merpati","makian": "bedemeteni", "galela": "o ake ma'sesesa"},     
+        {"ind":"cicak","ter":"diti","makian": "", "galela": "o lola'hekana"},
         {"ind":"badak","ter":"badak","makian": "badak", "galela": "o badaki"},
         {"ind":"kakatua","ter":"gatala","makian": "", "galela": "o gotopo"},
         {"ind":"camar","ter":"","makian": "", "galela": "o salamburungu"},
-        {"ind":"gagak","ter":"woka woka","makian": "wok", "galela": "o wogo", "img":"https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/17816_5-fakta-seputar-burung-hantu.jpg"},
-        {"ind":"kecoa","ter":"foke","makian": "titas", "galela": "o foke", "img":"https://westpapuavoice.ac/wp-content/uploads/2024/04/Cendrawaasih.png"},
+        {"ind":"gagak","ter":"woka woka","makian": "wok", "galela": "o wogo"},
+        {"ind":"kecoa","ter":"foke","makian": "titas", "galela": "o foke"},
         {"ind":"keong","ter":"bilolo","makian": "", "galela": "o ngihiya ma'gogerena/keong"},
-        {"ind":"tikus","ter":"nguti","makian": "mauka", "galela": "o lupu", "img":"https://d1bpj0tv6vfxyp.cloudfront.net/articles/a98d6280-5481-4a81-8926-cdfa2d8dbf9e_article_image_url.webp"},
-        {"ind":"kelelawar","ter":"","makian": "nhik", "galela": "o mano", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgdwtaSj-2RMCoA7rcmiUY7YR139ORsrGDCQ&s"},
+        {"ind":"tikus","ter":"nguti","makian": "mauka", "galela": "o lupu"},
+        {"ind":"kelelawar","ter":"","makian": "nhik", "galela": "o mano"},
         {"ind":"kelelawar kecil","ter":"","makian": "", "galela": "o gugu'sala"},
-        {"ind":"babi hutan","ter":"soho banga","makian": "dawalo", "galela": "o ponga ma'titi", 	"img":"https://asset.kompas.com/crops/DTyXmmHJt6wI9vvoyYhQOTzBrVU=/0x0:1900x1267/1200x800/data/photo/2019/09/23/5d88f725e2645.jpg"},
+        {"ind":"babi hutan","ter":"soho banga","makian": "dawalo", "galela": "o ponga ma'titi"},
         {"ind":"kelinci","ter":"kalinci","makian": "", "galela": "o kalinci"},
-        {"ind":"babi","ter":"soho","makian": "welik", "galela": "o titi", 	"img":"https://i0.wp.com/thepatriots.asia/wp-content/uploads/babiii.jpeg?fit=1536%2C873&ssl=1"},
+        {"ind":"babi","ter":"soho","makian": "welik", "galela": "o titi"},
         {"ind":"babi betina","ter":"","makian": "", "galela": "o esa/titi ma'bedheka"},
         {"ind":"babi jantan","ter":"","makian": "", "galela": "o mako/titi ma'nau"},
         {"ind":"taring babi","ter":"","makian": "", "galela": "o sisigi"},
         {"ind":"sarang babi","ter":"","makian": "", "galela": "o ahe"},
         {"ind":"kubangan babi","ter":"","makian": "", "galela": "o titi ma'gawa"},
-        {"ind":"gajah","ter":"gaja","makian": "gaja", "galela": "o gaja", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3TPemPKbTWnrF8eXCC8tYDhWyu2AhZ2QwQPA58h_GTJ1YdKG3EJCotcG9KmkSPVD_b7o&usqp=CAU"},
-        {"ind":"tokek","ter":"tokek","makian": "gefegifi", "galela": "o sarawodeke", 	"img":"https://bskdn.kemendagri.go.id/website/wp-content/uploads/2018/03/Harimau-800x400.jpg"},
-        {"ind":"singa","ter":"singa","makian": "", "galela": "", 	"img":"https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/78/2025/04/17/african-lion-portrait-warm-light-1551011717.jpg"},
+        {"ind":"gajah","ter":"gaja","makian": "gaja", "galela": "o gaja"},
+        {"ind":"tokek","ter":"tokek","makian": "gefegifi", "galela": "o sarawodeke"},
+        {"ind":"singa","ter":"singa","makian": "", "galela": ""},
         {"ind":"harimau","ter":"","makian": "singa", "galela": ""},
         {"ind":"macan","ter":"macan","makian": "", "galela": "o macani"},
         {"ind":"kumbang","ter":"bubuwau","makian": "keu", "galela": ""},
-        {"ind":"kelomang","ter":"beruang","makian": "bbelung", "galela": "o bapipi", "img":"https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/93/2024/07/06/4-fakta-menarik-beruang-coklat-himalaya-bisa-hibernasi-sampai-8-bulan-9VBXSAXQwf-1665841611.jpg"},
-        {"ind":"kumbang hijau","ter":"","makian": "malibung", "galela": "", "img":"https://www.treehugger.com/thmb/qFhPReYPPaVgTtHBOthYeMJVeZ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1043597638-49acd69677d7442588c1d8930d298a59.jpg"},
-        {"ind":"kumbang tanduk","ter":"","makian": "peu", "galela": "", "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Giraffe-solo_Koure-NIGER.jpg/250px-Giraffe-solo_Koure-NIGER.jpg"},
-        {"ind":"monyet","ter":"mia","makian": "mia-mia", "galela": "o miya", "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bonnet_macaque_%28Macaca_radiata%29_Photograph_By_Shantanu_Kuveskar.jpg/250px-Bonnet_macaque_%28Macaca_radiata%29_Photograph_By_Shantanu_Kuveskar.jpg"},
+        {"ind":"kelomang","ter":"beruang","makian": "bbelung", "galela": "o bapipi"},
+        {"ind":"kumbang hijau","ter":"","makian": "malibung", "galela": ""},
+        {"ind":"kumbang tanduk","ter":"","makian": "peu", "galela": ""},
+        {"ind":"monyet","ter":"mia","makian": "mia-mia", "galela": "o miya"},
         {"ind":"kera","ter":"miya","makian": "mia-mia", "galela": "o miya"},
         {"ind":"kungkang","ter":"","makian": "do", "galela": ""},
-        {"ind":"kodok","ter":"pa pa","makian": "pak'pak", "galela": "o pedeke", 	"img":"https://cdn1-production-images-kly.akamaized.net/9EJv_IFyChogvFuQTNQwUc6UReA=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1809016/original/084250100_1513849626-Snakes.jpg"},
-        {"ind":"ular","ter":"muhia","makian": "kolai", "galela": "o ngihiya", 	"img":"https://cdn1-production-images-kly.akamaized.net/9EJv_IFyChogvFuQTNQwUc6UReA=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1809016/original/084250100_1513849626-Snakes.jpg"},
-        {"ind":"ular laut","ter":"","makian": "bluk", "galela": "", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
+        {"ind":"kodok","ter":"pa pa","makian": "pak'pak", "galela": "o pedeke"},
+        {"ind":"ular","ter":"muhia","makian": "kolai", "galela": "o ngihiya"},
+        {"ind":"ular laut","ter":"","makian": "bluk", "galela": ""},
         {"ind":"ular cincin","ter":"","makian": "samemul", "galela": ""},
-        {"ind":"ular piton","ter":"","makian": "babau", "galela": "ogumi lamo", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
-        {"ind":"ular pohon","ter":"","makian": "samsom", "galela": "", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
-        {"ind":"ulat","ter":"gai","makian": "dam-dam", "galela": "o gai", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
-        {"ind":"ulat bulu","ter":"","makian": "afo-afo", "galela": "", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
-        {"ind":"ulat sagu","ter":"","makian": "sabeta", "galela": "", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
+        {"ind":"ular piton","ter":"","makian": "babau", "galela": "ogumi lamo"},
+        {"ind":"ular pohon","ter":"","makian": "samsom", "galela": ""},
+        {"ind":"ulat","ter":"gai","makian": "dam-dam", "galela": "o gai"},
+        {"ind":"ulat bulu","ter":"","makian": "afo-afo", "galela": ""},
+        {"ind":"ulat sagu","ter":"","makian": "sabeta", "galela": ""},
         {"ind":"ulat kenari","ter":"","makian": "ngemoglo", "galela": ""},
         {"ind":"kepompong","ter":"","makian": "taperi", "galela": "o ngelo"},
-        {"ind":"katak","ter":"pa pa","makian": "pak'pak", "galela": "o pedeke", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
-        {"ind":"kecebong","ter":"kodok","makian": "aworo do oma", "galela": "o tutupana", 	"img":"https://blog.kliknclean.com/wp-content/uploads/1-34.jpg"},
-        {"ind":"kupu-kupu","ter":"ngako ngako","makian": "babang", "galela": "o mama'liki", 	"img":"https://assets-a1.kompasiana.com/items/album/2016/08/09/kupu-kupu-57a95a61b17a61520786ca96.jpg"},
-        {"ind":"kura-kura","ter":"ori","makian": "o'ri ba'nga", "galela": "o sangkura/ori", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCypxkMNggvCdeLGSz9ZqpWNXkM-a6-Us9og&s"},
-        {"ind":"lebah","ter":"tawon","makian": "bub", "galela": "o hopu", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCypxkMNggvCdeLGSz9ZqpWNXkM-a6-Us9og&s"},
+        {"ind":"katak","ter":"pa pa","makian": "pak'pak", "galela": "o pedeke"},
+        {"ind":"kecebong","ter":"kodok","makian": "aworo do oma", "galela": "o tutupana"},
+        {"ind":"kupu-kupu","ter":"ngako ngako","makian": "babang", "galela": "o mama'liki"},
+        {"ind":"kura-kura","ter":"ori","makian": "o'ri ba'nga", "galela": "o sangkura/ori"},
+        {"ind":"lebah","ter":"tawon","makian": "bub", "galela": "o hopu"},
         {"ind":"lebah liar","ter":"","makian": "taitulai", "galela": ""},
-        {"ind":"nuri","ter":"luri","makian": "busu", "galela": "", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNTtc4qdS77oDfx0JZGyDw6oF3jou_sx_Qg&s"},
-        {"ind":"semut","ter":"bifi","makian": "wewei", "galela": "o guludu'ngu", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNTtc4qdS77oDfx0JZGyDw6oF3jou_sx_Qg&s"},
+        {"ind":"nuri","ter":"luri","makian": "busu", "galela": ""},
+        {"ind":"semut","ter":"bifi","makian": "wewei", "galela": "o guludu'ngu"},
         {"ind":"semut hitam besar","ter":"","makian": "patpot", "galela": "o guludu'ngu da sasaro la lamo"},
         {"ind":"rang rang","ter":"gunange","makian": "", "galela": ""},
-        {"ind":"semut bersayap","ter":"nyamuk","makian": "yimyomit", "galela": "", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRun5eCPGk_civCO4cJ-u4Bxz_PEiyqdlXWOYkGFLCKk3ZO6StAEHvF7EfEpOx71t5Afco&usqp=CAU"},
+        {"ind":"semut bersayap","ter":"nyamuk","makian": "yimyomit", "galela": ""},
         {"ind":"serangga","ter":"","makian": "", "galela": "danango"},
-        {"ind":"nyamuk","ter":"sisi","makian": "bobai", "galela": "o gomoma", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRun5eCPGk_civCO4cJ-u4Bxz_PEiyqdlXWOYkGFLCKk3ZO6StAEHvF7EfEpOx71t5Afco&usqp=CAU"},
-        {"ind":"laba-laba","ter":"bairere", "makian": "kalkol", "galela": "o nga'araka", "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGrMXdr6NmUZZKcCJ4xZ0voMIbdELTVDDjmQvY1C8rZUFGMxyIunMp_5cvumQzNlMDHu0&usqp=CAU"},
+        {"ind":"nyamuk","ter":"sisi","makian": "bobai", "galela": "o gomoma"},
+        {"ind":"laba-laba","ter":"bairere", "makian": "kalkol", "galela": "o nga'araka"},
         {"ind":"laba-laba berbisa","ter":"","makian": "", "galela": "o owanga"},
         {"ind":"labi-labi","ter":"ori","makian": "", "galela": ""},
         {"ind":"salmon","ter":"furei","makian": "maosip", "galela": ""},
-        {"ind":"cacing","ter":"kultidi", "makian": "lalati", "galela": "o hoha","img":"https://res.cloudinary.com/dk0z4ums3/image/upload/v1649637870/attached_image/cacing-tanah-sebagai-obat-alami-dan-indikator-polusi.jpg"},
+        {"ind":"cacing","ter":"kultidi", "makian": "lalati", "galela": "o hoha"},
         {"ind":"cacing tanah","ter":"kultidi kaha","makian": "", "galela": "o tona ma'oha"},
         {"ind":"cacing perut","ter":"","makian": "", "galela": "o kolotidi"},
         {"ind":"cacing kayu","ter":"","makian": "", "galela": "o kiloti ma'oha"},
         {"ind":"cacing laut","ter":"","makian": "palipit", "galela": "o laor/wawo"},
         {"ind":"cacing pita","ter":"","makian": "let alus", "galela": ""},
-        {"ind":"lalat","ter":"kepiting","makian": "lipong", "galela": "ogu'upu", "img":"https://unair.ac.id/wp-content/uploads/2022/07/Foto-by-Grid-Kids.jpg"},
-        {"ind":"lalat hijau","ter":"","makian": "sagat", "galela": "", "img":"https://www.bing.com/th?id=OIP.Xx1Yk9b2Yk1b0Y7bX4K3FAHaE8&pid=Api&P=0&w=300&h=300"},
-        {"ind":"laron","ter":"kepiting","makian": "yimyomit", "galela": "", "img":"https://unair.ac.id/wp-content/uploads/2022/07/Foto-by-Grid-Kids.jpg"},
-        {"ind":"kepiting","ter":"horu","makian": "bosok", "galela": "o kumo", "img":"https://unair.ac.id/wp-content/uploads/2022/07/Foto-by-Grid-Kids.jpg"},
+        {"ind":"lalat","ter":"kepiting","makian": "lipong", "galela": "ogu'upu"},
+        {"ind":"lalat hijau","ter":"","makian": "sagat", "galela": ""},
+        {"ind":"laron","ter":"kepiting","makian": "yimyomit", "galela": ""},
+        {"ind":"kepiting","ter":"horu","makian": "bosok", "galela": "o kumo"},
         {"ind":"anak kepiting","ter":"","makian": "", "galela": "o kapunaneke"},
         {"ind":"kepiting kenari","ter":"","makian": "titis", "galela": "o kutati"},
-        {"ind":"udang","ter":"buro","makian": "laulang", "galela": "o dode", "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Pandalus_borealis_Hakkeijima.jpg/2560px-Pandalus_borealis_Hakkeijima.jpg"},
-        {"ind":"rayap","ter":"lobster","makian": "bual", "galela": "o gubuala", "img":"https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-1262274470?_a=BAVAZGDX0"},
-        {"ind":"gurita","ter":"bo-oca","makian": "kakit", "galela": "o bo'ota", "img":"https://c.files.bbci.co.uk/8073/production/_122238823_1920xgettyimages-1136409408.jpg"},
+        {"ind":"udang","ter":"buro","makian": "laulang", "galela": "o dode"},
+        {"ind":"rayap","ter":"lobster","makian": "bual", "galela": "o gubuala"},
+        {"ind":"gurita","ter":"bo-oca","makian": "kakit", "galela": "o bo'ota"},
         {"ind":"hiu","ter":"gurango","makian": "", "galela": "o gasango"},
         {"ind":"unta","ter":"onta","makian": "", "galela": "o onta"},
         {"ind":"ikan gurame","ter":"","makian": "sumasi", "galela": ""},
@@ -403,100 +403,100 @@
         {"ind":"ikan badut","ter":"","makian": "seper", "galela": ""},
         {"ind":"ikan bandeng","ter":"","makian": "gurues", "galela": ""},
         {"ind":"ikan bandeng laut","ter":"","makian": "ilik", "galela": ""},
-        {"ind":"ikan pari","ter":"nyao nyoa","makian": "fafa", "galela": "oseka-seka", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUzUPIMKevrhm4P_LJ6VXa8UK1s1TO_dxeBQ&s"},
+        {"ind":"ikan pari","ter":"nyao nyoa","makian": "fafa", "galela": "oseka-seka"},
         {"ind":"ikan ekor kuning","ter":"","makian": "", "galela": "suru"},
         {"ind":"napoleon","ter":"","makian": "", "galela": "taba tuku"},
         {"ind":"ikan julung","ter":"ngowaro","makian": "womya", "galela": "ngawaro"},
         {"ind":"ikan teri","ter":"ngafi","makian": "ngafi", "galela": "ngafi"},
         {"ind":"ikan terbang","ter":"","makian": "poa", "galela": "nao toni"},
-        {"ind":"ubur-ubur","ter":"sosoro ngolo","makian": "sai", "galela": "", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUzUPIMKevrhm4P_LJ6VXa8UK1s1TO_dxeBQ&s"},
-        {"ind":"paus","ter":"sang sang","makian": "manumanuk", "galela": "", 	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgi6PDPBkU7_I2yZau2Lk3kVadYRmuuZcqbQ&s"},
-        {"ind":"lumba-lumba","ter":"lumba-lumba","makian": "kaiyas", "galela": "laluba", "img":"https://www.faunadanflora.com/wp-content/uploads/2016/07/lumba-lumba-hidung-botol.png"}, 
-        {"ind":"penyu","ter":"ori","makian": "hen", "galela": "ori", "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5654cbh7ThvwcwOjCw2Ptps66KTUqPAOugw&s"},
-        {"ind":"kuda","ter":"jara","makian": "jaran", "galela": "jara", "img":"https://cdn.grid.id/crop/0x0:0x0/x/photo/2021/10/21/pexels-sergiu-iacob-7868382jpg-20211021021945.jpg"},
+        {"ind":"ubur-ubur","ter":"sosoro ngolo","makian": "sai", "galela": ""},
+        {"ind":"paus","ter":"sang sang","makian": "manumanuk", "galela": ""},
+        {"ind":"lumba-lumba","ter":"lumba-lumba","makian": "kaiyas", "galela": "laluba"}, 
+        {"ind":"penyu","ter":"ori","makian": "hen", "galela": "ori"},
+        {"ind":"kuda","ter":"jara","makian": "jaran", "galela": "jara"},
         {"ind":"kuda laut","ter":"jara","makian": "jaran wolat", "galela": "jara"},
-        {"ind":"bintang laut","ter":"bintang laut","makian": "baikutuwolat", "galela": "teo ma'ngoma", "img":"https://asset.kompas.com/crops/0QuehL22Sii0l8YTbuTlhCXEsIA=/252x127:1779x1146/1200x800/data/photo/2022/09/30/63369d9620270.jpg"},
-        {"ind":"belut","ter":"sugili","makian": "bluk", "galela": "go'odho", "img":"https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//100/MTA-53397136/no_brand_belut_baluik_sawah_besar_hidup_500gr_ikan_segar_rak_sayur_padang_full01_s3bw1yma.jpg"},
+        {"ind":"bintang laut","ter":"bintang laut","makian": "baikutuwolat", "galela": "teo ma'ngoma"},
+        {"ind":"belut","ter":"sugili","makian": "bluk", "galela": "go'odho"},
         {"ind":"belut air tawar","ter":"","makian": "", "galela": "go'odho"},
         {"ind":"keledai","ter":"jara ici","makian": "", "galela": ""},
         {"ind":"belut air laut","ter":"","makian": "", "galela": "lado"},
-        {"ind":"tuna","ter":"madidihang","makian": "okit burei", "galela": "/masuwaki","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WgAefaMmxzsrAdy57RBK2fir8EeDXNndNg&s"},
-        {"ind":"rusa","ter":"manjanga","makian": "manjangan", "galela": "man'janga","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WgAefaMmxzsrAdy57RBK2fir8EeDXNndNg&s"},
-        {"ind":"cumi-cumi","ter":"utu","makian": "saisuak", "galela": "udi","img":"https://rumahpengetahuan.web.id/wp-content/uploads/2021/11/cumi-cumi.jpg"},
-        {"ind":"kerang","ter":"kerang","makian": "suat", "galela": "o bu'uku/tabule","img":"https://media.istockphoto.com/id/672140014/id/foto/cangkang-kerang-dalam-gelombang.jpg?s=612x612&w=0&k=20&c=4nuC1rQ29KWdcXvvzTOLfz5yvXkgdsgQlnM5fMVEJoU="},
-        {"ind":"kerapu","ter":"lolosi","makian": "kiesa", "galela": "o roto","img":"https://media.istockphoto.com/id/672140014/id/foto/cangkang-kerang-dalam-gelombang.jpg?s=612x612&w=0&k=20&c=4nuC1rQ29KWdcXvvzTOLfz5yvXkgdsgQlnM5fMVEJoU="},
-        {"ind":"kerapu macan","ter":"lolosi","makian": "kokofa", "galela": "o ","img":"https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/17816_5-fakta-seputar-burung-hantu.jpg"},
-        {"ind":"kakak tua hijau","ter":"","makian": "glelang", "galela": "o ", 	"img":"https://rumahpengetahuan.web.id/wp-content/uploads/2021/11/cumi-cumi.jpg"},
-        {"ind":"kakak tua putih","ter":"katala","makian": "gatala", "galela": "o gotola", 	"img":"https://media.istockphoto.com/id/672140014/id/foto/cangkang-kerang-dalam-gelombang.jpg?s=612x612&w=0&k=20&c=4nuC1rQ29KWdcXvvzTOLfz5yvXkgdsgQlnM5fMVEJoU="},
-        {"ind":"kakak tua merah","ter":"burung hantu","makian": "ubo", "galela": "o ubo", 	"img":"https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/17816_5-fakta-seputar-burung-hantu.jpg"},
+        {"ind":"tuna","ter":"madidihang","makian": "okit burei", "galela": "/masuwaki"},
+        {"ind":"rusa","ter":"manjanga","makian": "manjangan", "galela": "man'janga"},
+        {"ind":"cumi-cumi","ter":"utu","makian": "saisuak", "galela": "udi"},
+        {"ind":"kerang","ter":"kerang","makian": "suat", "galela": "o bu'uku/tabule"},
+        {"ind":"kerapu","ter":"lolosi","makian": "kiesa", "galela": "o roto"},
+        {"ind":"kerapu macan","ter":"lolosi","makian": "kokofa", "galela": "o "},
+        {"ind":"kakak tua hijau","ter":"","makian": "glelang", "galela": "o "},
+        {"ind":"kakak tua putih","ter":"katala","makian": "gatala", "galela": "o gotola"},
+        {"ind":"kakak tua merah","ter":"burung hantu","makian": "ubo", "galela": "o ubo"},
         {"ind":"kakak tua biru","ter":"","makian": "", "galela": "o gotopo"},
         {"ind":"burung mandar gendang","ter":"hetaka","makian": "", "galela": ""},
         {"ind":"kesturi","ter":"","makian": "", "galela": "luri"},
         {"ind":"pungguk","ter":"","makian": "", "galela": "wogo"},
         {"ind":"kakap","ter":"bubara","makian": "musein", "galela": "bubara"},
         {"ind":"kakap merah","ter":"","makian": "darise", "galela": ""},
-        {"ind":"kaki seribu","ter":"nuri","makian": "lalaka", "galela": "o hai", 	"img":"https://www.britannica.com/animal/parrot-bird/images-videos/Parrot-in-captivity/151978"},
+        {"ind":"kaki seribu","ter":"nuri","makian": "lalaka", "galela": "o hai"}
       ],  
       "Buah-Buahan": [
         {"ind":"buah yang masih muda","ter":"lan","makian": "", "galela": "ko'kiau"},
         {"ind":"buah yang matang","ter":"lan","makian": "", "galela": "samburu/ da'o'om"},
         {"ind":"buah yang sudah tua","ter":"","makian": "", "galela": "tihimo"},
         {"ind":"buah sudah masak","ter":"lan","makian": "", "galela": "da'omu"},
-        {"ind":"buah","ter":"sofo", "makian": "sopo", "galela": "sopo", "img":"https://www.balipost.com/wp-content/uploads/2017/12/balipostcom_makan-apel-setiap-hari-ini-10-manfaatnya_01-696x464.jpg"},
-        {"ind":"berbuah","ter":"apel", "makian": "sopo", "galela": "sopo", "img":"https://www.balipost.com/wp-content/uploads/2017/12/balipostcom_makan-apel-setiap-hari-ini-10-manfaatnya_01-696x464.jpg"},
-        {"ind":"buah cokelat","ter":"cokelat", "makian": "sakalat", "galela": "cokolat ma'sopo", "img":"https://www.balipost.com/wp-content/uploads/2017/12/balipostcom_makan-apel-setiap-hari-ini-10-manfaatnya_01-696x464.jpg"},
+        {"ind":"buah","ter":"sofo", "makian": "sopo", "galela": "sopo"},
+        {"ind":"berbuah","ter":"apel", "makian": "sopo", "galela": "sopo"},
+        {"ind":"buah cokelat","ter":"cokelat", "makian": "sakalat", "galela": "cokolat ma'sopo"},
         {"ind":"buah gambir","ter":"","makian": "", "galela": "saketa"},
         {"ind":"buah nona","ter":"","makian": "manona", "galela": ""},
-        {"ind":"apel","ter":"apel", "makian": "", "galela": "apel", "img":"https://www.balipost.com/wp-content/uploads/2017/12/balipostcom_makan-apel-setiap-hari-ini-10-manfaatnya_01-696x464.jpg"},
-        {"ind":"pisang","ter":"koi","makian": "loka", "galela": "bole", "img":"https://www.astronauts.id/blog/wp-content/uploads/2023/02/Kenali-Ciri-Buah-Pisang-Matang.jpg"},
+        {"ind":"apel","ter":"apel", "makian": "", "galela": "apel"},
+        {"ind":"pisang","ter":"koi","makian": "loka", "galela": "bole"},
         {"ind":"pisang bakar","ter":"","makian": "", "galela": "kokodo"},
         {"ind":"jeruk bali","ter":"","makian": "sangkar", "galela": "sangkar"},
-        {"ind":"jeruk","ter":"lemo","makian": "ho", "galela": "wama", "img":"https://mmc.tirto.id/image/2016/08/16/TIRTO-shutterstock_115590688_ratio-16x9.JPG"},
-        {"ind":"jantung pisang","ter":"kusi","makian": "nihat", "galela": "kusi", "img":"https://filebroker-cdn.lazada.co.id/kf/Sf4c187448e6a47acb1b1d8a33c9e1872a.jpg"},        
-        {"ind":"mangga","ter":"guwae","makian": "wawi", "galela": "wale", "img":"https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/255/2024/12/11/Screenshot-2024-12-11-144728-4103957776.png"},
-        {"ind":"nanas","ter":"nanas","makian": "nanasi", "galela": "nanasi", "img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/01/26025212/manfaat-rutin-konsumsi-buah-nanas-untuk-kolesterol-halodoc.jpg"},
-        {"ind":"anggur","ter":"anggur","makian": "", "galela": "anggori", "img":"https://lh7-rt.googleusercontent.com/docsz/AD_4nXcGkKtE7vERFheT7_9Lp2v1BF1SUOfcnmv2OrJgu-LYufhp-y-mrEWUnlgEbzltVOJq6UW3rU4ohK51-rIqUo6kzyr5iRdladXifbdnRevxqNBhf6if9A4dFVSeLwvHEF18ouMge4uCCcl37HZcoQZ4-yNy?key=s9Ui311zoyv7uLr6PYhGsxyE"},
+        {"ind":"jeruk","ter":"lemo","makian": "ho", "galela": "wama"},
+        {"ind":"jantung pisang","ter":"kusi","makian": "nihat", "galela": "kusi"},        
+        {"ind":"mangga","ter":"guwae","makian": "wawi", "galela": "wale"},
+        {"ind":"nanas","ter":"nanas","makian": "nanasi", "galela": "nanasi"},
+        {"ind":"anggur","ter":"anggur","makian": "", "galela": "anggori"},
         {"ind":"matoa","ter":"","makian": "rau", "galela": "nga'ahe"},
-        {"ind":"semangka","ter":"samaka","makian": "samanka", "galela": "samaka", "img":"https://pasarrakyatbali.com/cdn/shop/products/bua-020_750x.png?v=1590325301"},
-        {"ind":"nangka","ter":"naka","makian": "nangka", "galela": "tuwada", "img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/05/26052327/Tak-Hanya-Enak-Ini-X-Manfaat-Cantaloupe-Melon.jpg"},
-        {"ind":"pepaya","ter":"tapaya","makian": "kapaya", "galela": "papaya", "img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/01/19025309/Ragam-Manfaat-Pepaya-California-yang-Jarang-Diketahui-01-1.jpg"},
-        {"ind":"langsat","ter":"lasa","makian": "lasab", "galela": "lasa", "img":"https://i0.wp.com/ciputrahospital.com/wp-content/uploads/2025/04/manfaat-kiwi.jpeg?resize=1024%2C684&ssl=1"},
-        {"ind":"stroberi","ter":"stroberi","makian": "", "galela": "", "img":"https://img-cdn.medkomtek.com/Eh3Actrj-UGZ0t9bMZUhIgZL9bI=/510x395/smart/filters:quality(100):format(webp)/article/KvLxdyamVtSuGuJnIa1v3/original/6z1tvri7mys050ng0ezr6o0a5a265fqr.jpg"},
-        {"ind":"blueberry","ter":"blueberry","makian": "", "galela": "", 	"img":"https://www.bandirmabahcemarketi.com/img/products/blueberry-yaban-mersini-fidani-fidanlikcomtr_11.12.2022_82f0b32.jpg"},
-        {"ind":"raspberry","ter":"raspberry","makian": "", "galela": "", 	"img":"https://mr-fothergills.co.uk/cdn/shop/collections/MRF_Raspberry_collection_banner.jpg?v=1691682859&width=2048"},
-        {"ind":"blackberry","ter":"blackberry","makian": "", "galela": "", 	"img":"https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Thornless_Blackberry_3.jpg?v=1612444137"},
-        {"ind":"ceri","ter":"ceri","makian": "", 	"galela": 	"", 	"img":"https://oerban.com/wp-content/uploads/2022/06/IMG-20220615-WA0010.jpg"},
+        {"ind":"semangka","ter":"samaka","makian": "samanka", "galela": "samaka"},
+        {"ind":"nangka","ter":"naka","makian": "nangka", "galela": "tuwada"},
+        {"ind":"pepaya","ter":"tapaya","makian": "kapaya", "galela": "papaya"},
+        {"ind":"langsat","ter":"lasa","makian": "lasab", "galela": "lasa"},
+        {"ind":"stroberi","ter":"stroberi","makian": "", "galela": ""},
+        {"ind":"blueberry","ter":"blueberry","makian": "", "galela": ""},
+        {"ind":"raspberry","ter":"raspberry","makian": "", "galela": ""},
+        {"ind":"blackberry","ter":"blackberry","makian": "", "galela": ""},
+        {"ind":"ceri","ter":"ceri","makian": "", 	"galela": 	""},
         {"ind":"ceri kampung","ter":"","makian": "kersen", "galela": "gersen"},
-        {"ind":"pala","ter":"gosora", "makian": "lawa", "galela": "gosora","img":"https://blog.umsu.ac.id/aktual/wp-content/uploads/2024/12/buah-pala.jpg"},
-        {"ind":"delima","ter":"dalima", "makian": "dalima", "galela": "dalima", "img":"https://res.cloudinary.com/dk0z4ums3/image/upload/v1603089388/attached_image/4-manfaat-buah-delima-yang-perlu-kamu-tahu.jpg"},
-        {"ind":"kurma","ter":"korma","makian": "korma", "galela": "korma","img":"https://phinemo.com/wp-content/uploads/2018/05/Manfaat-Buah-Kurma.jpg"},
-        {"ind":"sirsak","ter":"nangka balanda","makian": "naka batae", "galela": "naka balanda","img":"https://i0.wp.com/raisa.aeonstore.id/wp-content/uploads/2023/08/203804.png?fit=1080%2C1080&ssl=1"},
-        {"ind":"jambu","ter":"gora","makian": "bora", "galela": "gora","img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/08/25045140/X-Khasiat-Jambu-Biji-Mampu-Redakan-Nyeri-Menstruasi.jpg"},
-        {"ind":"jambu biji","ter":"giawas","makian": "gawaya", "galela": "giyawas/guyawas","img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/08/25045140/X-Khasiat-Jambu-Biji-Mampu-Redakan-Nyeri-Menstruasi.jpg"},
-        {"ind":"jambu air","ter":"gora","makian": "bayadin", "galela": "rorawane","img":"https://upload.wikimedia.org/wikipedia/commons/a/aa/Syzygium_samarangense_%28jamalac_ou_jambose%29.jpg"},
+        {"ind":"pala","ter":"gosora", "makian": "lawa", "galela": "gosora"},
+        {"ind":"delima","ter":"dalima", "makian": "dalima", "galela": "dalima"},
+        {"ind":"kurma","ter":"korma","makian": "korma", "galela": "korma"},
+        {"ind":"sirsak","ter":"nangka balanda","makian": "naka batae", "galela": "naka balanda"},
+        {"ind":"jambu","ter":"gora","makian": "bora", "galela": "gora"},
+        {"ind":"jambu biji","ter":"giawas","makian": "gawaya", "galela": "giyawas/guyawas"},
+        {"ind":"jambu air","ter":"gora","makian": "bayadin", "galela": "rorawane"},
         {"ind":"jambu air besar","ter":"","makian": "", "galela": "godha-godha"},
         {"ind":"jambu monyet","ter":"buayakis","makian": "", "galela": "buayakis"},
         {"ind":"jambu mente","ter":"","makian": "gofarang", "galela": "buayakis"},
-        {"ind":"manggis","ter":"manggustang","makian": "manggustang", "galela": "bastangi/manggustang","img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/08/25084854/Kandungan-Nutrisi-dalam-Manggis-untuk-Kesehatan.jpg"},
-        {"ind":"rambutan","ter":"rambutan","makian": "rambutan", "galela": "rambutan","img":"https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2024/11/29080523/Buah-Rambutan-Ini-Kandungan-Nutrisi-dan-Manfaatnya-untuk-Kesehatan.jpg"},
-        {"ind":"salak","ter":"buasalak","makian": "salak", "galela": "salak","img":"https://image.idntimes.com/post/20190212/salacca-zalacca-ss-94683151806945512801280-d6f147c8fa8350dd082833f7961e3c04.jpg"},
-        {"ind":"sawo","ter":"buasawo","makian": "", "galela": "sawo","img":"https://kabarjombang.com/wp-content/uploads/2023/02/buah-sawo.jpg"},
-        {"ind":"kedondong","ter":"kedondong","makian": "wulu", "galela": "gori'odo","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRDdxJK3QXUUfJkXSK2jBFCERXwPwX0E_3kw&s"},
-        {"ind":"belimbing","ter":"belimbing","makian": "balimbin", "galela": "balibi/galibi","img":"https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/6611_foto-sehatmucom.jpg"},
+        {"ind":"manggis","ter":"manggustang","makian": "manggustang", "galela": "bastangi/manggustang"},
+        {"ind":"rambutan","ter":"rambutan","makian": "rambutan", "galela": "rambutan"},
+        {"ind":"salak","ter":"buasalak","makian": "salak", "galela": "salak"},
+        {"ind":"sawo","ter":"buasawo","makian": "", "galela": "sawo"},
+        {"ind":"kedondong","ter":"kedondong","makian": "wulu", "galela": "gori'odo"},
+        {"ind":"belimbing","ter":"belimbing","makian": "balimbin", "galela": "balibi/galibi"},
         {"ind":"belimbing manis","ter":"","makian": "pa'ppis", "galela": "galibi da'mumuti"},
-        {"ind":"buah naga","ter":"buah naga","makian": "", "galela": "naga","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpFdCSkH9TnDXsCTcAOnAp9PxH79fwPbpEA&s"},
-        {"ind":"lemon","ter":"lemonade","makian": "hololo", "galela": "wama","img":"https://lapakbuah.com/wp-content/uploads/2021/07/Markisa-kuning.jpg"}, 
-        {"ind":"lengkeng","ter":"lengkeng","makian": "", "galela": "kalengkeng","img":"https://awsimages.detik.net.id/community/media/visual/2022/04/20/buah-kelengkeng_169.jpeg?w=600&q=90"},  
-        {"ind":"alpukat","ter":"avokad","makian": "alfokat", "galela":"alpokad",	"img":"https://s3-ap-southeast-1.amazonaws.com/blog-assets.segari.id/2024/08/shutterstock_2424492393.jpg"},
-        {"ind":"cempedak","ter":"tuada","makian": "tuadak", 	"galela": 	"tuada gamkonora",	"img":"https://fahum.umsu.ac.id/blog/wp-content/uploads/2024/09/manfaat-buah-cempedak-untuk-kesehatan-tubuh.jpg"},
-        {"ind":"durian","ter":"duriang","makian": "durian", "galela": "duriang","img":"https://www.chubb.com/content/dam/chubb-sites/chubb-com/id-id/lei-new-assets/images/article/manfaat-durian-featured.png"},
-        {"ind":"buah tin","ter":"buah tin","makian": "", "galela": "tin","img":"https://www.tanamanmart.com/wp-content/uploads/2022/02/TIN-UNGU-8.jpg"},
-        {"ind":"buah zaitun","ter":"buah zaitun","makian": "", "galela": "zaitun","img":"https://images.meesho.com/images/products/475720093/byxjl_512.webp?width=512"},
-        {"ind":"kelapa","ter":"igo","makian": "niwi", "galela": "igo","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdWszFBTw_ZOdicz4xE80j7vk3mVWQ4ObTA&s"},
-        {"ind":"kelapa tua","ter":"","makian": "niwi matua", "galela": "igo dha'o'osa/ igo dha totolole","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2LYLQzdrb9aS9KlMNg9I-tDa3zHnrjgEphc07jVenVKNfrYQpcGPQ5Zhva5_roCfGnO8&usqp=CAU"},
-        {"ind":"kelapa muda","ter":"","makian": "niwi gao", "galela": "gopoa","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2LYLQzdrb9aS9KlMNg9I-tDa3zHnrjgEphc07jVenVKNfrYQpcGPQ5Zhva5_roCfGnO8&usqp=CAU"},
-        {"ind":"santol","ter":"santol","makian": "", "galela": "","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI7PfophYZcOdPK6_s0ADHKUovHv1cUmXMVtlqeKX-yn0KRewlur67YnBC-qLhKtwCWw&usqp=CAU"},
-        {"ind":"asam jawa","ter":"asem jawa","makian": "", "galela": "asam jawa","img":"https://puskesmasmeninting-dikes.lombokbaratkab.go.id/media/crop/2025/04/30/57-20250430-231048-004763.jpg"},
+        {"ind":"buah naga","ter":"buah naga","makian": "", "galela": "naga"},
+        {"ind":"lemon","ter":"lemonade","makian": "hololo", "galela": "wama"},
+        {"ind":"lengkeng","ter":"lengkeng","makian": "", "galela": "kalengkeng"},  
+        {"ind":"alpukat","ter":"avokad","makian": "alfokat", "galela":"alpokad"},
+        {"ind":"cempedak","ter":"tuada","makian": "tuadak", 	"galela": 	"tuada gamkonora"},
+        {"ind":"durian","ter":"duriang","makian": "durian", "galela": "duriang"},
+        {"ind":"buah tin","ter":"buah tin","makian": "", "galela": "tin"},
+        {"ind":"buah zaitun","ter":"buah zaitun","makian": "", "galela": "zaitun"},
+        {"ind":"kelapa","ter":"igo","makian": "niwi", "galela": "igo"},
+        {"ind":"kelapa tua","ter":"","makian": "niwi matua", "galela": "igo dha'o'osa/ igo dha totolole"},
+        {"ind":"kelapa muda","ter":"","makian": "niwi gao", "galela": "gopoa"},
+        {"ind":"santol","ter":"santol","makian": "", "galela": ""},
+        {"ind":"asam jawa","ter":"asem jawa","makian": "", "galela": "asam jawa"},
       ],
       "Tumbuhan": [
         {"ind":"melati","ter":"manuru","makian": "", "galela": "manuru"},
@@ -508,7 +508,7 @@
         {"ind":"kamboja","ter":"","makian": "bungan saya", "galela": "capaka"},
         {"ind":"kembang sepatu","ter":"","makian": "", "galela": "ubo-ubo"},
         {"ind":"pohon baru","ter":"hate sungi","makian": "rabut", "galela": ""},
-        {"ind":"pohon","ter":"hate", "makian": "fete", "galela": "mahutu","img":"https://asset.kompas.com/crops/xj6vydUIRUnuf7_Zqr9MCeO73ig=/0x0:750x500/1200x800/data/photo/2021/04/26/608696cd6eb85.jpg"},
+        {"ind":"pohon","ter":"hate", "makian": "fete", "galela": "mahutu"},
         {"ind":"pohon-pepohonan","ter":"mahate", "makian": "fete-fete", "galela": "gota mahutu idala","img":"https://asset.kompas.com/crops/xj6vydUIRUnuf7_Zqr9MCeO73ig=/0x0:750x500/1200x800/data/photo/2021/04/26/608696cd6eb85.jpg"},
         {"ind":"daun","ter":"rau", "makian": "llu", "galela": "soka","img":"https://asset.kompas.com/crops/xj6vydUIRUnuf7_Zqr9MCeO73ig=/0x0:750x500/1200x800/data/photo/2021/04/26/608696cd6eb85.jpg"},
         {"ind":"daun pucuk","ter":"marau madubo","makian": "", "galela": "magudo"},
@@ -526,7 +526,7 @@
         {"ind":"cengkeh","ter":"bualawa","makian": "odai", "galela": "cengkeh","img":"https://static.gatra.com/foldershared/images/2021/fek/11-Nov/SAVE_20211115_131656.jpg"},
         {"ind":"padi","ter":"bira","makian": "hamasik", "galela": "tamo","img":"https://static.gatra.com/foldershared/images/2021/fek/11-Nov/SAVE_20211115_131656.jpg"},
         {"ind":"jagung","ter":"tela","makian": "gocila", "galela": "goko","img":"https://asset.kompas.com/crops/PlvLsdLOdCpdpnxNP8N95kDVuBE=/0x43:1000x710/1200x800/data/photo/2022/09/22/632c01f18b16e.jpg"},
-        {"ind":"jahe","ter":"guraka","makian": "o'wai", "galela": "goraka","img":"https://asset.kompas.com/crops/PlvLsdLOdCpdpnxNP8N95kDVuBE=/0x43:1000x710/1200x800/data/photo/2022/09/22/632c01f18b16e.jpg"},
+        {"ind":"jahe","ter":"guraka","makian": "o'wai", "galela": "goraka"},
         {"ind":"kacang","ter":"bonci","makian": "bonci", "galela": "boci","img":"https://jambiindependent.bacakoran.co/upload/7f95e2fc6614cbdb8917035dfb607b7d.jpg"},
         {"ind":"kacang kedelai","ter":"kadele","makian": "kadelai", "galela": "kadelei","img":"https://jambiindependent.bacakoran.co/upload/7f95e2fc6614cbdb8917035dfb607b7d.jpg"},
         {"ind":"kacang tanah","ter":"","makian": "bonci", "galela": "boci"},
@@ -1454,7 +1454,7 @@
         {"ind":"mendahului","ter":"sosira","makian": "", "galela": "dhoma"},
         {"ind":"dahulukan","ter":"sosira","makian": "", "galela": ""},
         {"ind":"sebentar saja","ter":"caicai bato","makian": "", "galela": ""},
-        {"ind":"sebentar","ter":"caicai","makian": "", "galela": ""},
+        {"ind":"sebentar","ter":"caicai","makian": "", "galela": "bole da"},
         {"ind":"segera","ter":"murari","makian": "", "galela": ""},
         {"ind":"setelah","ter":"sawise","makian": "togu", "galela": ""},
         {"ind":"sebelum","ter":"sadurunge","makian": "", "galela": ""},
@@ -5178,6 +5178,7 @@
         {"ind":"siam","ter":"","makian": "", "galela": "sago"},
         {"ind":"sia-sia","ter":"","makian": "", "galela": "po'osa"},
         {"ind":"siap","ter":"raima","makian": "", "galela": "mangaku"},
+        {"ind":"siapa nama kamu","ter":"","makian": "nim so alho", "galela": ""},
         {"ind":"siar","ter":"pangoro","makian": "", "galela": "kawasa ya nako"},
         {"ind":"siasat","ter":"","makian": "", "galela": "si'sari ma'ngeko"},
         {"ind":"sikat","ter":"bundur","makian": "esek", "galela": "roso"},
@@ -6255,32 +6256,69 @@ function translateFromVoice(text){
         {
           role: 'system',
           content: `
-          Kamu adalah korektor tata bahasa Indonesia. Perbaiki ejaan dan tata bahasa tanpa mengubah makna.
+          Kamu adalah AI penyusun ulang kalimat.
 
-          Aturan:
-          1. Perbaiki hasil terjemahan agar alami
-          2. Pahami konteks kalimat secara keseluruhan
-          3. Pilih kata yang sesuai dengan konteks digunakan untuk (manusia/hewan/situasi)
-          4. Pilih arti kata yang paling tepat berdasarkan konteks
-          5. Jika ada kata ambigu (contoh: "gulaha"), pilih arti paling sesuai
-          6. Jangan terjemahkan ulang dari nol, gunakan hasil kamus sebagai dasar
-          7. Jangan mengilangkan inputan kalimat, tapi hanya menyusunnya menjadi kalimat yang sempurna
- 
-          PENTING (IMBUHAN BAHASA DAERAH):
-          Jika ada kata yang mengandung imbuhan seperti:
-          "o", "i", "ai", "da", "dha", "k", "n", "se", "ma", "ka"
+          TUGAS:
+          Ubah susunan kata dari hasil kamus agar mengikuti pola yang benar.
 
-          MAKA:
-          - Cari kata dasarnya
-          - Anggap imbuhan itu hanya variasi bentuk kata
-          - JANGAN ubah arti kata dasar
+          ==================================
+          ATURAN UTAMA (WAJIB IKUTI):
+          ==================================
 
-          CONTOH:
-          fala = rumah
-          o fala =  rumah
-          i fala = = rumah
-          fala ni =  rumah
+          BENTUK INPUT:
+          "ngaimoi o boki mangopa dha tataro i mote-mote de ya hino ngohi ka"
 
+          BENTUK OUTPUT:
+          "o boki mangopa dha tataro ngaimoi i mote-mote de ya hino ngohi ka"
+
+          ----------------------------------
+
+          POLA YANG HARUS DIIKUTI:
+
+          Jika ada susunan seperti:
+          [jumlah] + [benda] + [penjelas/sifat]
+
+          MAKA UBAH MENJADI:
+          [benda] + [penjelas/sifat] + [jumlah]
+
+          ----------------------------------
+
+          CONTOH 1:
+          INPUT:
+          "ngaimoi o boki dha tataro"
+
+          OUTPUT:
+          "o boki dha tataro ngaimoi"
+
+          ----------------------------------
+
+          CONTOH 2:
+          INPUT:
+          "ngaimoi o boki mangopa dha tataro"
+
+          OUTPUT:
+          "o boki mangopa dha tataro ngaimoi"
+
+          ----------------------------------
+
+          ATURAN TAMBAHAN:
+
+          1. Kata kerja (contoh: i mote-mote, hino)
+            → JANGAN DIPINDAH jauh, tetap setelah subjek
+
+          2. JANGAN:
+            - tambah kata
+            - hapus kata
+            - ubah arti
+
+          3. HANYA:
+            - pindahkan posisi kata agar sesuai pola
+
+          ----------------------------------
+
+          OUTPUT:
+          - hanya kalimat akhir
+          - tanpa penjelasan
           `
         },
         {
@@ -6293,6 +6331,9 @@ function translateFromVoice(text){
 
           Hasil dari kamus:
           "${dictResult}"
+
+          Susun ulang dengan aturan:
+          jumlah selalu di belakang benda
 
           Perbaiki hasil kamus di atas agar menjadi kalimat yang benar dan sesuai konteks.
           `
