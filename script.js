@@ -6203,24 +6203,6 @@ function translateFromVoice(text){
           JANGAN ubah arti. HANYA ubah posisi kata.
 
           ==================================
-          PRIORITAS TERTINGGI (WAJIB)
-          ==================================
-
-          - Gunakan struktur dari "Kalimat asli" sebagai acuan utama
-
-          - Jika ada frasa yang terdiri dari lebih dari satu kata di input
-            (contoh: "dia laki-laki", "buah kelapa", "belakang rumah")
-
-            → MAKA:
-            - Anggap sebagai SATU UNIT
-            - JANGAN dipisah
-            - JANGAN gunakan hasil terjemahan per kata jika ada bentuk gabungan
-            - WAJIB mengikuti bentuk frasa dari input asli
-
-          - Jika terjadi konflik antara hasil kamus dan kalimat asli:
-            → PRIORITASKAN "Kalimat asli"
-
-          ==================================
           ATURAN UTAMA (WAJIB IKUTI)
           ==================================
 
@@ -6334,6 +6316,9 @@ function translateFromVoice(text){
           "mereka memiliki 2 mobil di rumah"
           → "mereka memiliki mobil 2 di rumah"
 
+          "kucing mengikuti saya"
+          → "kucing mengikuti saya"
+
           ----------------------------------
 
           8. ATURAN KALIMAT TANYA
@@ -6348,7 +6333,7 @@ function translateFromVoice(text){
           → MAKA:
           kata tersebut HARUS di paling belakang kalimat
 
-          ----------------------------------
+          ----------------------------------s
 
           ==================================
           ATURAN PENTING
@@ -6356,23 +6341,9 @@ function translateFromVoice(text){
           - DILARANG mengulang kata
           - Setiap kata hanya boleh muncul SATU KALI sesuai input
           - Jika ada kata yang muncul lebih dari sekali akibat penyusunan ulang → HAPUS duplikatnya
-          - Gunakan hanya "kata" atau "kalimat" yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
+          - Gunakan hanya kata yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
           - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
-
-          ----------------------------------
-
-          ANTI PENGULANGAN (WAJIB)
-          ----------------------------------
-          - Susun kalimat HANYA SEKALI
-          - JANGAN melakukan penyusunan ulang lebih dari satu kali
-          - JANGAN membuat variasi kalimat
-          - JANGAN menggabungkan beberapa versi hasil
-          - Output harus hanya SATU KALIMAT FINAL
-          - Jika kalimat sudah benar → BERHENTI
-          - DILARANG memproses ulang bagian yang sudah benar
-          - DILARANG menghasilkan lebih dari satu versi kalimat
-
 
           ==================================
 
