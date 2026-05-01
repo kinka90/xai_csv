@@ -6350,12 +6350,6 @@ function translateFromVoice(text){
 
           ----------------------------------
 
-          9. ATURAN KAMUS
-          - Jika ada frasa yang terdiri dari lebih dari satu kata di input (contoh: "dia laki-laki"):
-            → anggap sebagai SATU UNIT
-            → JANGAN dipisah menjadi kata terpisah
-            → JANGAN gunakan hasil terjemahan per kata jika ada bentuk gabungan di kamus
-
           ==================================
           ATURAN PENTING
           ==================================
