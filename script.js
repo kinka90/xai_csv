@@ -1004,7 +1004,7 @@
         {"ind":"hitam","ter":"kokotu","makian": "kuda", "galela": "dha tata'ro"},
         {"ind":"hitam legam","ter":"","makian": "burat", "galela": ""},
         {"ind":"putih","ter":"bubudo","makian": "bulang", "galela": "dha are"},
-        {"ind":"abu-abu","ter":"fika-fika","makian": "tat'tapin", "galela": "da kakapo"},
+        {"ind":"abu-abu","ter":"fika-fika","makian": "tat'tapin", "galela": "dha kakapo"},
         {"ind":"cokelat","ter":"soklat","makian": "kakao", "galela": "dha sokulati"},
         {"ind":"jingga","ter":"jingga","makian": "jingga", "galela": "dha jijiga"},  
         {"ind":"ungu","ter":"wung","makian": "", "galela": ""},
@@ -6335,11 +6335,10 @@ function translateFromVoice(text){
           ==================================
           ATURAN PENTING
           ==================================
-
-          - Jangan tambah kata
-          - Jangan hapus kata 
-          - Jangan ubah arti
-          - Hanya ubah posisi
+          - DILARANG mengulang kata
+          - Setiap kata hanya boleh muncul SATU KALI sesuai input
+          - Jika ada kata yang muncul lebih dari sekali akibat penyusunan ulang → HAPUS duplikatnya
+          - Gunakan hanya kata yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
           - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
 
