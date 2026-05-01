@@ -1197,19 +1197,16 @@
         {"ind":"saya laki-laki","ter":"fangare","makian": "", "galela": ""},
         {"ind":"saya perempuan","ter":"fajaru","makian": "", "galela": ""},
         {"ind":"aku","ter":"ngori","makian": "yak", "galela": "ngohi"},
-        {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngona"},
-        {"ind":"engkau","ter":"ngon","makian": "ni", "galela": "ngona"},
-        {"ind":"anda","ter":"ngon","makian": "au", "galela": ""},
-        {"ind":"dia sendiri","ter":"","makian": "ile", "galela": "ngona"},
-        {"ind":"dia","ter":"una/mina","makian": "amanim", "galela": "to'una/to'muna"},
-        {"ind":"dia","ter":"","makian": "ido", "galela": ""},
-        {"ind":"dia laki-laki","ter":"una","makian": "", "galela": "to'una"},
-        {"ind":"dia perempuan","ter":"mina","makian": "", "galela": "to'muna"},
-        {"ind":"dia (lk)","ter":"una","makian": "", "galela": "wo"},
-        {"ind":"dia (pr)","ter":"una","makian": "", "galela": "mo"},
+        {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngona/ngini"},
+        {"ind":"engkau","ter":"ngon","makian": "ni", "galela": "ngona/ngini"},
+        {"ind":"anda","ter":"ngon","makian": "au", "galela": "ngona/ngini"},
+        {"ind":"dia sendiri","ter":"","makian": "ile", "galela": "ngona/ngini"},
+        {"ind":"dia","ter":"","makian": "ido", "galela": "ngona/ngini"},
+        {"ind":"dia laki-laki","ter":"una","makian": "amanim", "galela": "to'una/wo/awi"},
+        {"ind":"dia perempuan","ter":"mina","makian": "amanim", "galela": "to'muna/mo/ami"},
         {"ind":"kami","ter":"ngom","makian": "am", "galela": "to ngomi"},  
         {"ind":"kami","ter":"ngom","makian": "titanit", "galela": "to ngomi"},
-        {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone"},
+        {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone/nanga"},
         {"ind":"mereka","ter":"ana","makian": "n", "galela": "ona"},
         {"ind":"mereka","ter":"mancia","makian": "n", "galela": ""},
         {"ind":"mereka berdua","ter":"","makian": "matlusi ", "galela": ""},
@@ -1285,7 +1282,7 @@
         {"ind":"siapa laki-laki itu","ter":"","makian": "", "galela": "nagu'una"},
         {"ind":"siapa laki-laki itu","ter":"","makian": "", "galela": "nagu'muna"},
         {"ind":"siapakah","ter":"nage ana","makian": "alho", "galela": "nago'ona"},
-        {"ind":"apa","ter":"koa","makian": "yapu", "galela": "kiya"},
+        {"ind":"apa","ter":"koa","makian": "yapu", "galela": "o kiya"},
         {"ind":"apa sebaiknya","ter":"amalaha","makian": "", "galela": ""},
         {"ind":"yang mana","ter":"","makian": "", "galela": "dha'kikiya"},
         {"ind":"di mana","ter":"kasa","makian": "pololi", "galela": "kiya'ka"},
@@ -1294,11 +1291,11 @@
         {"ind":"kenapa","ter":"golokoa","makian": "pepue", "galela": ""},
         {"ind":"tidak tahu","ter":"waro ua","makian": "", "galela": "wa'asoko"},
         {"ind":"mana","ter":"kasaa","makian": "", "galela": "kiya'ka"},
-        {"ind":"mengapa","ter":"golokoa","makian": "isapama", "galela": "dha'do'oha"},
-        {"ind":"bagaimana","ter":"doka sa","makian": "pepue", "galela": "dodo'oha"},
+        {"ind":"mengapa","ter":"golokoa","makian": "isapama", "galela": "dha'do'oha so"},
+        {"ind":"bagaimana","ter":"doka sa","makian": "pepue", "galela": "i'dodo'oha"},
         {"ind":"dari mana","ter":"","makian": "", "galela": "kikiya no"},
         {"ind":"dari siapa","ter":"","makian": "", "galela": "nago'ona'no"},
-        {"ind":"kapan","ter":"wangerao","makian": "poiso", "galela": "muruo'de"},
+        {"ind":"kapan","ter":"wangerao","makian": "poiso", "galela": "muruo'ka"},
         {"ind":"berapa","ter":"rao","makian": "", "galela": "ngai muruo"},
         {"ind":"adakah","ter":"","makian": "", "galela": "de'maena so?"},
         {"ind":"apakah","ter":"","makian": "", "galela": "de'maena so"},
@@ -1675,7 +1672,6 @@
         {"ind":"pernah","ter":"parnah","makian": "", "galela": ""},
         {"ind":"bisa","ter":"dadi","makian": "nahan", "galela": "dadi"},
         {"ind":"bisa","ter":"dadi","makian": "han", "galela": ""},
-        {"ind":"mampu","ter":"poha","makian": "", "galela": "aku"},
         {"ind":"sanggup","ter":"poha","makian": "", "galela": "mangaku"},
         {"ind":"berani","ter":"barani","makian": "barani", "galela": "tomole"},
         {"ind":"berada","ter":"berada","makian": "", "galela": ""}
@@ -2485,10 +2481,6 @@
         {"ind":"dilukis","ter":"silefo","makian": "", "galela": ""},
         {"ind":"dijadikan","ter":"i sidadi","makian": "", "galela": ""},
         {"ind":"ditanami","ter":"si uto","makian": "", "galela": ""},
-        {"ind":"di belakang rumah","ter":"toma fala madudu","makian": "", "galela": "o tahu maduduka"},
-        {"ind":"di depan rumah","ter":"toma fala magunaga","makian": "", "galela": "o tahu magunagaka"},
-        {"ind":"di samping rumah","ter":"toma fala masunanga","makian": "", "galela": "o tahu masunangaka"},
-        {"ind":"di bawah rumah","ter":"toma fala maadu","makian": "", "galela": "o tahu maaduka"},
         {"ind":"di dapur","ter":"hito", "makian": "tapin", "galela": "o sosah kahika","img":"https://png.pngtree.com/png-clipart/20250811/original/pngtree-charming-cartoon-house-with-red-roof-and-green-trees-isolated-on-png-image_21718449.png"},
         {"ind":"di rumah nenek","ter":"se ere ma fala","makian": "nene nium", "galela": ""},
         {"ind":"dihanyutkan","ter":"siruru","makian": "myaling", "galela": "si'dhasi"}
@@ -5603,7 +5595,7 @@
         {"ind":"tengah malam","ter":"","makian": "lusama", "galela":"putu tongiraba"},
         {"ind":"tengah hari","ter":"wange konora","makian": "", "galela": ""},
         {"ind":"tenggorokannya","ter":"ihulukum","makian": "", "galela": ""},
-        {"ind":"tidak penuh","ter":"","makian": "", "galela": "buku"},
+        {"ind":"tidak penuh","ter":"","makian": "", "galela": "bukuu"},
         {"ind":"tengik","ter":"ikarasi","makian": "", "galela": ""},
         {"ind":"teka-teki","ter":"rai","makian": "", "galela": "cumu"},
         {"ind":"teken","ter":"","makian": "", "galela": "si'bitu"},
@@ -6324,58 +6316,17 @@ function translateFromVoice(text){
 
           ----------------------------------
 
-          8. ATURAN KALIMAT TANYA (PENTING)
-
-          Jika ada kata tanya, atur posisi sebagai berikut:
-
-          A. KATA TANYA DI DEPAN:
+          8. ATURAN KALIMAT TANYA
 
           Jika ada kata:
           "apa", "kapan", "apakah", "mengapa"
-
           → MAKA:
           kata tersebut HARUS di paling depan kalimat
 
-          CONTOH:
-          "kamu makan apa"
-          → "apa kamu makan"
-
-          "kapan kamu pergi"
-          → tetap "kapan kamu pergi"
-
-          "mengapa dia datang"
-          → tetap "mengapa dia datang"
-
-          ----------------------------------
-
-          B. KATA TANYA DI BELAKANG:
-
           Jika ada kata:
           "bagaimana", "dimana", "dari mana", "siapa"
-
           → MAKA:
           kata tersebut HARUS di paling belakang kalimat
-
-          CONTOH:
-          "bagaimana kabar kamu"
-          → "kamu kabar bagaimana"
-
-          "kamu dimana"
-          → "kamu dimana" (sudah benar di belakang)
-
-          "kamu dari mana"
-          → "kamu dari mana"
-
-          "siapa nama kamu"
-          → "kamu nama siapa"
-
-          ----------------------------------
-
-          C. PRIORITAS:
-
-          - Aturan kata tanya dijalankan SETELAH semua aturan lain
-          - Jangan ubah arti
-          - Hanya ubah posisi kata tanya
 
           ----------------------------------
 
@@ -6384,10 +6335,10 @@ function translateFromVoice(text){
           ==================================
 
           - Jangan tambah kata
-          - Jangan hapus kata (kecuali angka duplikat)
+          - Jangan hapus kata 
           - Jangan ubah arti
           - Hanya ubah posisi
-          - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali jika di inputan angka hanya sekali)
+          - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
 
           ==================================
