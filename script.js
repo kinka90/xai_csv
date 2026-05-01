@@ -1200,11 +1200,13 @@
         {"ind":"kamu","ter":"ngon","makian": "au", "galela": "ngona"},
         {"ind":"engkau","ter":"ngon","makian": "ni", "galela": "ngona"},
         {"ind":"anda","ter":"ngon","makian": "au", "galela": ""},
-        {"ind":"dia sendiri","ter":"","makian": "ile", "galela": ""},
+        {"ind":"dia sendiri","ter":"","makian": "ile", "galela": "ngona"},
         {"ind":"dia","ter":"una/mina","makian": "amanim", "galela": "to'una/to'muna"},
         {"ind":"dia","ter":"","makian": "ido", "galela": ""},
         {"ind":"dia laki-laki","ter":"una","makian": "", "galela": "to'una"},
         {"ind":"dia perempuan","ter":"mina","makian": "", "galela": "to'muna"},
+        {"ind":"dia (lk)","ter":"una","makian": "", "galela": "wo"},
+        {"ind":"dia (pr)","ter":"una","makian": "", "galela": "mo"},
         {"ind":"kami","ter":"ngom","makian": "am", "galela": "to ngomi"},  
         {"ind":"kami","ter":"ngom","makian": "titanit", "galela": "to ngomi"},
         {"ind":"kita","ter":"ngone","makian": "titanit", "galela": "ngone"},
@@ -1333,54 +1335,6 @@
         {"ind":"tidak suka","ter":"nyiha ua","makian": "", "galela": "mahara"},
         {"ind":"tidak setuju","ter":"nyiha ua","makian": "", "galela": "mahara"},
         {"ind":"tidak bisa","ter":"dadi ua","makian": "te", "galela": "dadi wa"}
-      ],
-      "Angka": [
-        {"ind":"satu","ter":"rimoi","makian": "pso", "galela": "moi"},
-        {"ind":"dua","ter":"romdidi","makian": "plu", "galela": "sinoto"},
-        {"ind":"tiga","ter":"raange","makian": "ptol", "galela": "sa'ange"},
-        {"ind":"empat","ter":"raha","makian": "phot", "galela": "iha"},
-        {"ind":"lima","ter":"ramtoha","makian": "plim", "galela": "motoha"},
-        {"ind":"enam","ter":"rara","makian": "pwonam", "galela": "butanga"},
-        {"ind":"tujuh","ter":"tomdi","makian": "phit", "galela": "tumudingi"},
-        {"ind":"delapan","ter":"tofkange","makian": "pwal", "galela": "tupa'ange"},
-        {"ind":"sembilan","ter":"sio","makian": "psiwo", "galela": "sio"},
-        {"ind":"sepuluh","ter":"nyagi moi","makian": "yohaso", "galela": "mogiowo"},
-        {"ind":"sebelas","ter":"nyagimoi se rimoi","makian": "lopsol", "galela": "mogiowo de moi"},
-        {"ind":"dua belas","ter":"nyagimoi se romdidi","makian": "yohaso loplu", "galela": "mogiowo de sinoto"},
-        {"ind":"tiga belas","ter":"nyagimoi se raange","makian": "yohaso loptol", "galela": "mogiowo de sa'ange"}, 
-        {"ind":"empat belas","ter":"nyagimoi se raha","makian": "yohaso lophot", "galela": "mogiowo de iha"},
-        {"ind":"lima belas","ter":"nyagimoi se ramtoha","makian": "yohaso loplim", "galela": "mogiowo de motoha"},
-        {"ind":"seribu","ter":"cala moi","makian": "calanye", "galela": "cala"},
-        {"ind":"satu juta","ter":"siji yuta","makian": "", "galela": ""},
-        {"ind":"satu abad","ter":"taong ratu moi","makian": "", "galela": ""},
-        {"ind":"dua abad","ter":"taong ratu romdidi","makian": "", "galela": ""},
-        {"ind":"tiga abad","ter":"taong ratu raange","makian": "", "galela": ""},
-        {"ind":"empat abad","ter":"taong ratu raha","makian": "", "galela": ""},
-        {"ind":"lima abad","ter":"taong ratu ramtoha","makian": "", "galela": ""},
-        {"ind":"tujuh abad","ter":"taong ratu tomdi","makian": "", "galela": "taong moritomudingi"},
-        {"ind":"delapan abad","ter":"taong ratu tofkange","makian": "", "galela": "taong moritupa'ange"},
-        {"ind":"sembilan abad","ter":"taong ratu sio","makian": "", "galela": "taong morisio"},
-        {"ind":"sepuluh abad","ter":"taong ratu nyagi moi","makian": "", "galela": "taong morinyagi moi"},
-        {"ind":"nol","ter":"nol","makian": "", "galela": ""},
-        {"ind":"angka","ter":"angka","makian": "", "galela": "ngai"},
-        {"ind":"angka-angka","ter":"angka-angka","makian": "", "galela": ""},
-        {"ind":"satuan","ter":"satuan","makian": "", "galela": ""},
-        {"ind":"belasan","ter":"nyagimoi","makian": "", "galela": "mogiowo"},
-        {"ind":"belas","ter":"nyagimoi","makian": "", "galela": "mogiowo"},
-        {"ind":"puluhan","ter":"nyagi","makian": "yoha", "galela": "mori"},
-        {"ind":"puluh","ter":"nyagi","makian": "yoha", "galela": "mori"},
-        {"ind":"ratusan","ter":"atusan","makian": "", "galela": "ratu"},
-        {"ind":"ratus","ter":"atus","makian": "utin", "galela": "ratu"},
-        {"ind":"ribuan","ter":"cala","makian": "", "galela": ""},
-        {"ind":"ribu","ter":"cala","makian": "calan", "galela": "cala"},
-        {"ind":"jutaan","ter":"jutaan","makian": "", "galela": ""},
-        {"ind":"juta","ter":"juta","makian": "", "galela": ""},
-        {"ind":"miliaran","ter":"miliaran","makian": "", "galela": ""},
-        {"ind":"miliar","ter":"miliar","makian": "", "galela": ""},
-        {"ind":"triliunan","ter":"triliunan","makian": "", "galela": ""},
-        {"ind":"satu per empat","ter":"","makian": "", "galela": "gaki"},
-        {"ind":"seperempat","ter":"","makian": "", "galela": "gaki"},
-        {"ind":"triliun","ter":"triliun","makian": "", "galela": ""}
       ],
       "Bilangan Ordinal": [
         {"ind":"pertama","ter":"","makian": "nibohiya", "galela": "ma'nonoma"},
@@ -1653,13 +1607,6 @@
         {"ind":"kring-kring","ter":"kring-kring","makian": "", "galela": ""},
         {"ind":"embik","ter":"kabi mai-di","makian": "", "galela": ""},
         {"ind":"kwek-kwek","ter":"kwek-kwek","makian": "", "galela": ""}
-      ],
-      "Bunyi Alam": [        
-        {"ind":"gemericik","ter":"gemricik","makian": "", "galela": ""},
-        {"ind":"gemuruh","ter":"gemuruh","makian": "rewos", "galela": ""},
-        {"ind":"gempa","ter":"sodidi","makian": "jui", "galela": "osu"},
-        {"ind":"deru","ter":"buwau","makian": "", "galela": "kuguru"},
-        {"ind":"degup","ter":"degup","makian": "", "galela": ""}
       ],
     },
     "Kata sapaan": {
@@ -6350,6 +6297,8 @@ function translateFromVoice(text){
           "pagi ini"
           "sore ini"
           "malam ini"
+          "malam itu"
+          "nanti malam"
           "besok malam"
 
           → tetap (JANGAN DIUBAH)
@@ -6372,6 +6321,61 @@ function translateFromVoice(text){
 
           "mereka memiliki 2 mobil di rumah"
           → "mereka memiliki mobil 2 di rumah"
+
+          ----------------------------------
+
+          8. ATURAN KALIMAT TANYA (PENTING)
+
+          Jika ada kata tanya, atur posisi sebagai berikut:
+
+          A. KATA TANYA DI DEPAN:
+
+          Jika ada kata:
+          "apa", "kapan", "apakah", "mengapa"
+
+          → MAKA:
+          kata tersebut HARUS di paling depan kalimat
+
+          CONTOH:
+          "kamu makan apa"
+          → "apa kamu makan"
+
+          "kapan kamu pergi"
+          → tetap "kapan kamu pergi"
+
+          "mengapa dia datang"
+          → tetap "mengapa dia datang"
+
+          ----------------------------------
+
+          B. KATA TANYA DI BELAKANG:
+
+          Jika ada kata:
+          "bagaimana", "dimana", "dari mana", "siapa"
+
+          → MAKA:
+          kata tersebut HARUS di paling belakang kalimat
+
+          CONTOH:
+          "bagaimana kabar kamu"
+          → "kamu kabar bagaimana"
+
+          "kamu dimana"
+          → "kamu dimana" (sudah benar di belakang)
+
+          "kamu dari mana"
+          → "kamu dari mana"
+
+          "siapa nama kamu"
+          → "kamu nama siapa"
+
+          ----------------------------------
+
+          C. PRIORITAS:
+
+          - Aturan kata tanya dijalankan SETELAH semua aturan lain
+          - Jangan ubah arti
+          - Hanya ubah posisi kata tanya
 
           ----------------------------------
 
