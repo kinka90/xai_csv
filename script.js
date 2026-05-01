@@ -6360,6 +6360,20 @@ function translateFromVoice(text){
           - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
 
+          ----------------------------------
+
+          ANTI PENGULANGAN (WAJIB)
+          ----------------------------------
+          - Susun kalimat HANYA SEKALI
+          - JANGAN melakukan penyusunan ulang lebih dari satu kali
+          - JANGAN membuat variasi kalimat
+          - JANGAN menggabungkan beberapa versi hasil
+          - Output harus hanya SATU KALIMAT FINAL
+          - Jika kalimat sudah benar → BERHENTI
+          - DILARANG memproses ulang bagian yang sudah benar
+          - DILARANG menghasilkan lebih dari satu versi kalimat
+
+
           ==================================
 
           OUTPUT:
