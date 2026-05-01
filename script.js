@@ -6203,6 +6203,24 @@ function translateFromVoice(text){
           JANGAN ubah arti. HANYA ubah posisi kata.
 
           ==================================
+          PRIORITAS TERTINGGI (WAJIB)
+          ==================================
+
+          - Gunakan struktur dari "Kalimat asli" sebagai acuan utama
+
+          - Jika ada frasa yang terdiri dari lebih dari satu kata di input
+            (contoh: "dia laki-laki", "saudara perempuan", "saudara perempuan seibu")
+
+            → MAKA:
+            - Anggap sebagai SATU UNIT
+            - JANGAN dipisah
+            - JANGAN gunakan hasil terjemahan per kata jika ada bentuk gabungan
+            - WAJIB mengikuti bentuk frasa dari input asli
+
+          - Jika terjadi konflik antara hasil kamus dan kalimat asli:
+            → PRIORITASKAN "Kalimat asli"
+
+          ==================================
           ATURAN UTAMA (WAJIB IKUTI)
           ==================================
 
@@ -6341,12 +6359,6 @@ function translateFromVoice(text){
           - Gunakan hanya kata yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
           - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
-
-          - Jika ada frasa yang terdiri dari lebih dari satu kata di input (contoh: "dia laki-laki"):
-            → anggap sebagai SATU UNIT
-            → JANGAN dipisah menjadi kata terpisah
-            → JANGAN gunakan hasil terjemahan per kata jika ada bentuk gabungan
-
 
           ==================================
 
