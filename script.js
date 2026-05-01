@@ -6209,7 +6209,7 @@ function translateFromVoice(text){
           - Gunakan struktur dari "Kalimat asli" sebagai acuan utama
 
           - Jika ada frasa yang terdiri dari lebih dari satu kata di input
-            (contoh: "dia laki-laki", "saudara perempuan", "saudara perempuan seibu")
+            (contoh: "dia laki-laki", "buah kelapa", "belakang rumah")
 
             → MAKA:
             - Anggap sebagai SATU UNIT
@@ -6350,13 +6350,19 @@ function translateFromVoice(text){
 
           ----------------------------------
 
+          9. ATURAN KAMUS
+          - Jika ada frasa yang terdiri dari lebih dari satu kata di input (contoh: "dia laki-laki"):
+            → anggap sebagai SATU UNIT
+            → JANGAN dipisah menjadi kata terpisah
+            → JANGAN gunakan hasil terjemahan per kata jika ada bentuk gabungan di kamus
+
           ==================================
           ATURAN PENTING
           ==================================
           - DILARANG mengulang kata
           - Setiap kata hanya boleh muncul SATU KALI sesuai input
           - Jika ada kata yang muncul lebih dari sekali akibat penyusunan ulang → HAPUS duplikatnya
-          - Gunakan hanya kata yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
+          - Gunakan hanya "kata" atau "kalimat" yang ada di "Hasil dari kamus", jangan menambah atau menggandakan
           - Angka SELALU pindah ke belakang benda (angka hanya muncul sekali, jika di inputan angka hanya sekali)
           - Negasi SELALU pindah ke belakang kata kerja atau objek
 
