@@ -6236,6 +6236,7 @@ function translateFromVoice(text){
           "2 rumah" → "rumah 2"
           "21 ikan merah" → "ikan merah 21"
           "21 ayam kuning" → "ayam kuning 21"
+          "seekor kucing putih" → "kucing putih seekor"
 
           ----------------------------------
 
@@ -6270,7 +6271,8 @@ function translateFromVoice(text){
           "rumah saya" → "saya rumah"  
           "buah kelapa" → "kelapa buah"  
           "belakang rumah" → "rumah belakang"  
-          "depan rumah" → "rumah depan"  
+          "depan rumah" → "rumah depan"
+          "seekor kucing" → "kucing seekor" 
 
           ----------------------------------
 
